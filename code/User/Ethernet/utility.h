@@ -11,9 +11,9 @@
 #define DELAY_TIMER_IRQn		TIMER3_IRQn
  
 //定时器不分频
-#define DELAY_TIMER_PRESCALER	0	//分频值0,频率和系统时钟一样
+#define DELAY_TIMER_PRESCALER	0	//分频值0,频率和系统时钟一样 120MHz
 //1us的定时计数是
-#define DELAY_TIMER_PERIOD		(SystemCoreClock / 1000 /1000)-1	//71	//SystemCoreClock / 1000 /1000
+#define DELAY_TIMER_PERIOD		(SystemCoreClock / 1000 /1000)-1	//120	//SystemCoreClock / 1000 /1000
  
 #define TMR_ENABLE()	TIMER_CTL0(DELAY_TIMER)|=(uint32_t)TIMER_CTL0_CEN	//开启定时器
 #define TMR_DISABEL()	TIMER_CTL0(DELAY_TIMER) &= ~(uint32_t)TIMER_CTL0_CEN //关闭定时器

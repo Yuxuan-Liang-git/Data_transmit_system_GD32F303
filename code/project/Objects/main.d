@@ -40,9 +40,8 @@
 .\objects\main.o: ..\User\main.h
 .\objects\main.o: ..\bsp\bsp_usart.h
 .\objects\main.o: ..\bsp\bsp_gpio.h
+.\objects\main.o: ..\bsp\bsp_adc.h
 .\objects\main.o: ..\bsp\gd25qxx.h
-.\objects\main.o: ..\User\Ethernet\w5500.h
-.\objects\main.o: ..\User\Ethernet\Types.h
-.\objects\main.o: ..\User\Ethernet\W5500_conf.h
-.\objects\main.o: ..\User\Ethernet\socket.h
 .\objects\main.o: ..\User\Ethernet\utility.h
+.\objects\main.o: ..\User\Ethernet\types.h
+.\objects\main.o: ..\User\Ethernet\udp.h

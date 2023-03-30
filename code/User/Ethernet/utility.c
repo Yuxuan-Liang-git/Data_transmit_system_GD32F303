@@ -34,18 +34,18 @@ void Delay_Timer_Init(void)
 	timer_parameter_struct tmr;
  
 	rcu_periph_clock_enable(RCU_DELAY_TIMER);
-    timer_deinit(DELAY_TIMER);
+	timer_deinit(DELAY_TIMER);
  
 	 /* TIMERx configuration */
-    tmr.prescaler         = DELAY_TIMER_PRESCALER;
-    tmr.alignedmode       = TIMER_COUNTER_EDGE;
-    tmr.counterdirection  = TIMER_COUNTER_UP;
-    tmr.period            = DELAY_TIMER_PERIOD;
-    tmr.clockdivision     = TIMER_CKDIV_DIV1;
-    tmr.repetitioncounter = 0;
-    timer_init(DELAY_TIMER,&tmr);
-	
-    timer_interrupt_enable(DELAY_TIMER,TIMER_INT_UP); //使能更新中断
+	tmr.prescaler         = DELAY_TIMER_PRESCALER;
+	tmr.alignedmode       = TIMER_COUNTER_EDGE;
+	tmr.counterdirection  = TIMER_COUNTER_UP;
+	tmr.period            = DELAY_TIMER_PERIOD;
+	tmr.clockdivision     = TIMER_CKDIV_DIV1;
+	tmr.repetitioncounter = 0;
+	timer_init(DELAY_TIMER,&tmr);
+
+	timer_interrupt_enable(DELAY_TIMER,TIMER_INT_UP); //使能更新中断
 	nvic_irq_enable(DELAY_TIMER_IRQn,2,0); //使能中断线
 	TMR_DISABEL();
 }

@@ -12,7 +12,11 @@ extern "C" {
 #include "address_setting.h"
 #include "bsp_usart.h"
 #include "bsp_gpio.h"
+#include "bsp_adc.h"
 #include "gd25qxx.h"
+#include "utility.h"
+
+void get_clk(void);		//	ªÒ»° ±÷”
 
 
 #ifdef __cplusplus

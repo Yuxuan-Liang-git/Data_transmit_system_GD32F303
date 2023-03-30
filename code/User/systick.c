@@ -55,7 +55,7 @@ void systick_config(void)
 //        }
 //    }
 	    /* setup systick timer for 1000Hz interrupts */
-    if (SysTick_Config(SystemCoreClock/1000 )){
+    if (SysTick_Config(SystemCoreClock/120000 )){
         /* capture error */
         while (1){
         }

@@ -1,4 +1,5 @@
 .\objects\address_setting.o: ..\User\address_setting.c
+.\objects\address_setting.o: ..\User\address_setting.h
 .\objects\address_setting.o: ..\User\main.h
 .\objects\address_setting.o: ..\CMSIS\gd32f30x.h
 .\objects\address_setting.o: G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h
@@ -37,7 +38,9 @@
 .\objects\address_setting.o: ..\User\systick.h
 .\objects\address_setting.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\address_setting.o: ..\User\address_setting.h
-.\objects\address_setting.o: ..\User\main.h
 .\objects\address_setting.o: ..\bsp\bsp_usart.h
 .\objects\address_setting.o: ..\bsp\bsp_gpio.h
+.\objects\address_setting.o: ..\bsp\bsp_adc.h
 .\objects\address_setting.o: ..\bsp\gd25qxx.h
+.\objects\address_setting.o: ..\User\Ethernet\utility.h
+.\objects\address_setting.o: ..\User\Ethernet\types.h

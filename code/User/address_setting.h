@@ -23,4 +23,6 @@ uint16_t get_addr(void);
 #endif
 
 #endif /* _ADDRESS_SETTING_H__ */
+
+																	 
 																	 

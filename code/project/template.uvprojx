@@ -573,14 +573,14 @@
               <FilePath>..\bsp\gd25qxx.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_spi.c</FileName>
+              <FileName>bsp_adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\bsp\bsp_spi.c</FilePath>
+              <FilePath>..\bsp\bsp_adc.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_TiMbase.c</FileName>
+              <FileName>bsp_rcu_clk.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\bsp\bsp_TiMbase.c</FilePath>
+              <FilePath>..\bsp\bsp_rcu_clk.c</FilePath>
             </File>
           </Files>
         </Group>

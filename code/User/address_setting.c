@@ -1,4 +1,3 @@
-#include "main.h"
 #include "address_setting.h"
 
 int i;
