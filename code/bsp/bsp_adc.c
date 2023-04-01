@@ -95,6 +95,7 @@ void dma_config(void)
     /* initialize DMA single data mode */
     dma_data_parameter.periph_addr = (uint32_t)(&ADC_RDATA(ADC0));
     dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
+//		dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_ENABLE;
     dma_data_parameter.memory_addr = (uint32_t)(adc_value);
     dma_data_parameter.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
@@ -136,7 +137,7 @@ void adc_config(void)
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC0, 0, adc_channels[i], ADC_SAMPLETIME_7POINT5);
+				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_1POINT5);
 		}
     /* ADC trigger config */
 		//	用TIMER0_CH0作为adc采样的触发信号

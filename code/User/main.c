@@ -4,7 +4,7 @@
 #include "tcp.h"
 
 
-uint8 data[10];
+uint8_t data[4];
 
 uint16_t address;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
@@ -28,12 +28,18 @@ int main(void)
 
 	while(1)
 	{
-		
 		printf("{plotter:%d}\n", adc_value[0]);
+//		printf("{plotter:%d,%d,%d}\n", adc_value[0],adc_value[1],adc_value[2]);
 
+//		
+//		do_tcp_client();                  /*TCP_Client 数据回环测试程序*/ 
 		
-//		do_tcp_client();                  /*TCP_Client 数据回环测试程序*/    
-
+//		for(i=0;i<4;i++)
+//		{
+//			data[i]=adc_value[0] >> 8*i;
+//		}
+//			do_tcp_communicate(data,4);
+		
 //		for(i=0;i<10;i++)
 //		{
 //			data[i]=i+48;
@@ -44,7 +50,7 @@ int main(void)
 //		{
 //			data[i]=0;
 //		}
-//		
+		
 	}
 	
 	return 0;
