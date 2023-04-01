@@ -1,16 +1,17 @@
 #include "main.h"
-//#include "w5500.h"
-//#include "W5500_conf.h"
-//#include "socket.h"
-//#include "utility.h"
 
-#include "udp.h"
+//#include "udp.h"
+#include "tcp.h"
+
+
+uint8 data[10];
 
 uint16_t address;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
 
 int main(void)
 {
+	uint8 i;
 	SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
 	systick_config(); // 初始化systick计时器
 	Delay_Timer_Init();		//	us级延时
@@ -19,9 +20,12 @@ int main(void)
 	adc_init();
 	gd_usart_com_init(DEV_COM0);
 	
-	udp_com_init();
-	
 	led_on();
+	address=get_addr();
+	printf("Address is:%d \n\r",address);	
+	tcp_com_init(address);
+	
+
 	while(1)
 	{
 		led_on();
@@ -29,11 +33,21 @@ int main(void)
 		led_off();
 		delay_ms(1000);
 		
-		address=get_addr();
-		printf("Address is:%d \n\r",address);	
+
 		
-		do_udp();                         /*UDP 数据回环测试*/
-		
+		do_tcp_client();                  /*TCP_Client 数据回环测试程序*/    
+
+//		for(i=0;i<10;i++)
+//		{
+//			data[i]=i+48;
+//			do_tcp_communicate(data,10);
+//			delay_ms(1000);
+//		}
+//		for(i=0;i<10;i++)
+//		{
+//			data[i]=0;
+//		}
+//		
 	}
 	
 	return 0;

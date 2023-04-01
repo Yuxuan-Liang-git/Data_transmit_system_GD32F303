@@ -6,6 +6,7 @@
 #endif
 
 #include "main.h"
+#include "types.h"
 
 #define ADDR_GPIO_CLK		RCU_GPIOD
 #define ADDR_GPIO_Port 	GPIOD
@@ -15,7 +16,7 @@ static uint32_t ADDR_PIN[8]	= {GPIO_PIN_0,GPIO_PIN_1,GPIO_PIN_2,GPIO_PIN_3,
 
 
 void addr_init(void);
-uint16_t get_addr(void);
+uint8 get_addr(void);
 																	 
 																	 
 #ifdef __cplusplus

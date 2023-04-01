@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\Objects\template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Mar 31 01:31:59 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Apr 01 08:53:56 2023
 <BR><P>
-<H3>Maximum Stack Usage =       2168 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        132 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; do_udp &rArr; sendto &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
+main &rArr; gd_usart_com_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 <P>
 <H3>
 Mutually Recursive functions
@@ -99,7 +99,7 @@ Global Symbols
 <P><STRONG><a name="[48]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_xd.o(.text)
 </UL>
-<P><STRONG><a name="[b7]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[ba]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[4a]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -109,15 +109,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[b8]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[bb]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[b9]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[bc]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[ba]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[bd]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[bb]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[be]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[bc]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[bf]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_gd32f30x_xd.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_xd.o(RESET)
@@ -303,7 +303,7 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>WWDGT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32f30x_xd.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_xd.o(RESET)
 </UL>
-<P><STRONG><a name="[bd]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[c0]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 
 <P><STRONG><a name="[60]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
@@ -315,11 +315,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[be]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[c1]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
-<P><STRONG><a name="[bf]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[c2]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[c0]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[c3]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_it.o(i.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_xd.o(RESET)
@@ -349,14 +349,17 @@ Global Symbols
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendto
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recvfrom
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_data_processing
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_TX_FSR
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_RX_RSR
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_RX_RSR
 </UL>
 
 <P><STRONG><a name="[55]"></a>IINCHIP_SpiSendData</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, w5500_conf.o(i.IINCHIP_SpiSendData))
@@ -364,10 +367,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_SendByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
 <P><STRONG><a name="[58]"></a>IINCHIP_WRITE</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, w5500_conf.o(i.IINCHIP_WRITE))
@@ -377,13 +380,15 @@ Global Symbols
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendto
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recvfrom
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_data_processing
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
 </UL>
 
 <P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_it.o(i.MemManage_Handler))
@@ -434,26 +439,27 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[c1]"></a>__1printf$3</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3), UNUSED)
+<P><STRONG><a name="[c4]"></a>__1printf$3</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3), UNUSED)
 
-<P><STRONG><a name="[82]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
+<P><STRONG><a name="[83]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recvfrom
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_data_processing
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
-<P><STRONG><a name="[c2]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[c5]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[c3]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[c6]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[c4]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[c7]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[6b]"></a>adc_calibration_enable</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_calibration_enable))
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
@@ -551,7 +557,19 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
+</UL>
+
+<P><STRONG><a name="[74]"></a>connect</STRONG> (Thumb, 248 bytes, Stack size 24 bytes, socket.o(i.connect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = connect &rArr; getSn_IR &rArr; IINCHIP_READ &rArr; iinchip_cson &rArr; wiz_cs
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
 <P><STRONG><a name="[6a]"></a>delay_1ms</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, systick.o(i.delay_1ms))
@@ -562,33 +580,32 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
-<P><STRONG><a name="[74]"></a>delay_ms</STRONG> (Thumb, 26 bytes, Stack size 4 bytes, utility.o(i.delay_ms))
+<P><STRONG><a name="[76]"></a>delay_ms</STRONG> (Thumb, 26 bytes, Stack size 4 bytes, utility.o(i.delay_ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = delay_ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
-<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
-</UL>
-
-<P><STRONG><a name="[75]"></a>delay_us</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, utility.o(i.delay_us))
-<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
 </UL>
 
-<P><STRONG><a name="[76]"></a>dma_channel_enable</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, gd32f30x_dma.o(i.dma_channel_enable))
+<P><STRONG><a name="[77]"></a>delay_us</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, utility.o(i.delay_us))
+<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
+</UL>
+
+<P><STRONG><a name="[78]"></a>dma_channel_enable</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, gd32f30x_dma.o(i.dma_channel_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dma_channel_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
 </UL>
 <BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_config
 </UL>
 
-<P><STRONG><a name="[78]"></a>dma_circulation_enable</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, gd32f30x_dma.o(i.dma_circulation_enable))
+<P><STRONG><a name="[7a]"></a>dma_circulation_enable</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, gd32f30x_dma.o(i.dma_circulation_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dma_circulation_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
 </UL>
 <BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_config
 </UL>
@@ -596,42 +613,43 @@ Global Symbols
 <P><STRONG><a name="[70]"></a>dma_config</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, bsp_adc.o(i.dma_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = dma_config &rArr; dma_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_init
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_deinit
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_circulation_enable
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_init
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_deinit
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_circulation_enable
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
 </UL>
 
-<P><STRONG><a name="[79]"></a>dma_deinit</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, gd32f30x_dma.o(i.dma_deinit))
+<P><STRONG><a name="[7b]"></a>dma_deinit</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, gd32f30x_dma.o(i.dma_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dma_deinit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
 </UL>
 <BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_config
 </UL>
 
-<P><STRONG><a name="[7a]"></a>dma_init</STRONG> (Thumb, 302 bytes, Stack size 24 bytes, gd32f30x_dma.o(i.dma_init))
+<P><STRONG><a name="[7c]"></a>dma_init</STRONG> (Thumb, 302 bytes, Stack size 24 bytes, gd32f30x_dma.o(i.dma_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dma_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_periph_and_channel_check
 </UL>
 <BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_config
 </UL>
 
-<P><STRONG><a name="[7b]"></a>do_udp</STRONG> (Thumb, 140 bytes, Stack size 2064 bytes, udp.o(i.do_udp))
-<BR><BR>[Stack]<UL><LI>Max Depth = 2168<LI>Call Chain = do_udp &rArr; sendto &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
+<P><STRONG><a name="[7d]"></a>do_tcp_client</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, tcp.o(i.do_tcp_client))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = do_tcp_client &rArr; send &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendto
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recvfrom
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_RX_RSR
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_RX_RSR
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -639,151 +657,160 @@ Global Symbols
 <P><STRONG><a name="[49]"></a>fputc</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, main.o(i.fputc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf3.o(i.__0printf$3)
 </UL>
-<P><STRONG><a name="[86]"></a>gd_usart_com_init</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, bsp_usart.o(i.gd_usart_com_init))
+<P><STRONG><a name="[87]"></a>gd_usart_com_init</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, bsp_usart.o(i.gd_usart_com_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = gd_usart_com_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[8c]"></a>getGAR</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, w5500.o(i.getGAR))
+<P><STRONG><a name="[8d]"></a>getGAR</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, w5500.o(i.getGAR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = getGAR &rArr; wiz_read_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
-</UL>
-
-<P><STRONG><a name="[a2]"></a>getIINCHIP_TxMAX</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, w5500.o(i.getIINCHIP_TxMAX))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendto
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 </UL>
 
-<P><STRONG><a name="[8e]"></a>getSIPR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSIPR))
+<P><STRONG><a name="[a3]"></a>getIINCHIP_TxMAX</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, w5500.o(i.getIINCHIP_TxMAX))
+<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+</UL>
+
+<P><STRONG><a name="[8f]"></a>getSIPR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSIPR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = getSIPR &rArr; wiz_read_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 </UL>
 
-<P><STRONG><a name="[8f]"></a>getSUBR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSUBR))
+<P><STRONG><a name="[90]"></a>getSUBR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSUBR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = getSUBR &rArr; wiz_read_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 </UL>
 
-<P><STRONG><a name="[7e]"></a>getSn_IR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSn_IR))
+<P><STRONG><a name="[75]"></a>getSn_IR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSn_IR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = getSn_IR &rArr; IINCHIP_READ &rArr; iinchip_cson &rArr; wiz_cs
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
-<P><STRONG><a name="[80]"></a>getSn_RX_RSR</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, w5500.o(i.getSn_RX_RSR))
+<P><STRONG><a name="[81]"></a>getSn_RX_RSR</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, w5500.o(i.getSn_RX_RSR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = getSn_RX_RSR &rArr; IINCHIP_READ &rArr; iinchip_cson &rArr; wiz_cs
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
-<P><STRONG><a name="[7c]"></a>getSn_SR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSn_SR))
+<P><STRONG><a name="[7e]"></a>getSn_SR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSn_SR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = getSn_SR &rArr; IINCHIP_READ &rArr; iinchip_cson &rArr; wiz_cs
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
-<P><STRONG><a name="[90]"></a>get_addr</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, address_setting.o(i.get_addr))
+<P><STRONG><a name="[91]"></a>getSn_TX_FSR</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, w5500.o(i.getSn_TX_FSR))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = getSn_TX_FSR &rArr; IINCHIP_READ &rArr; iinchip_cson &rArr; wiz_cs
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
+</UL>
+
+<P><STRONG><a name="[92]"></a>get_addr</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, address_setting.o(i.get_addr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = get_addr
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_input_bit_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[9b]"></a>gpio_bit_reset</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_bit_reset))
-<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
+<P><STRONG><a name="[9d]"></a>gpio_bit_reset</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_bit_reset))
+<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
 </UL>
 
-<P><STRONG><a name="[99]"></a>gpio_bit_set</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_bit_set))
-<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
+<P><STRONG><a name="[9b]"></a>gpio_bit_set</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_bit_set))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
 </UL>
 
-<P><STRONG><a name="[92]"></a>gpio_for_w5500_config</STRONG> (Thumb, 168 bytes, Stack size 32 bytes, w5500_conf.o(i.gpio_for_w5500_config))
+<P><STRONG><a name="[94]"></a>gpio_for_w5500_config</STRONG> (Thumb, 168 bytes, Stack size 32 bytes, w5500_conf.o(i.gpio_for_w5500_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = gpio_for_w5500_config &rArr; gpio_pin_remap_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_pin_remap_config
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_pin_remap_config
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_enable
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 </UL>
 
 <P><STRONG><a name="[72]"></a>gpio_init</STRONG> (Thumb, 188 bytes, Stack size 20 bytes, gd32f30x_gpio.o(i.gpio_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addr_init
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
-<P><STRONG><a name="[91]"></a>gpio_input_bit_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_input_bit_get))
-<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_addr
+<P><STRONG><a name="[93]"></a>gpio_input_bit_get</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_input_bit_get))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_addr
 </UL>
 
-<P><STRONG><a name="[93]"></a>gpio_pin_remap_config</STRONG> (Thumb, 138 bytes, Stack size 20 bytes, gd32f30x_gpio.o(i.gpio_pin_remap_config))
+<P><STRONG><a name="[95]"></a>gpio_pin_remap_config</STRONG> (Thumb, 138 bytes, Stack size 20 bytes, gd32f30x_gpio.o(i.gpio_pin_remap_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = gpio_pin_remap_config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
 <P><STRONG><a name="[54]"></a>iinchip_csoff</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, w5500_conf.o(i.iinchip_csoff))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iinchip_csoff &rArr; wiz_cs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
 <P><STRONG><a name="[56]"></a>iinchip_cson</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, w5500_conf.o(i.iinchip_cson))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iinchip_cson &rArr; wiz_cs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
-<P><STRONG><a name="[97]"></a>led_init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_init))
+<P><STRONG><a name="[99]"></a>led_init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = led_init &rArr; gpio_init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
@@ -792,205 +819,218 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[98]"></a>led_off</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_off))
+<P><STRONG><a name="[9a]"></a>led_off</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_off))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = led_off
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[9a]"></a>led_on</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_on))
+<P><STRONG><a name="[9c]"></a>led_on</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_on))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = led_on
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 2168<LI>Call Chain = main &rArr; do_udp &rArr; sendto &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = main &rArr; gd_usart_com_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_addr
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_addr
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addr_init
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Timer_Init
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
 <P><STRONG><a name="[52]"></a>nvic_irq_enable</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, gd32f30x_misc.o(i.nvic_irq_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = nvic_irq_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Timer_Init
 </UL>
 
-<P><STRONG><a name="[9e]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_misc.o(i.nvic_priority_group_set))
+<P><STRONG><a name="[a0]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_misc.o(i.nvic_priority_group_set))
 <BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 </UL>
 
-<P><STRONG><a name="[b6]"></a>rcu_clock_freq_get</STRONG> (Thumb, 310 bytes, Stack size 84 bytes, gd32f30x_rcu.o(i.rcu_clock_freq_get))
+<P><STRONG><a name="[b9]"></a>rcu_clock_freq_get</STRONG> (Thumb, 310 bytes, Stack size 84 bytes, gd32f30x_rcu.o(i.rcu_clock_freq_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = rcu_clock_freq_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
 </UL>
 
 <P><STRONG><a name="[4e]"></a>rcu_periph_clock_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_clock_enable))
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_rcu_config
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;addr_init
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Timer_Init
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
-<P><STRONG><a name="[b5]"></a>rcu_periph_reset_disable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_disable))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<P><STRONG><a name="[b8]"></a>rcu_periph_reset_disable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
 </UL>
 
-<P><STRONG><a name="[b4]"></a>rcu_periph_reset_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<P><STRONG><a name="[b7]"></a>rcu_periph_reset_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
 </UL>
 
-<P><STRONG><a name="[81]"></a>recvfrom</STRONG> (Thumb, 486 bytes, Stack size 48 bytes, socket.o(i.recvfrom))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = recvfrom &rArr; wiz_read_buf &rArr; __2printf
+<P><STRONG><a name="[82]"></a>recv</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, socket.o(i.recv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = recv &rArr; recv_data_processing &rArr; wiz_read_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_data_processing
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
-<P><STRONG><a name="[9f]"></a>reset_w5500</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, w5500_conf.o(i.reset_w5500))
+<P><STRONG><a name="[a1]"></a>recv_data_processing</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, w5500.o(i.recv_data_processing))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = recv_data_processing &rArr; wiz_read_buf &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv
+</UL>
+
+<P><STRONG><a name="[a2]"></a>reset_w5500</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, w5500_conf.o(i.reset_w5500))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = reset_w5500 &rArr; delay_ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 </UL>
 
-<P><STRONG><a name="[a0]"></a>send_data_processing</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, w5500.o(i.send_data_processing))
+<P><STRONG><a name="[84]"></a>send</STRONG> (Thumb, 216 bytes, Stack size 32 bytes, socket.o(i.send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = send &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_TX_FSR
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getIINCHIP_TxMAX
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
+</UL>
+
+<P><STRONG><a name="[a4]"></a>send_data_processing</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, w5500.o(i.send_data_processing))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = send_data_processing &rArr; wiz_write_buf &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendto
-</UL>
-
-<P><STRONG><a name="[83]"></a>sendto</STRONG> (Thumb, 268 bytes, Stack size 32 bytes, socket.o(i.sendto))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = sendto &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getIINCHIP_TxMAX
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
-<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 </UL>
 
-<P><STRONG><a name="[a3]"></a>setGAR</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, w5500.o(i.setGAR))
+<P><STRONG><a name="[a6]"></a>setGAR</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, w5500.o(i.setGAR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = setGAR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 </UL>
 
-<P><STRONG><a name="[a4]"></a>setSHAR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.setSHAR))
+<P><STRONG><a name="[a7]"></a>setSHAR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.setSHAR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = setSHAR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_mac
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_mac
 </UL>
 
-<P><STRONG><a name="[a5]"></a>setSIPR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.setSIPR))
+<P><STRONG><a name="[a8]"></a>setSIPR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.setSIPR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = setSIPR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 </UL>
 
-<P><STRONG><a name="[a6]"></a>setSUBR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.setSUBR))
+<P><STRONG><a name="[a9]"></a>setSUBR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.setSUBR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = setSUBR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 </UL>
 
-<P><STRONG><a name="[7f]"></a>setSn_IR</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, w5500.o(i.setSn_IR))
+<P><STRONG><a name="[80]"></a>setSn_IR</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, w5500.o(i.setSn_IR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = setSn_IR &rArr; IINCHIP_WRITE &rArr; iinchip_cson &rArr; wiz_cs
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
-<P><STRONG><a name="[a7]"></a>set_w5500_ip</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, w5500_conf.o(i.set_w5500_ip))
+<P><STRONG><a name="[aa]"></a>set_w5500_ip</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, w5500_conf.o(i.set_w5500_ip))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = set_w5500_ip &rArr; setSUBR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSIPR
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getGAR
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSIPR
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getGAR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 </UL>
 
-<P><STRONG><a name="[a8]"></a>set_w5500_mac</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, w5500_conf.o(i.set_w5500_mac))
+<P><STRONG><a name="[ab]"></a>set_w5500_mac</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, w5500_conf.o(i.set_w5500_mac))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = set_w5500_mac &rArr; setSHAR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 </UL>
 
-<P><STRONG><a name="[7d]"></a>socket</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, socket.o(i.socket))
+<P><STRONG><a name="[7f]"></a>socket</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, socket.o(i.socket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = socket &rArr; close &rArr; IINCHIP_WRITE &rArr; iinchip_cson &rArr; wiz_cs
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_client
 </UL>
 
-<P><STRONG><a name="[a9]"></a>socket_buf_init</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, w5500.o(i.socket_buf_init))
+<P><STRONG><a name="[ac]"></a>socket_buf_init</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, w5500.o(i.socket_buf_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = socket_buf_init &rArr; IINCHIP_WRITE &rArr; iinchip_cson &rArr; wiz_cs
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;udp_com_init
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 </UL>
 
-<P><STRONG><a name="[95]"></a>spi_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_spi.o(i.spi_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<P><STRONG><a name="[97]"></a>spi_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_spi.o(i.spi_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
 <P><STRONG><a name="[5b]"></a>spi_i2s_data_receive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_spi.o(i.spi_i2s_data_receive))
@@ -1005,56 +1045,69 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_SendByte
 </UL>
 
-<P><STRONG><a name="[94]"></a>spi_init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gd32f30x_spi.o(i.spi_init))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<P><STRONG><a name="[96]"></a>spi_init</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gd32f30x_spi.o(i.spi_init))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
-<P><STRONG><a name="[9c]"></a>systick_config</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, systick.o(i.systick_config))
+<P><STRONG><a name="[9e]"></a>systick_config</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, systick.o(i.systick_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = systick_config &rArr; __NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b2]"></a>timer_auto_reload_shadow_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_auto_reload_shadow_enable))
+<P><STRONG><a name="[9f]"></a>tcp_com_init</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, tcp.o(i.tcp_com_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = tcp_com_init &rArr; set_w5500_mac &rArr; setSHAR &rArr; wiz_write_buf &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_mac
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b5]"></a>timer_auto_reload_shadow_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_auto_reload_shadow_enable))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
-<P><STRONG><a name="[ad]"></a>timer_channel_output_config</STRONG> (Thumb, 484 bytes, Stack size 8 bytes, gd32f30x_timer.o(i.timer_channel_output_config))
+<P><STRONG><a name="[b0]"></a>timer_channel_output_config</STRONG> (Thumb, 484 bytes, Stack size 8 bytes, gd32f30x_timer.o(i.timer_channel_output_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_channel_output_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
-<P><STRONG><a name="[af]"></a>timer_channel_output_mode_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_mode_config))
+<P><STRONG><a name="[b2]"></a>timer_channel_output_mode_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_mode_config))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
-<P><STRONG><a name="[ae]"></a>timer_channel_output_pulse_value_config</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_pulse_value_config))
+<P><STRONG><a name="[b1]"></a>timer_channel_output_pulse_value_config</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_pulse_value_config))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
-<P><STRONG><a name="[b0]"></a>timer_channel_output_shadow_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_shadow_config))
+<P><STRONG><a name="[b3]"></a>timer_channel_output_shadow_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_shadow_config))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
-<P><STRONG><a name="[ac]"></a>timer_channel_output_struct_para_init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_struct_para_init))
+<P><STRONG><a name="[af]"></a>timer_channel_output_struct_para_init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_channel_output_struct_para_init))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
 <P><STRONG><a name="[6f]"></a>timer_config</STRONG> (Thumb, 124 bytes, Stack size 32 bytes, bsp_adc.o(i.timer_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = timer_config &rArr; timer_channel_output_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_primary_output_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_primary_output_config
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_struct_para_init
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_shadow_config
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_pulse_value_config
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_mode_config
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_config
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_auto_reload_shadow_enable
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_struct_para_init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_shadow_config
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_pulse_value_config
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_mode_config
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_channel_output_config
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_auto_reload_shadow_enable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
 </UL>
@@ -1062,13 +1115,13 @@ Global Symbols
 <P><STRONG><a name="[4f]"></a>timer_deinit</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, gd32f30x_timer.o(i.timer_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_deinit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Timer_Init
 </UL>
 
-<P><STRONG><a name="[b3]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_enable))
+<P><STRONG><a name="[b6]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_enable))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
@@ -1081,127 +1134,114 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Timer_Init
 </UL>
 
-<P><STRONG><a name="[b1]"></a>timer_primary_output_config</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_primary_output_config))
+<P><STRONG><a name="[b4]"></a>timer_primary_output_config</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_primary_output_config))
 <BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_config
 </UL>
 
-<P><STRONG><a name="[9d]"></a>udp_com_init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, udp.o(i.udp_com_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = udp_com_init &rArr; set_w5500_mac &rArr; setSHAR &rArr; wiz_write_buf &rArr; __2printf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_mac
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
-</UL>
-<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[88]"></a>usart_baudrate_set</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, gd32f30x_usart.o(i.usart_baudrate_set))
+<P><STRONG><a name="[89]"></a>usart_baudrate_set</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, gd32f30x_usart.o(i.usart_baudrate_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_clock_freq_get
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_clock_freq_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
 </UL>
 
-<P><STRONG><a name="[84]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_data_transmit))
+<P><STRONG><a name="[85]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_data_transmit))
 <BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[87]"></a>usart_deinit</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_deinit))
+<P><STRONG><a name="[88]"></a>usart_deinit</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_deinit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
-</UL>
-
-<P><STRONG><a name="[8b]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
 </UL>
 
-<P><STRONG><a name="[85]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_flag_get))
+<P><STRONG><a name="[8c]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+</UL>
+
+<P><STRONG><a name="[86]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_flag_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_flag_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[89]"></a>usart_receive_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_receive_config))
-<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<P><STRONG><a name="[8a]"></a>usart_receive_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_receive_config))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
 </UL>
 
-<P><STRONG><a name="[8a]"></a>usart_transmit_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_transmit_config))
-<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
+<P><STRONG><a name="[8b]"></a>usart_transmit_config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_transmit_config))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gd_usart_com_init
 </UL>
 
-<P><STRONG><a name="[96]"></a>wiz_cs</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, w5500_conf.o(i.wiz_cs))
+<P><STRONG><a name="[98]"></a>wiz_cs</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, w5500_conf.o(i.wiz_cs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = wiz_cs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 </UL>
 
-<P><STRONG><a name="[8d]"></a>wiz_read_buf</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, w5500_conf.o(i.wiz_read_buf))
+<P><STRONG><a name="[8e]"></a>wiz_read_buf</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, w5500_conf.o(i.wiz_read_buf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = wiz_read_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recvfrom
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSIPR
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getGAR
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv_data_processing
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSIPR
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getGAR
 </UL>
 
-<P><STRONG><a name="[a1]"></a>wiz_write_buf</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, w5500_conf.o(i.wiz_write_buf))
+<P><STRONG><a name="[a5]"></a>wiz_write_buf</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, w5500_conf.o(i.wiz_write_buf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[aa]"></a>system_clock_120m_irc8m</STRONG> (Thumb, 236 bytes, Stack size 0 bytes, system_gd32f30x.o(i.system_clock_120m_irc8m))
+<P><STRONG><a name="[ad]"></a>system_clock_120m_irc8m</STRONG> (Thumb, 236 bytes, Stack size 0 bytes, system_gd32f30x.o(i.system_clock_120m_irc8m))
 <BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
 </UL>
 
 <P><STRONG><a name="[5d]"></a>system_clock_config</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32f30x.o(i.system_clock_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = system_clock_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_120m_irc8m
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_120m_irc8m
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[77]"></a>dma_periph_and_channel_check</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f30x_dma.o(i.dma_periph_and_channel_check))
-<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_init
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_deinit
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_circulation_enable
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
+<P><STRONG><a name="[79]"></a>dma_periph_and_channel_check</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f30x_dma.o(i.dma_periph_and_channel_check))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_init
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_deinit
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_circulation_enable
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_channel_enable
 </UL>
 
-<P><STRONG><a name="[ab]"></a>__NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, systick.o(i.__NVIC_SetPriority))
+<P><STRONG><a name="[ae]"></a>__NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, systick.o(i.__NVIC_SetPriority))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
 </UL>
 
 <P><STRONG><a name="[5f]"></a>_printf_core</STRONG> (Thumb, 436 bytes, Stack size 96 bytes, printf3.o(i._printf_core), UNUSED)

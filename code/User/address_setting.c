@@ -1,6 +1,6 @@
 #include "address_setting.h"
 
-int i;
+uint8 i;
 void addr_init(void)
 {
 		rcu_periph_clock_enable(RCU_AF);	
@@ -13,9 +13,9 @@ void addr_init(void)
 
 }
 
-uint16_t get_addr(void)
+uint8 get_addr(void)
 {
-	uint16_t	addr;
+	uint8	addr;
 	FlagStatus ADDR_state[8];
 	for(i=0;i<8;i++)
 	{

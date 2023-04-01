@@ -38,10 +38,10 @@
 .\objects\main.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: ..\User\address_setting.h
 .\objects\main.o: ..\User\main.h
+.\objects\main.o: ..\User\Ethernet\types.h
 .\objects\main.o: ..\bsp\bsp_usart.h
 .\objects\main.o: ..\bsp\bsp_gpio.h
 .\objects\main.o: ..\bsp\bsp_adc.h
 .\objects\main.o: ..\bsp\gd25qxx.h
 .\objects\main.o: ..\User\Ethernet\utility.h
-.\objects\main.o: ..\User\Ethernet\types.h
-.\objects\main.o: ..\User\Ethernet\udp.h
+.\objects\main.o: ..\User\Ethernet\tcp.h

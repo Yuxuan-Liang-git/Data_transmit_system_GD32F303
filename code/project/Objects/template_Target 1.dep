@@ -853,8 +853,8 @@ I (..\Library\Include\gd32f30x_usart.h)(0x61CC215C)
 I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
-F (..\User\main.c)(0x6425C788)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\User\main.h)(0x6425C721)
+F (..\User\main.c)(0x64277EE2)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\User\main.h)(0x64277D38)
 I (..\CMSIS\gd32f30x.h)(0x6422EEAB)
 I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -890,14 +890,14 @@ I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (..\User\systick.h)(0x64146B69)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\address_setting.h)(0x6422FB6B)
+I (..\User\address_setting.h)(0x64277FD4)
+I (..\User\Ethernet\types.h)(0x64277FC1)
 I (..\bsp\bsp_usart.h)(0x6411A741)
 I (..\bsp\bsp_gpio.h)(0x640C2D67)
 I (..\bsp\bsp_adc.h)(0x6425C75B)
 I (..\bsp\gd25qxx.h)(0x63B4E830)
 I (..\User\Ethernet\utility.h)(0x6422FA55)
-I (..\User\Ethernet\types.h)(0x63BE635B)
-I (..\User\Ethernet\udp.h)(0x642055B2)
+I (..\User\Ethernet\tcp.h)(0x64277F94)
 F (..\User\systick.c)(0x6422FF9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (..\CMSIS\gd32f30x.h)(0x6422EEAB)
 I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
@@ -969,9 +969,9 @@ I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (..\User\systick.h)(0x64146B69)
-F (..\User\address_setting.c)(0x6422F9B1)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\address_setting.o --omf_browse .\objects\address_setting.crf --depend .\objects\address_setting.d)
-I (..\User\address_setting.h)(0x6422FB6B)
-I (..\User\main.h)(0x6425C721)
+F (..\User\address_setting.c)(0x64277F7D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\address_setting.o --omf_browse .\objects\address_setting.crf --depend .\objects\address_setting.d)
+I (..\User\address_setting.h)(0x64277FD4)
+I (..\User\main.h)(0x64277D38)
 I (..\CMSIS\gd32f30x.h)(0x6422EEAB)
 I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1012,7 +1012,7 @@ I (..\bsp\bsp_gpio.h)(0x640C2D67)
 I (..\bsp\bsp_adc.h)(0x6425C75B)
 I (..\bsp\gd25qxx.h)(0x63B4E830)
 I (..\User\Ethernet\utility.h)(0x6422FA55)
-I (..\User\Ethernet\types.h)(0x63BE635B)
+I (..\User\Ethernet\types.h)(0x64277FC1)
 F (..\User\type.h)(0x641461EA)()
 F (..\bsp\bsp_gpio.c)(0x640C2E1C)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\bsp_gpio.o --omf_browse .\objects\bsp_gpio.crf --depend .\objects\bsp_gpio.d)
 I (..\bsp\bsp_gpio.h)(0x640C2D67)
@@ -1234,7 +1234,7 @@ I (..\Library\Include\gd32f30x_wwdgt.h)(0x61CC215C)
 I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (..\User\Ethernet\Types.h)(0x63BE635B)
+I (..\User\Ethernet\Types.h)(0x64277FC1)
 I (..\User\Ethernet\socket.h)(0x6411B9C7)
 I (..\User\Ethernet\dhcp.h)(0x64133961)
 I (..\User\type.h)(0x641461EA)
@@ -1275,7 +1275,7 @@ I (..\Library\Include\gd32f30x_wwdgt.h)(0x61CC215C)
 I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (..\User\Ethernet\Types.h)(0x63BE635B)
+I (..\User\Ethernet\Types.h)(0x64277FC1)
 I (..\User\Ethernet\W5500_conf.h)(0x6414604D)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\Ethernet\w5500.h)(0x6411B9CA)
@@ -1316,7 +1316,7 @@ I (..\Library\Include\gd32f30x_wwdgt.h)(0x61CC215C)
 I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (..\User\Ethernet\types.h)(0x63BE635B)
+I (..\User\Ethernet\types.h)(0x64277FC1)
 I (..\User\Ethernet\w5500.h)(0x6411B9CA)
 I (..\User\Ethernet\socket.h)(0x6411B9C7)
 F (..\User\Ethernet\w5500_conf.c)(0x6414691B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\w5500_conf.o --omf_browse .\objects\w5500_conf.crf --depend .\objects\w5500_conf.d)
@@ -1356,13 +1356,13 @@ I (..\Library\Include\gd32f30x_wwdgt.h)(0x61CC215C)
 I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (..\User\Ethernet\types.h)(0x63BE635B)
+I (..\User\Ethernet\types.h)(0x64277FC1)
 I (..\User\Ethernet\utility.h)(0x6422FA55)
 I (..\User\Ethernet\w5500.h)(0x6411B9CA)
 I (..\User\Ethernet\dhcp.h)(0x64133961)
 I (..\User\type.h)(0x641461EA)
 I (..\bsp\bsp_TiMbase.h)(0x6411BD99)
-F (..\User\Ethernet\utility.c)(0x6422FB29)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\utility.o --omf_browse .\objects\utility.crf --depend .\objects\utility.d)
+F (..\User\Ethernet\utility.c)(0x64277FF7)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\utility.o --omf_browse .\objects\utility.crf --depend .\objects\utility.d)
 I (..\CMSIS\gd32f30x.h)(0x6422EEAB)
 I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1397,14 +1397,14 @@ I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (..\User\Ethernet\w5500.h)(0x6411B9CA)
-I (..\User\Ethernet\Types.h)(0x63BE635B)
+I (..\User\Ethernet\Types.h)(0x64277FC1)
 I (..\User\Ethernet\w5500_conf.h)(0x6414604D)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\Ethernet\utility.h)(0x6422FA55)
 I (..\User\type.h)(0x641461EA)
 I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
-F (..\User\Ethernet\udp.c)(0x64257EAB)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\udp.o --omf_browse .\objects\udp.crf --depend .\objects\udp.d)
+F (..\User\Ethernet\udp.c)(0x64277ACF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\udp.o --omf_browse .\objects\udp.crf --depend .\objects\udp.d)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (..\User\Ethernet\w5500_conf.h)(0x6414604D)
@@ -1441,8 +1441,49 @@ I (..\Library\Include\gd32f30x_wwdgt.h)(0x61CC215C)
 I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
 I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (..\User\Ethernet\types.h)(0x63BE635B)
+I (..\User\Ethernet\types.h)(0x64277FC1)
 I (..\User\Ethernet\w5500.h)(0x6411B9CA)
 I (..\User\Ethernet\socket.h)(0x6411B9C7)
 I (..\User\Ethernet\utility.h)(0x6422FA55)
 I (..\User\Ethernet\udp.h)(0x642055B2)
+F (..\User\Ethernet\tcp.c)(0x642780A1)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD-o .\objects\tcp.o --omf_browse .\objects\tcp.crf --depend .\objects\tcp.d)
+I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\User\Ethernet\tcp.h)(0x64277F94)
+I (..\User\Ethernet\types.h)(0x64277FC1)
+I (..\User\Ethernet\W5500_conf.h)(0x6414604D)
+I (..\CMSIS\gd32f30x.h)(0x6422EEAB)
+I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
+I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
+I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
+I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
+I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
+I (..\CMSIS\system_gd32f30x.h)(0x61CC215C)
+I (..\User\gd32f30x_libopt.h)(0x61CC215B)
+I (..\Library\Include\gd32f30x_rcu.h)(0x61CC215B)
+I (..\Library\Include\gd32f30x_adc.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_can.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_crc.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_ctc.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_dac.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_dbg.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_dma.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_exti.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_fwdgt.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_gpio.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_i2c.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_pmu.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (..\Library\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_spi.h)(0x61CC215B)
+I (..\Library\Include\gd32f30x_timer.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_usart.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_wwdgt.h)(0x61CC215C)
+I (..\Library\Include\gd32f30x_misc.h)(0x61CC215B)
+I (..\Library\Include\gd32f30x_enet.h)(0x61CC215B)
+I (..\Library\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (..\User\Ethernet\w5500.h)(0x6411B9CA)
+I (..\User\Ethernet\socket.h)(0x6411B9C7)

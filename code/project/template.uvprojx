@@ -617,6 +617,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\Ethernet\udp.c</FilePath>
             </File>
+            <File>
+              <FileName>tcp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Ethernet\tcp.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

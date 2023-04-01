@@ -54,7 +54,7 @@ void udp_com_init(void)
 			{
 				recvfrom(SOCK_UDPS,buff, len, remote_ip,&remote_port);               /*W5500接收计算机发送来的数据*/
 				buff[len-8]=0x00;                                                    /*添加字符串结束符*/
-				printf("%s\r\n",buff);                                               /*打印接收缓存*/ 
+//				printf("%s\r\n",buff);                                               /*打印接收缓存*/ 
 				sendto(SOCK_UDPS,buff,len-8, remote_ip, remote_port);                /*W5500把接收到的数据发送给Remote*/
 			}
 			break;
