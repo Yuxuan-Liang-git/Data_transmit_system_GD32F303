@@ -2,15 +2,27 @@
 #include "gd32f30x.h"
 #include <string.h>
 
+uint32_t adc_value[16];
+
 void adc_init(void)
 {
 		adc_rcu_config();
+		adc_gpio_config();
     /* TIMER configuration */
     timer_config();
     /* DMA configuration */
     dma_config();
     /* ADC configuration */
     adc_config();
+}
+
+void adc_gpio_config(void)
+{
+	uint8_t i;
+	for(i = 0 ;i<16;i++)
+	{
+		gpio_init(adc_gpio_port[i], GPIO_MODE_AIN, GPIO_OSPEED_MAX, adc_gpio_pin[i]);		
+	}
 }
 
 void adc_rcu_config(void)
@@ -112,10 +124,10 @@ void adc_config(void)
 		uint8_t i;
     /* configure the ADC sync mode */
     adc_mode_config(ADC_DAUL_REGULAL_PARALLEL);
-    /* ADC scan mode function enable */
-    adc_special_function_config(ADC0, ADC_SCAN_MODE, ENABLE);
     /* ADC data alignment config */
     adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
+		/* ADC scan mode function enable */
+    adc_special_function_config(ADC0, ADC_SCAN_MODE, ENABLE);
 
     /* ADC channel length config */
     adc_channel_length_config(ADC0, ADC_REGULAR_CHANNEL,16);
@@ -126,14 +138,14 @@ void adc_config(void)
 				// 对每个通道进行处理
 				adc_regular_channel_config(ADC0, 0, adc_channels[i], ADC_SAMPLETIME_7POINT5);
 		}
-
-    /* ADC external trigger enable */
-		//	只需要规则组
-    adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
     /* ADC trigger config */
 		//	用TIMER0_CH0作为adc采样的触发信号
     adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_EXTTRIG_REGULAR_T0_CH0);
    
+    /* ADC external trigger enable */
+		//	只需要规则组
+    adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
+
     /* enable ADC interface */
     adc_enable(ADC0);
     delay_1ms(1);

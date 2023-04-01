@@ -28,14 +28,11 @@ int main(void)
 
 	while(1)
 	{
-		led_on();
-		delay_ms(1000);
-		led_off();
-		delay_ms(1000);
 		
+		printf("{plotter:%d}\n", adc_value[0]);
 
 		
-		do_tcp_client();                  /*TCP_Client 数据回环测试程序*/    
+//		do_tcp_client();                  /*TCP_Client 数据回环测试程序*/    
 
 //		for(i=0;i<10;i++)
 //		{
