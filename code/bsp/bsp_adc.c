@@ -2,6 +2,8 @@
 #include "gd32f30x.h"
 #include <string.h>
 
+//	adc采样如果有问题，调调ADC_SAMPLETIME
+
 uint32_t adc_value[16];
 
 void adc_init(void)
@@ -38,6 +40,7 @@ void adc_rcu_config(void)
 //		/* config ADC clock */
 //		rcu_adc_clock_config(RCU_CKADC_CKAPB2_DIV6);
 }
+
 //	时钟120M
 /*!
     \brief      configure the timer peripheral
@@ -96,7 +99,7 @@ void dma_config(void)
     dma_data_parameter.periph_addr = (uint32_t)(&ADC_RDATA(ADC0));
     dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
 //		dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_ENABLE;
-    dma_data_parameter.memory_addr = (uint32_t)(adc_value);
+    dma_data_parameter.memory_addr = (uint32_t)(&adc_value);
     dma_data_parameter.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
@@ -137,7 +140,7 @@ void adc_config(void)
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_1POINT5);
+				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_55POINT5);
 		}
     /* ADC trigger config */
 		//	用TIMER0_CH0作为adc采样的触发信号
@@ -148,11 +151,13 @@ void adc_config(void)
     adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
 
     /* enable ADC interface */
-    adc_enable(ADC0);
-    delay_1ms(1);
-    /* ADC calibration and reset calibration */
-    adc_calibration_enable(ADC0);
-    
+
+//    delay_1ms(1);
+//		    
     /* ADC DMA function enable */
     adc_dma_mode_enable(ADC0);
+		adc_enable(ADC0);
+    /* ADC calibration and reset calibration */
+    adc_calibration_enable(ADC0);
+
 }

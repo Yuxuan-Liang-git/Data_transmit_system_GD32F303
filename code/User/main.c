@@ -3,15 +3,16 @@
 //#include "udp.h"
 #include "tcp.h"
 
-
 uint8_t data[4];
 
 uint16_t address;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
+uint32_t temp;
+uint32_t ADC0_0,ADC0_1;
 
 int main(void)
 {
-	uint8 i;
+	uint8 i,j;
 	SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
 	systick_config(); // 初始化systick计时器
 	Delay_Timer_Init();		//	us级延时
@@ -24,28 +25,40 @@ int main(void)
 	address=get_addr();
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
-	
 
 	while(1)
 	{
-		printf("{plotter:%d}\n", adc_value[0]);
+//		printf("{adc_value:");
+//	
+//		for(i=0;i<15;i++)
+//		{
+//			printf("%d,",adc_value[i]);
+//		} 
+//		printf("}\n");
+		
+		
+		
+//		printf("{plotter:%d}\n", adc_value[0]);
+		
 //		printf("{plotter:%d,%d,%d}\n", adc_value[0],adc_value[1],adc_value[2]);
 
-//		
-//		do_tcp_client();                  /*TCP_Client 数据回环测试程序*/ 
-		
+		data[0] = adc_value[0] >> 24;
+		data[1] = (adc_value[0] >> 16)&0xff;
+		data[2] =( adc_value[0] >> 8)&0xff;
+		data[3] = adc_value[0] &0xff ;
 //		for(i=0;i<4;i++)
 //		{
 //			data[i]=adc_value[0] >> 8*i;
 //		}
-//			do_tcp_communicate(data,4);
-		
-//		for(i=0;i<10;i++)
-//		{
-//			data[i]=i+48;
-//			do_tcp_communicate(data,10);
-//			delay_ms(1000);
-//		}
+			do_tcp_communicate(data,4);
+
+
+	
+//		sprintf(data, "%lu", adc_value[0]);
+
+//		do_tcp_communicate(data,4);
+//		delay_ms(100);
+
 //		for(i=0;i<10;i++)
 //		{
 //			data[i]=0;
@@ -55,6 +68,8 @@ int main(void)
 	
 	return 0;
 }
+
+//	回传系统时钟
 void get_clk(void)
 {
 		apb1_clk = rcu_clock_freq_get(CK_APB1);		

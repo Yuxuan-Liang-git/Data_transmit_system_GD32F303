@@ -167,8 +167,7 @@ void dma_init(uint32_t dma_periph, dma_channel_enum channelx, dma_parameter_stru
       \arg        DMA0: DMA_CHx(x=0..6), DMA1: DMA_CHx(x=0..4)
     \param[out] none
     \retval     none 
-*/
-void dma_circulation_enable(uint32_t dma_periph, dma_channel_enum channelx)
+*/void dma_circulation_enable(uint32_t dma_periph, dma_channel_enum channelx)
 {
     if(ERROR == dma_periph_and_channel_check(dma_periph, channelx)){
         DMA_WRONG_HANDLE

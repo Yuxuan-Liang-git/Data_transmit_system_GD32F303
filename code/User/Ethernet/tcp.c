@@ -29,7 +29,7 @@ void tcp_com_init(uint8 address)
 
 		socket_buf_init(txsize, rxsize);		/*初始化8个Socket的发送接收缓存大小*/
 
-		printf(" 电脑作为TCP服务器,让W5500作为 TCP客户端去连接 \r\n");
+		printf(" 电脑作为TCP服务端,让W5500作为客户端 TCP去连接 \r\n");
 		printf(" 服务器IP:%d.%d.%d.%d\r\n",remote_ip[0],remote_ip[1],remote_ip[2],remote_ip[3]);
 		printf(" 监听端口:%d \r\n",remote_port);
 		printf(" 连接成功后，服务器发送数据给W5500，W5500将返回对应数据 \r\n");
@@ -56,14 +56,18 @@ void do_tcp_communicate(uint8 * data,int len)
 			{
 				setSn_IR(SOCK_TCPC, Sn_IR_CON); 							         /*清除接收中断标志位*/
 			}
+			if(len>0)
+			{
 				data[len]=0x00;  											                 /*添加字符串结束符*/
-				printf("%s\r\n",data);
+//				printf("%d\r\n",data);
 				send(SOCK_TCPC,data,len);								     	         /*向Server发送数据*/
+				delay_ms(100);
+			}	
+//      printf("SOCK_ESTABLISHED\n");      
 		  break;
 			
 		case SOCK_CLOSE_WAIT: 											    	         /*socket处于等待关闭状态*/
 			close(SOCK_TCPC);
-//      printf("SOCK_CLOSE_WAIT\n");
 		  break;
 	}
 }
