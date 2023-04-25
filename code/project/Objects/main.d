@@ -44,4 +44,4 @@
 .\objects\main.o: ..\bsp\bsp_adc.h
 .\objects\main.o: ..\bsp\gd25qxx.h
 .\objects\main.o: ..\User\Ethernet\utility.h
-.\objects\main.o: ..\User\Ethernet\tcp.h
+.\objects\main.o: ..\User\Ethernet\udp.h

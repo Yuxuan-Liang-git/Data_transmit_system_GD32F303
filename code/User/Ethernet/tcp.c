@@ -61,7 +61,6 @@ void do_tcp_communicate(uint8 * data,int len)
 				data[len]=0x00;  											                 /*添加字符串结束符*/
 //				printf("%d\r\n",data);
 				send(SOCK_TCPC,data,len);								     	         /*向Server发送数据*/
-				delay_ms(100);
 			}	
 //      printf("SOCK_ESTABLISHED\n");      
 		  break;

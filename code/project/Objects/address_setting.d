@@ -41,6 +41,7 @@
 .\objects\address_setting.o: ..\bsp\bsp_usart.h
 .\objects\address_setting.o: ..\bsp\bsp_gpio.h
 .\objects\address_setting.o: ..\bsp\bsp_adc.h
+.\objects\address_setting.o: ..\User\main.h
 .\objects\address_setting.o: ..\bsp\gd25qxx.h
 .\objects\address_setting.o: ..\User\Ethernet\utility.h
 .\objects\address_setting.o: ..\User\Ethernet\types.h

@@ -4,6 +4,7 @@
 #include "gd32f30x.h"
 #include "gd32f30x_adc.h"
 #include "systick.h"
+#include "main.h"
 
 
 extern uint32_t adc_value[16];

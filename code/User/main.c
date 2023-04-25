@@ -1,11 +1,12 @@
 #include "main.h"
 
-//#include "udp.h"
-#include "tcp.h"
+#include "udp.h"
+//#include "tcp.h"
 
 uint8_t data[4];
 
 uint16_t address;
+uint16_t delay_time;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
 uint32_t temp;
 uint32_t ADC0_0,ADC0_1;
@@ -26,43 +27,15 @@ int main(void)
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
 
+	delay_time = 5000;
+
+
 	while(1)
 	{
-//		printf("{adc_value:");
-//	
-//		for(i=0;i<15;i++)
-//		{
-//			printf("%d,",adc_value[i]);
-//		} 
-//		printf("}\n");
-		
-		
-		
-//		printf("{plotter:%d}\n", adc_value[0]);
-		
-//		printf("{plotter:%d,%d,%d}\n", adc_value[0],adc_value[1],adc_value[2]);
-
-		data[0] = adc_value[0] >> 24;
-		data[1] = (adc_value[0] >> 16)&0xff;
-		data[2] =( adc_value[0] >> 8)&0xff;
-		data[3] = adc_value[0] &0xff ;
-//		for(i=0;i<4;i++)
-//		{
-//			data[i]=adc_value[0] >> 8*i;
-//		}
-			do_tcp_communicate(data,4);
 
 
-	
+
 //		sprintf(data, "%lu", adc_value[0]);
-
-//		do_tcp_communicate(data,4);
-//		delay_ms(100);
-
-//		for(i=0;i<10;i++)
-//		{
-//			data[i]=0;
-//		}
 		
 	}
 	

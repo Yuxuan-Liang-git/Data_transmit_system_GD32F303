@@ -140,3 +140,14 @@ void SysTick_Handler(void)
 {
     delay_decrement();
 }
+
+void TIMER1_IRQHandler(void)
+{
+	if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
+        //ÓÃ»§´úÂë
+		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
+		/* clear TIMER interrupt flag */
+		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
+    }  
+}
+

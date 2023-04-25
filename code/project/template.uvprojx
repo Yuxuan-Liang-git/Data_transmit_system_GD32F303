@@ -336,7 +336,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>USE_STDPERIPH_DRIVER,GD32F30X_HD</Define>
               <Undefine></Undefine>
               <IncludePath>..\CMSIS;..\Library\Include;..\User;..\bsp;..\User\Ethernet</IncludePath>
             </VariousControls>

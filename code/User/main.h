@@ -16,6 +16,8 @@ extern "C" {
 #include "gd25qxx.h"
 #include "utility.h"
 
+#define DELAY_US 1000
+
 void get_clk(void);		//	ªÒ»° ±÷”
 
 

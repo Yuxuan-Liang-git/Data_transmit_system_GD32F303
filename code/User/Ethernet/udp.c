@@ -29,12 +29,14 @@ void udp_com_init(void)
 	printf(" 连接成功后，PC机发送数据给W5500，W5500将返回对应数据 \r\n");
 }
 
+
+
 /**
 *@brief		UDP测试程序
 *@param		无
 *@return	无
 */
-	void do_udp(void)
+void do_udp(void)
 {                                                              
 	uint16 len=0;
 	uint8 buff[2048];                                                          /*定义一个2KB的缓存*/	
@@ -54,7 +56,7 @@ void udp_com_init(void)
 			{
 				recvfrom(SOCK_UDPS,buff, len, remote_ip,&remote_port);               /*W5500接收计算机发送来的数据*/
 				buff[len-8]=0x00;                                                    /*添加字符串结束符*/
-//				printf("%s\r\n",buff);                                               /*打印接收缓存*/ 
+				printf("%s\r\n",buff);
 				sendto(SOCK_UDPS,buff,len-8, remote_ip, remote_port);                /*W5500把接收到的数据发送给Remote*/
 			}
 			break;

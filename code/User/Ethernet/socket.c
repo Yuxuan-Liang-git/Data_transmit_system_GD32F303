@@ -181,6 +181,7 @@ uint16 send(SOCKET s, const uint8 * buf, uint16 len)
   uint8 status=0;
   uint16 ret=0;
   uint16 freesize=0;
+	uint16 temp = getIINCHIP_TxMAX(s);
 
   if (len > getIINCHIP_TxMAX(s)) ret = getIINCHIP_TxMAX(s); // check size not to exceed MAX size.
   else ret = len;
