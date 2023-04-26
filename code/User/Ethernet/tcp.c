@@ -42,7 +42,7 @@ void do_tcp_communicate(uint8 * data,int len)
 	switch(getSn_SR(SOCK_TCPC))								  				         /*获取socket的状态*/
 	{
 		case SOCK_CLOSED:											        		         /*socket处于关闭状态*/
-			socket(SOCK_TCPC,Sn_MR_TCP,local_port++,Sn_MR_ND);
+			socket(SOCK_TCPC,Sn_MR_TCP,local_port,Sn_MR_ND);
 //      printf("SOCK_CLOSED\n");
 		  break;
 		

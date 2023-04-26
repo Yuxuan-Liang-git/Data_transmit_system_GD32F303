@@ -179,9 +179,9 @@ void iinchip_cson(void)
 void reset_w5500(void)
 {
 	gpio_bit_reset(WIZ_SPIx_RESET_PORT,WIZ_RESET);
-	delay_us(2);  
+	delay_us(100);  
 	gpio_bit_set(WIZ_SPIx_RESET_PORT,WIZ_RESET);
-	delay_ms(1600);
+	delay_ms(1);
 }
 
 uint8_t SPI_SendByte(uint8_t byte)
