@@ -4,8 +4,9 @@
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
-uint32_t adc_value[16];
-int count = 0;
+uint32_t raw_data[16];
+uint8_t adc_value[64];
+FlagStatus adc_finish_flag;
 
 void adc_init(void)
 {
@@ -54,7 +55,7 @@ void timer_config(void)
 		timer_parameter_struct timer_initpara; //定时器结构体 
 		rcu_periph_clock_enable(RCU_TIMER1); //开启定时器时钟
 
-		timer_struct_para_init(&timer_initpara);//将定时器结构体内参数配置成默认参数
+//		timer_struct_para_init(&timer_initpara);//将定时器结构体内参数配置成默认参数
 		timer_deinit(TIMER1); //复位定时器
 
 		//配置TIMER1，时钟为120M/120/100  100us触发一次
@@ -63,9 +64,9 @@ void timer_config(void)
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
 		timer_initpara.period            = 100-1; //计数值
 		timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
-		timer_initpara.repetitioncounter = 0; //设置重复计数器值，0表示不重复计数，每次溢出都产生更新事件
+//		timer_initpara.repetitioncounter = 0; //设置重复计数器值，0表示不重复计数，每次溢出都产生更新事件
 		timer_init(TIMER1,&timer_initpara);
-		timer_auto_reload_shadow_enable(TIMER1);//使能自动重加载
+//		timer_auto_reload_shadow_enable(TIMER1);//使能自动重加载
 
 		timer_interrupt_enable(TIMER1,TIMER_INT_UP);//使能溢出中断
 
@@ -92,7 +93,7 @@ void dma_config(void)
     dma_data_parameter.periph_addr = (uint32_t)(&ADC_RDATA(ADC0));
     dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
 //		dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_ENABLE;
-    dma_data_parameter.memory_addr = (uint32_t)(&adc_value);
+    dma_data_parameter.memory_addr = (uint32_t)(&raw_data);
     dma_data_parameter.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
@@ -149,24 +150,32 @@ void adc_config(void)
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
 		nvic_irq_enable(ADC0_1_IRQn, 1,1);
+		// 清除ADC规则组转换结束中断标志
+		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
+		//	使能ADC规则组转换结束中断
 		adc_interrupt_enable(ADC0,ADC_INT_EOC);
+		
+		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
 
 
 }
 
 void ADC0_1_IRQHandler(void)
 {
-		if(adc_interrupt_flag_get(ADC0,ADC_INT_FLAG_EOC))
+		uint8_t i;
+		adc_regular_data_read(ADC0);
+//		if(adc_interrupt_flag_get(ADC0,ADC_INT_FLAG_EOC))
+//		{
+		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
+		for (i = 0;i<16;i++)
 		{
-			adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
-			adc_regular_data_read(ADC0);
+				adc_value[4*i+0] = raw_data[i] >> 24;
+				adc_value[4*i+1] = (raw_data[i] >> 16)&0xff;
+				adc_value[4*i+2] =( raw_data[i] >> 8)&0xff;
+				adc_value[4*i+3] = raw_data[i] &0xff ;
 		}
-//	count++;
-//	if(count>1000)
-//	{
-//		printf("Count is:%d \n\r",count);	
-//		count = 0;
-//	}
+		adc_finish_flag = SET;
+//		}
 
 }
 

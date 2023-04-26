@@ -18,6 +18,9 @@ extern "C" {
 
 #define DELAY_US 1000
 
+extern uint16_t address;
+
+
 void get_clk(void);		//	ªÒ»° ±÷”
 
 

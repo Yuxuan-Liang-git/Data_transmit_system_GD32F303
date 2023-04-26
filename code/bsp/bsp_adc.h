@@ -6,9 +6,6 @@
 #include "systick.h"
 #include "main.h"
 
-
-extern uint32_t adc_value[16];
-
 #define COMn                             1U
 
 #define DEV_COM0                        USART0
@@ -25,6 +22,8 @@ void dma_config(void);
 void adc_config(void);
 void timer_config(void);
 
+extern uint8_t adc_value[64];
+extern FlagStatus adc_finish_flag;
 
 static uint32_t adc_channels[]= {
 	ADC_CHANNEL_6, ADC_CHANNEL_4, ADC_CHANNEL_2,ADC_CHANNEL_0, 

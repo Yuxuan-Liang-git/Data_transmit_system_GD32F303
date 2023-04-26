@@ -35,3 +35,14 @@
 .\objects\gd32f30x_it.o: ..\Library\Include\gd32f30x_enet.h
 .\objects\gd32f30x_it.o: ..\Library\Include\gd32f30x_exmc.h
 .\objects\gd32f30x_it.o: ..\User\systick.h
+.\objects\gd32f30x_it.o: ..\User\main.h
+.\objects\gd32f30x_it.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gd32f30x_it.o: ..\User\address_setting.h
+.\objects\gd32f30x_it.o: ..\User\main.h
+.\objects\gd32f30x_it.o: ..\User\Ethernet\types.h
+.\objects\gd32f30x_it.o: ..\bsp\bsp_usart.h
+.\objects\gd32f30x_it.o: ..\bsp\bsp_gpio.h
+.\objects\gd32f30x_it.o: ..\bsp\bsp_adc.h
+.\objects\gd32f30x_it.o: ..\bsp\gd25qxx.h
+.\objects\gd32f30x_it.o: ..\User\Ethernet\utility.h
+.\objects\gd32f30x_it.o: ..\User\Ethernet\tcp.h
