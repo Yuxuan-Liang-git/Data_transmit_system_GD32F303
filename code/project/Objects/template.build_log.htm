@@ -22,19 +22,39 @@ Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
 D:\Programming\GITHUB\Data_transmit_system_GD32F303\code\project\template.uvprojx
-Project File Date:  04/25/2023
+Project File Date:  04/27/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\Programming\Keil4\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling main.c...
+..\User\address_setting.h(29): warning:  #1-D: last line of file ends without a newline
+  																	 
+..\User\main.c(40): warning:  #111-D: statement is unreachable
+  	return 0;
+..\User\main.c: 2 warnings, 0 errors
+compiling address_setting.c...
+..\User\address_setting.h(29): warning:  #1-D: last line of file ends without a newline
+  																	 
+..\User\address_setting.h(29): warning:  #1-D: last line of file ends without a newline
+  																	 
+..\User\address_setting.c: 2 warnings, 0 errors
+compiling gd32f30x_it.c...
+..\User\address_setting.h(29): warning:  #1-D: last line of file ends without a newline
+  																	 
+..\User\gd32f30x_it.c(161): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy(cache_data+64*count,adc_value,64);
+..\User\gd32f30x_it.c(166): warning:  #223-D: function "memcpy" declared implicitly
+  				memcpy(buffer,cache_data,4096);
+..\User\gd32f30x_it.c: 3 warnings, 0 errors
 compiling bsp_adc.c...
 ..\User\address_setting.h(29): warning:  #1-D: last line of file ends without a newline
   																	 
 ..\bsp\bsp_adc.c: 1 warning, 0 errors
 linking...
-Program Size: Code=8652 RO-data=336 RW-data=1032 ZI-data=6376  
+Program Size: Code=8680 RO-data=336 RW-data=1032 ZI-data=10472  
 FromELF: creating hex file...
-".\Objects\template.axf" - 0 Error(s), 1 Warning(s).
+".\Objects\template.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 

@@ -43,5 +43,6 @@
 .\objects\main.o: ..\bsp\bsp_gpio.h
 .\objects\main.o: ..\bsp\bsp_adc.h
 .\objects\main.o: ..\bsp\gd25qxx.h
+.\objects\main.o: ..\User\gd32f30x_it.h
 .\objects\main.o: ..\User\Ethernet\utility.h
 .\objects\main.o: ..\User\Ethernet\tcp.h

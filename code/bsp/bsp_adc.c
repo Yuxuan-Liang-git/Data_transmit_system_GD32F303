@@ -58,7 +58,7 @@ void timer_config(void)
 //		timer_struct_para_init(&timer_initpara);//将定时器结构体内参数配置成默认参数
 		timer_deinit(TIMER1); //复位定时器
 
-		//配置TIMER1，时钟为120M/60=2M 50/2M=25us  25us触发一次采样 采样频率可以到40kHz
+		//配置TIMER1，时钟为120M/120/100  100us触发一次
 		timer_initpara.prescaler         = 120-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
@@ -163,16 +163,22 @@ void adc_config(void)
 void ADC0_1_IRQHandler(void)
 {
 		uint8_t i;
+		uint8_t * ptr; 
 		adc_regular_data_read(ADC0);
 //		if(adc_interrupt_flag_get(ADC0,ADC_INT_FLAG_EOC))
 //		{
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 		for (i = 0;i<16;i++)
 		{
-				adc_value[4*i+0] = raw_data[i] >> 24;
-				adc_value[4*i+1] = (raw_data[i] >> 16)&0xff;
-				adc_value[4*i+2] =( raw_data[i] >> 8)&0xff;
-				adc_value[4*i+3] = raw_data[i] &0xff ;
+				ptr = (uint8_t *)&raw_data[i];
+				adc_value[4*i+3] = *(ptr+0);
+				adc_value[4*i+2] = *(ptr+1);
+				adc_value[4*i+1] = *(ptr+2);
+				adc_value[4*i+0] = *(ptr+3);
+//				adc_value[4*i+0] = raw_data[i] >> 24;
+//				adc_value[4*i+1] = (raw_data[i] >> 16)&0xff;
+//				adc_value[4*i+2] =( raw_data[i] >> 8)&0xff;
+//				adc_value[4*i+3] = raw_data[i] &0xff ;
 		}
 		adc_finish_flag = SET;
 //		}

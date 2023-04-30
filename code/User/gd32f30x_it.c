@@ -43,6 +43,8 @@ OF SUCH DAMAGE.
 
 uint8 count;
 uint8 cache_data[4096];
+uint8_t buffer[4096];
+FlagStatus send_flag;
 
 /*!
     \brief      this function handles NMI exception
@@ -150,26 +152,55 @@ void SysTick_Handler(void)
 //	10us触发一次中断
 void TIMER1_IRQHandler(void)
 {
-	if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-		if(count<64)
+		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
+			
+		if(adc_finish_flag == SET)
 		{
-			if(adc_finish_flag == SET)
+			if(count<64)	//	3.2ms发一次
 			{
 				memcpy(cache_data+64*count,adc_value,64);
 				count++;
-				adc_finish_flag = RESET;
+			} 
+			else
+			{
+				memcpy(buffer,cache_data,4096);
+				memcpy(cache_data,0x00,4096);							//	清空缓存
+				memcpy(cache_data,adc_value,64);	
+				count = 1;
+				send_flag = SET;
 			}
-		} 
-		else
-		{
-			do_tcp_communicate(cache_data,4096);
-			memcpy(cache_data,0x00,4096);							//	清空缓存
-			memcpy(cache_data,adc_value,64);	
-			count = 1;
+			adc_finish_flag = RESET;
 		}
 		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
 		/* clear TIMER interrupt flag */
 		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
     }
 }
+
+
+////	10us触发一次中断
+//void TIMER1_IRQHandler(void)
+//{
+//	if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
+//		if(count<32)	//	3.2ms发一次
+//		{
+//			if(adc_finish_flag == SET)
+//			{
+//				memcpy(cache_data+64*count,adc_value,64);
+//				count++;
+//				adc_finish_flag = RESET;
+//			}
+//		} 
+//		else
+//		{
+//			do_tcp_communicate(cache_data,2048);
+//			memcpy(cache_data,0x00,2048);							//	清空缓存
+//			memcpy(cache_data,adc_value,64);	
+//			count = 1;
+//		}
+//		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
+//		/* clear TIMER interrupt flag */
+//		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
+//    }
+//}
 

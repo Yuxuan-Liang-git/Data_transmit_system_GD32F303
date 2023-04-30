@@ -40,6 +40,9 @@ OF SUCH DAMAGE.
 
 #include "gd32f30x.h"
 
+extern FlagStatus send_flag;
+extern uint8_t buffer[4096];
+
 /* function declarations */
 /* this function handles NMI exception */
 void NMI_Handler(void);

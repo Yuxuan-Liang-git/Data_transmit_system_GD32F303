@@ -14,6 +14,7 @@ extern "C" {
 #include "bsp_gpio.h"
 #include "bsp_adc.h"
 #include "gd25qxx.h"
+#include "gd32f30x_it.h"
 #include "utility.h"
 
 #define DELAY_US 1000

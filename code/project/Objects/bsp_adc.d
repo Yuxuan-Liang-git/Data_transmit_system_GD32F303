@@ -44,5 +44,6 @@
 .\objects\bsp_adc.o: ..\bsp\bsp_gpio.h
 .\objects\bsp_adc.o: ..\bsp\bsp_adc.h
 .\objects\bsp_adc.o: ..\bsp\gd25qxx.h
+.\objects\bsp_adc.o: ..\User\gd32f30x_it.h
 .\objects\bsp_adc.o: ..\User\Ethernet\utility.h
 .\objects\bsp_adc.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\string.h
