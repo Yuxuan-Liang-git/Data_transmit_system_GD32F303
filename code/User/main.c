@@ -1,5 +1,5 @@
+//	数据每25us采样一次 每3.2ms发送一次数据包
 #include "main.h"
-
 #include "tcp.h"
 
 uint16_t address;

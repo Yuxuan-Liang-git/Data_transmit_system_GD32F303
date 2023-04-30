@@ -58,7 +58,7 @@ void timer_config(void)
 //		timer_struct_para_init(&timer_initpara);//将定时器结构体内参数配置成默认参数
 		timer_deinit(TIMER1); //复位定时器
 
-		//配置TIMER1，时钟为120M/120/100  100us触发一次
+		//配置TIMER1，时钟为120M/60=2M 50/2M=25us  25us触发一次采样 采样频率可以到40kHz
 		timer_initpara.prescaler         = 120-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式

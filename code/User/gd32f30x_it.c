@@ -42,7 +42,7 @@ OF SUCH DAMAGE.
 #include "bsp_adc.h"
 
 uint8 count;
-uint8 cache_data[2048];
+uint8 cache_data[4096];
 
 /*!
     \brief      this function handles NMI exception
@@ -151,7 +151,7 @@ void SysTick_Handler(void)
 void TIMER1_IRQHandler(void)
 {
 	if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-		if(count<32)	//	3.2ms发一次
+		if(count<64)
 		{
 			if(adc_finish_flag == SET)
 			{
@@ -162,8 +162,8 @@ void TIMER1_IRQHandler(void)
 		} 
 		else
 		{
-			do_tcp_communicate(cache_data,2048);
-			memcpy(cache_data,0x00,2048);							//	清空缓存
+			do_tcp_communicate(cache_data,4096);
+			memcpy(cache_data,0x00,4096);							//	清空缓存
 			memcpy(cache_data,adc_value,64);	
 			count = 1;
 		}
