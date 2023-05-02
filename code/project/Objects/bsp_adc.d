@@ -47,3 +47,4 @@
 .\objects\bsp_adc.o: ..\User\gd32f30x_it.h
 .\objects\bsp_adc.o: ..\User\Ethernet\utility.h
 .\objects\bsp_adc.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\string.h
+.\objects\bsp_adc.o: ..\User\Ethernet\tcp.h

@@ -1,11 +1,13 @@
 #include "bsp_adc.h"
 #include "gd32f30x.h"
 #include <string.h>
+#include "tcp.h"
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
 uint32_t raw_data[16];
 uint8_t adc_value[64];
+uint8_t send_data[4];
 FlagStatus adc_finish_flag;
 
 void adc_init(void)
@@ -167,7 +169,7 @@ void ADC0_1_IRQHandler(void)
 		adc_regular_data_read(ADC0);
 //		if(adc_interrupt_flag_get(ADC0,ADC_INT_FLAG_EOC))
 //		{
-		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
+
 		for (i = 0;i<16;i++)
 		{
 				ptr = (uint8_t *)&raw_data[i];
@@ -180,8 +182,10 @@ void ADC0_1_IRQHandler(void)
 //				adc_value[4*i+2] =( raw_data[i] >> 8)&0xff;
 //				adc_value[4*i+3] = raw_data[i] &0xff ;
 		}
+		memcpy(send_data,adc_value,4);
 		adc_finish_flag = SET;
-//		}
+		
+		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 
 }
 

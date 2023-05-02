@@ -44,6 +44,8 @@ OF SUCH DAMAGE.
 uint8 count;
 uint8 cache_data[4096];
 uint8_t buffer[4096];
+
+
 FlagStatus send_flag;
 
 /*!
@@ -153,10 +155,10 @@ void SysTick_Handler(void)
 void TIMER1_IRQHandler(void)
 {
 		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-			
+
 		if(adc_finish_flag == SET)
 		{
-			if(count<64)	//	3.2ms发一次
+			if(count<64)	//	6.4ms发一次
 			{
 				memcpy(cache_data+64*count,adc_value,64);
 				count++;

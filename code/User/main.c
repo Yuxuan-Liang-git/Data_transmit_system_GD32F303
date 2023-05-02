@@ -8,7 +8,7 @@ uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
 uint32_t temp;
 uint32_t ADC0_0,ADC0_1;
 
-
+extern uint8_t send_data[4];
 
 int main(void)
 {
@@ -30,9 +30,13 @@ int main(void)
 
 	while(1)
 	{
+//			do_tcp_communicate(send_data,4);
+//			delay_1ms(5);
+		
 		if(send_flag == SET)
 		{
 			do_tcp_communicate(buffer,4096);
+			
 			send_flag = RESET;
 		}
 	}
