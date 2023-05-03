@@ -40,10 +40,11 @@ OF SUCH DAMAGE.
 #include "main.h"
 #include "tcp.h"
 #include "bsp_adc.h"
+#include "string.h"
 
-uint8 count;
-uint8 cache_data[4096];
-uint8_t buffer[4096];
+uint8_t count;
+uint8_t cache_data[1024];
+uint8_t tcp_buffer[1024];
 
 
 FlagStatus send_flag;
@@ -158,15 +159,15 @@ void TIMER1_IRQHandler(void)
 
 		if(adc_finish_flag == SET)
 		{
-			if(count<64)	//	6.4ms发一次
+			if(count<=16)	//	6.4ms发一次
 			{
 				memcpy(cache_data+64*count,adc_value,64);
 				count++;
 			} 
 			else
 			{
-				memcpy(buffer,cache_data,4096);
-				memcpy(cache_data,0x00,4096);							//	清空缓存
+				memcpy(tcp_buffer,cache_data,1024);
+				memset(cache_data,0,sizeof cache_data);
 				memcpy(cache_data,adc_value,64);	
 				count = 1;
 				send_flag = SET;

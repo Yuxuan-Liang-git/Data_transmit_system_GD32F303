@@ -45,4 +45,5 @@
 .\objects\main.o: ..\bsp\gd25qxx.h
 .\objects\main.o: ..\User\gd32f30x_it.h
 .\objects\main.o: ..\User\Ethernet\utility.h
+.\objects\main.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: ..\User\Ethernet\tcp.h

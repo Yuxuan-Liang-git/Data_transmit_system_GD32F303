@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 
 #include "tcp.h"
 
@@ -35,7 +36,8 @@ int main(void)
 		
 		if(send_flag == SET)
 		{
-			do_tcp_communicate(buffer,4096);
+			do_tcp_communicate(tcp_buffer,1024);
+			memset(tcp_buffer,0,sizeof tcp_buffer);
 			
 			send_flag = RESET;
 		}
