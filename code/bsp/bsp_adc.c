@@ -72,7 +72,7 @@ void timer_config(void)
 
 		timer_interrupt_enable(TIMER1,TIMER_INT_UP);//使能溢出中断
 
-		nvic_irq_enable(TIMER1_IRQn, 0, 1);//配置中断优先级
+		nvic_irq_enable(TIMER1_IRQn, 1, 1);//配置中断优先级
 		timer_enable(TIMER1);//使能定时器  
 	
 }
@@ -151,7 +151,7 @@ void adc_config(void)
 		delay_1ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		nvic_irq_enable(ADC0_1_IRQn, 1,1);
+		nvic_irq_enable(ADC0_1_IRQn, 0,0);
 		// 清除ADC规则组转换结束中断标志
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 		//	使能ADC规则组转换结束中断
@@ -167,9 +167,6 @@ void ADC0_1_IRQHandler(void)
 		uint8_t i;
 		uint8_t * ptr; 
 		adc_regular_data_read(ADC0);
-//		if(adc_interrupt_flag_get(ADC0,ADC_INT_FLAG_EOC))
-//		{
-
 		for (i = 0;i<16;i++)
 		{
 				ptr = (uint8_t *)&raw_data[i];
@@ -177,10 +174,6 @@ void ADC0_1_IRQHandler(void)
 				adc_value[4*i+2] = *(ptr+1);
 				adc_value[4*i+1] = *(ptr+2);
 				adc_value[4*i+0] = *(ptr+3);
-//				adc_value[4*i+0] = raw_data[i] >> 24;
-//				adc_value[4*i+1] = (raw_data[i] >> 16)&0xff;
-//				adc_value[4*i+2] =( raw_data[i] >> 8)&0xff;
-//				adc_value[4*i+3] = raw_data[i] &0xff ;
 		}
 		memcpy(send_data,adc_value,4);
 		adc_finish_flag = SET;

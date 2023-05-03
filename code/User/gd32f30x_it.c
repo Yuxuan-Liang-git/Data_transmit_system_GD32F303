@@ -43,8 +43,8 @@ OF SUCH DAMAGE.
 #include "string.h"
 
 uint8_t count;
-uint8_t cache_data[1024];
-uint8_t tcp_buffer[1024];
+uint8_t cache_data[4096];
+uint8_t tcp_buffer[4096];
 
 
 FlagStatus send_flag;
@@ -156,27 +156,32 @@ void SysTick_Handler(void)
 void TIMER1_IRQHandler(void)
 {
 		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-
-		if(adc_finish_flag == SET)
-		{
-			if(count<=16)	//	6.4ms发一次
-			{
-				memcpy(cache_data+64*count,adc_value,64);
-				count++;
-			} 
-			else
-			{
-				memcpy(tcp_buffer,cache_data,1024);
-				memset(cache_data,0,sizeof cache_data);
-				memcpy(cache_data,adc_value,64);	
-				count = 1;
-				send_flag = SET;
-			}
-			adc_finish_flag = RESET;
-		}
 		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
 		/* clear TIMER interrupt flag */
 		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
+			
+		if(adc_finish_flag == SET)
+		{
+			
+//			if(count<=64)	//	6.4ms发一次
+//			{
+//				memcpy(cache_data+64*count,adc_value,64);
+//				count++;
+//			} 
+//			else
+//			{
+//				memcpy(tcp_buffer,cache_data,4096);
+//				memset(cache_data,0,sizeof cache_data);
+//				memcpy(cache_data,adc_value,64);	
+//				count = 1;
+//				send_flag = SET;
+//			}
+			
+			send_flag = SET;
+			
+			adc_finish_flag = RESET;
+		}
+
     }
 }
 

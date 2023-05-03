@@ -31,13 +31,11 @@ int main(void)
 
 	while(1)
 	{
-//			do_tcp_communicate(send_data,4);
-//			delay_1ms(5);
-		
 		if(send_flag == SET)
 		{
-			do_tcp_communicate(tcp_buffer,1024);
-			memset(tcp_buffer,0,sizeof tcp_buffer);
+			do_tcp_communicate(send_data,4);
+//			do_tcp_communicate(tcp_buffer,4096);
+//			memset(tcp_buffer,0,sizeof tcp_buffer);
 			
 			send_flag = RESET;
 		}
