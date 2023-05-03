@@ -133,7 +133,7 @@ Section Cross References
     main.o(i.main) refers to tcp.o(i.do_tcp_communicate) for do_tcp_communicate
     main.o(i.main) refers to main.o(.data) for address
     main.o(i.main) refers to gd32f30x_it.o(.data) for send_flag
-    main.o(i.main) refers to bsp_adc.o(.data) for send_data
+    main.o(i.main) refers to bsp_adc.o(.bss) for adc_value
     systick.o(i.delay_1ms) refers to systick.o(.data) for delay
     systick.o(i.delay_decrement) refers to systick.o(.data) for delay
     systick.o(i.systick_config) refers to systick.o(i.__NVIC_SetPriority) for __NVIC_SetPriority

@@ -152,7 +152,7 @@ void SysTick_Handler(void)
     delay_decrement();
 }
 
-//	10us触发一次中断
+//	100us触发一次中断
 void TIMER1_IRQHandler(void)
 {
 		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){

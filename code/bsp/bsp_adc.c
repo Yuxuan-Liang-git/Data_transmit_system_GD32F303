@@ -60,11 +60,11 @@ void timer_config(void)
 //		timer_struct_para_init(&timer_initpara);//将定时器结构体内参数配置成默认参数
 		timer_deinit(TIMER1); //复位定时器
 
-		//配置TIMER1，时钟为120M/120/100  100us触发一次
-		timer_initpara.prescaler         = 120-1;//预分频
+		//配置TIMER1，时钟为120M/60/50  25us触发一次
+		timer_initpara.prescaler         = 60-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
-		timer_initpara.period            = 100-1; //计数值
+		timer_initpara.period            = 50-1; //计数值
 		timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
 //		timer_initpara.repetitioncounter = 0; //设置重复计数器值，0表示不重复计数，每次溢出都产生更新事件
 		timer_init(TIMER1,&timer_initpara);

@@ -33,7 +33,7 @@ int main(void)
 	{
 		if(send_flag == SET)
 		{
-			do_tcp_communicate(send_data,4);
+			do_tcp_communicate(adc_value,64);
 //			do_tcp_communicate(tcp_buffer,4096);
 //			memset(tcp_buffer,0,sizeof tcp_buffer);
 			
