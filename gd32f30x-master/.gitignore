@@ -1,0 +1,4 @@
+Project/test/MDK-ARM/output/*
+.history/*
+.vscode/*
+
