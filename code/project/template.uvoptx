@@ -154,7 +154,7 @@
           <Type>0</Type>
           <LineNumber>59</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134221746</Address>
+          <Address>134221582</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -164,6 +164,22 @@
           <Filename>C:\Users\FIVE-CYCLE\Downloads\Data_transmit_system_GD32F303-main (1)\Data_transmit_system_GD32F303-main\code\User\Ethernet\tcp.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\template\../User/Ethernet/tcp.c\59</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>36</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134222822</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\User\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\template\../User/main.c\36</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
