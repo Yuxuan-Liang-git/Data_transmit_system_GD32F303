@@ -21,6 +21,7 @@ void adc_gpio_config(void);
 void dma_config(void);
 void adc_config(void);
 void timer_config(void);
+uint32_t *get_raw_data(void);
 
 static uint32_t raw_data[16];
 

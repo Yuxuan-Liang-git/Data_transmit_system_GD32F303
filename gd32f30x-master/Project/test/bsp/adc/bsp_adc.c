@@ -16,7 +16,7 @@ void adc_init(void)
 		
 		binIRQSemaphore = xSemaphoreCreateBinary();		//	创建二值信号量，实现中断与任务的同步
     /* TIMER configuration */
-    timer_config();		//	卡在这里了
+    timer_config();		
     /* DMA configuration */
     dma_config();
     /* ADC configuration */
@@ -230,10 +230,14 @@ void ADC0_1_IRQHandler(void)
 		memcpy(send_data,adc_value,4);
 		adc_finish_flag = SET;
 		
-		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
+//		printf("{plotter:%d}\n", raw_data[0]);
 
+		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 }
 
-
+uint32_t *get_raw_data(void)
+{
+	return (uint32_t *)&raw_data;
+}
 
 

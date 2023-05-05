@@ -22,6 +22,6 @@ void system_init(void)
 		
 
     test_task_init();
-//		adc_task_init();
+		adc_task_init();
 
 }

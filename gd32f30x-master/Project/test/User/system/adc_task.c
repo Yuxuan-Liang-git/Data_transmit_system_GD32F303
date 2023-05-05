@@ -1,31 +1,26 @@
-
 #include "gd32f303e_eval.h"
 #include "bsp_adc.h"
 #include "adc_task.h"
-
-FlagStatus adc_task_FLAG = SET;
 
 /*******************************************************************/
 /***       			    Local Function                           ***/
 /*******************************************************************/
 static void adc_task(void *para)
 {
-		adc_init();
-	
-//    float f = 0.3f;
-    while(1)
-    {
+	while(1)
+	{
+		//	没有收到二值信号量时就堵塞在这里
+		while(xSemaphoreTake(binIRQSemaphore,portMAX_DELAY)!=pdTRUE){}
+		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);		
+			
+//		//	可以把raw_data打印出来看
+//		uint32_t *ptr;
+//		ptr = get_raw_data();
+//		printf("{plotter:%d}\n",*ptr);
 			
 			
-//				adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
-//				delay_1ms(1000);
 			
-        OS_MsDelay(1000);
-				printf("Hello! \n");
-				adc_task_FLAG = RESET;
-				vTaskSuspend(adc_TaskHandel);
-
-    }
+	}
 }
 
 /******************************************************************/
@@ -37,8 +32,4 @@ static void adc_task(void *para)
 void adc_task_init(void)
 {
 		xTaskCreate(adc_task, "adc_task", 256, NULL, OS_TASK_PRIO2, &adc_TaskHandel);
-//		vTaskSuspend(adc_TaskHandel);
-
-//	
-//    OS_TaskCreate(adc_task, "adc_task", 256, NULL, OS_TASK_PRIO2, &adc_TaskHandel);
 }
