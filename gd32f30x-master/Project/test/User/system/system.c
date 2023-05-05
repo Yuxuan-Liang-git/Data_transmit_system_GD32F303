@@ -13,6 +13,7 @@
 #include "util.h"
 #include "test_task.h"
 #include "adc_task.h"
+#include "communicate_task.h"
 
 
 
@@ -20,8 +21,9 @@ void system_init(void)
 {
     printf("Software Version: %s,%s\n\n", GET_SOFTWARE_VER_STR(), get_complie_time());
 		
-//		xQueue_buffer = xQueueCreate(1,sizeof cache_data);					//	创建队列
+		xQueue_buffer = xQueueCreate(1,sizeof cache_data);					//	创建队列
     test_task_init();
 		adc_task_init();
+		communicate_task_init();
 
 }

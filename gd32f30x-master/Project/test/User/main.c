@@ -12,7 +12,10 @@
 #include "bsp_usart.h"
 #include "bsp_delay.h"
 #include "bsp_adc.h"
+#include "address_setting.h"
+#include "tcp.h"
 
+uint16_t address;
 /*!
     \brief      main function
     \param[in]  none
@@ -24,6 +27,10 @@ int main(void)
     delay_init();
     uart_printf_init();
 		adc_init();
+		addr_init();
+		address=get_addr();
+		printf("Address is:%d \n\r",address);	
+		tcp_com_init(address);
 
     OS_Init();
     system_init();

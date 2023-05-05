@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,GD32F30X_HD,__FPU_PRESENT</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\Library\Firmware\CMSIS;..\..\..\Library\Firmware\CMSIS\GD\GD32F30x\Include;..\..\..\Library\Firmware\GD32F30x_standard_peripheral\Include;..\..\..\Library\Utilities;..\;..\bsp\key;..\bsp\led;..\source;..\osal\FreeRTOS\kernel\include;..\osal\FreeRTOS\kernel\portable\RVDS\ARM_CM4F;..\osal\FreeRTOS;..\osal;..\bsp\delay;..\User\system;..\User\common;..\bsp\i2c;..\source\network;..\RTT\Config;..\RTT\RTT;..\bsp\usart;..\bsp\gpio;..\User;..\bsp\adc</IncludePath>
+              <IncludePath>..\..\..\Library\Firmware\CMSIS;..\..\..\Library\Firmware\CMSIS\GD\GD32F30x\Include;..\..\..\Library\Firmware\GD32F30x_standard_peripheral\Include;..\..\..\Library\Utilities;..\;..\bsp\key;..\bsp\led;..\source;..\osal\FreeRTOS\kernel\include;..\osal\FreeRTOS\kernel\portable\RVDS\ARM_CM4F;..\osal\FreeRTOS;..\osal;..\bsp\delay;..\User\system;..\User\common;..\bsp\i2c;..\source\network;..\RTT\Config;..\RTT\RTT;..\bsp\usart;..\bsp\gpio;..\User;..\bsp\adc;..\User\Ethernet</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -396,6 +396,11 @@
               <FileName>systick.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>address_setting.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\address_setting.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -631,6 +636,11 @@
               <FileName>adc_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\system\adc_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>communicate_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\system\communicate_task.c</FilePath>
             </File>
           </Files>
         </Group>

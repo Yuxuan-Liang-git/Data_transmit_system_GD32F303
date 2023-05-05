@@ -1,0 +1,22 @@
+Address is:126 
+ IPW5500
+ W5500 IP   : 192.168.1.126
+ W5500  : 255.255.255.0
+ W5500      : 192.168.1.1
+ TCP,W5500 TCP 
+ IP:192.168.1.102
+ :5000 
+ W5500W5500 
+ иоз│
+Software Version: V0.2,May  5 2023
+
+task: test_task, freestack: 238, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	187	1
+IDLE           	R	0	117	3
+adc_task       	B	2	224	2
+
+taskname     count     %cpu
+test_task      	13842		75%
+IDLE           	0		<1%
+adc_task       	4352		23%

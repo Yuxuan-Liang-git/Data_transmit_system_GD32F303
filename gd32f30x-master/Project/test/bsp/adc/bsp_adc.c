@@ -5,7 +5,7 @@
 #include <string.h>
 
 xSemaphoreHandle binIRQSemaphore;		//	二值信号量
-//xQueueHandle xQueue_buffer;					//	消息队列句柄
+xQueueHandle xQueue_buffer;					//	消息队列句柄
 
 BaseType_t xHighPriorityTaskWoken = pdFALSE;
 uint8_t adc_value[64];
