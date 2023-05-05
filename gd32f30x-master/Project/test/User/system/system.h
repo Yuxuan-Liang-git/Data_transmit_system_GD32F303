@@ -10,6 +10,10 @@
 #define _SYSTEM_H_
 
 #include "config.h"
+#include "FreeRTOS.h"
+#include "semphr.h"		//	加上这个之后就找得到xSemaphoreHandle了
+
+extern xSemaphoreHandle binIRQSemaphore;
 
 void system_init(void);
 

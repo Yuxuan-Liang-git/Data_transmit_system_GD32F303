@@ -11,6 +11,7 @@
 #include "system.h"
 #include "bsp_usart.h"
 #include "bsp_delay.h"
+#include "bsp_adc.h"
 
 /*!
     \brief      main function
@@ -22,6 +23,7 @@ int main(void)
 {  
     delay_init();
     uart_printf_init();
+		adc_init();
 
     OS_Init();
     system_init();

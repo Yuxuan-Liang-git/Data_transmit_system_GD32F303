@@ -11,6 +11,10 @@
 #define _ADC_TASK_H_
 
 #include "osal.h"
+#include "gd32f30x.h"
+
+
 void adc_task_init(void);
 static TaskHandle_t adc_TaskHandel = NULL;
+extern FlagStatus adc_task_FLAG;
 #endif

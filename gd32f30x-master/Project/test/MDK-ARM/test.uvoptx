@@ -167,7 +167,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>177</LineNumber>
+          <LineNumber>24</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -176,14 +176,14 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\bsp\adc\bsp_adc.c</Filename>
+          <Filename>..\User\system\adc_task.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>76</LineNumber>
+          <LineNumber>188</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -199,7 +199,7 @@
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>70</LineNumber>
+          <LineNumber>187</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -215,25 +215,57 @@
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
-          <LineNumber>22</LineNumber>
+          <LineNumber>185</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134225240</Address>
+          <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\system\adc_task.c</Filename>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\bsp\adc\bsp_adc.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\test\../User/system/adc_task.c\22</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
           <LineNumber>174</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134221148</Address>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\bsp\adc\bsp_adc.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>5</Number>
+          <Type>0</Type>
+          <LineNumber>1478</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134225750</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\osal\FreeRTOS\kernel\tasks.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\test\../osal/FreeRTOS/kernel/tasks.c\1478</Expression>
+        </Bp>
+        <Bp>
+          <Number>6</Number>
+          <Type>0</Type>
+          <LineNumber>154</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134224634</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -242,7 +274,23 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\bsp\adc\bsp_adc.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\test\../bsp/adc/bsp_adc.c\174</Expression>
+          <Expression>\\test\../bsp/adc/bsp_adc.c\154</Expression>
+        </Bp>
+        <Bp>
+          <Number>7</Number>
+          <Type>0</Type>
+          <LineNumber>152</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134224628</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\bsp\adc\bsp_adc.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\test\../bsp/adc/bsp_adc.c\152</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -330,6 +378,26 @@
           <count>16</count>
           <WinNumber>1</WinNumber>
           <ItemText>adc_value[3],0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>eReturn</ItemText>
+        </Ww>
+        <Ww>
+          <count>18</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>state</ItemText>
+        </Ww>
+        <Ww>
+          <count>19</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>adc_task_FLAG</ItemText>
+        </Ww>
+        <Ww>
+          <count>20</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>adc_task_FLAG</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>

@@ -4,7 +4,7 @@
 #include "gd32f30x.h"
 #include "gd32f30x_adc.h"
 #include "systick.h"
-//#include "main.h"
+#include "system.h"
 
 #define COMn                             1U
 

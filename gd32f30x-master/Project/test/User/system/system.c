@@ -14,10 +14,14 @@
 #include "test_task.h"
 #include "adc_task.h"
 
+
+
 void system_init(void)
 {
     printf("Software Version: %s,%s\n\n", GET_SOFTWARE_VER_STR(), get_complie_time());
+		
 
     test_task_init();
-		adc_task_init();
+//		adc_task_init();
+
 }

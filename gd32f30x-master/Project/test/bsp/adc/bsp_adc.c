@@ -1,7 +1,10 @@
 #include "bsp_adc.h"
-#include "gd32f30x.h"
 #include "adc_task.h"
+#include "gd32f30x.h"
 #include <string.h>
+
+xSemaphoreHandle binIRQSemaphore;
+BaseType_t xHighPriorityTaskWoken = pdFALSE;
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
@@ -10,6 +13,8 @@ void adc_init(void)
 		adc_rcu_config();
 		adc_gpio_config();
 //		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
+		
+		binIRQSemaphore = xSemaphoreCreateBinary();		//	创建二值信号量，实现中断与任务的同步
     /* TIMER configuration */
     timer_config();		//	卡在这里了
     /* DMA configuration */
@@ -144,7 +149,7 @@ void adc_config(void)
     /* ADC DMA function enable */
     adc_dma_mode_enable(ADC0);
 		adc_enable(ADC0);
-		delay_1ms(1);
+		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
 		nvic_irq_enable(ADC0_1_IRQn, 0,0);
@@ -166,9 +171,22 @@ void TIMER1_IRQHandler(void)
 		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
 //		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
 		/* clear TIMER interrupt flag */
+			
+		//	释放二值信号量，释放成功则	xHighPriorityTaskWoken = pdTRUE
+		xSemaphoreGiveFromISR(binIRQSemaphore,&xHighPriorityTaskWoken);
+		//	检查当前是否有更高优先级的任务需要运行，如果有，则立即切换到该任务
+		portYIELD_FROM_ISR(xHighPriorityTaskWoken);
+			
 		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
-		vTaskResume(adc_TaskHandel);		//	恢复adc任务
-
+			
+			
+//		eTaskState state = eTaskGetState(adc_TaskHandel);
+			
+			
+//		if(adc_task_FLAG == RESET)
+//		{
+//			adc_task_FLAG = SET;
+//		}
 			
 //		if(adc_finish_flag == SET)
 //		{

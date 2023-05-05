@@ -3,6 +3,8 @@
 #include "bsp_adc.h"
 #include "adc_task.h"
 
+FlagStatus adc_task_FLAG = SET;
+
 /*******************************************************************/
 /***       			    Local Function                           ***/
 /*******************************************************************/
@@ -20,6 +22,7 @@ static void adc_task(void *para)
 			
         OS_MsDelay(1000);
 				printf("Hello! \n");
+				adc_task_FLAG = RESET;
 				vTaskSuspend(adc_TaskHandel);
 
     }
@@ -34,7 +37,8 @@ static void adc_task(void *para)
 void adc_task_init(void)
 {
 		xTaskCreate(adc_task, "adc_task", 256, NULL, OS_TASK_PRIO2, &adc_TaskHandel);
-		vTaskSuspend(adc_TaskHandel);
+//		vTaskSuspend(adc_TaskHandel);
+
 //	
 //    OS_TaskCreate(adc_task, "adc_task", 256, NULL, OS_TASK_PRIO2, &adc_TaskHandel);
 }
