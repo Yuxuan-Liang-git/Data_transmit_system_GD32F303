@@ -20,7 +20,7 @@ void system_init(void)
 {
     printf("Software Version: %s,%s\n\n", GET_SOFTWARE_VER_STR(), get_complie_time());
 		
-
+//		xQueue_buffer = xQueueCreate(1,sizeof cache_data);					//	创建队列
     test_task_init();
 		adc_task_init();
 

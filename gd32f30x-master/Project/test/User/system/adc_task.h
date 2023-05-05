@@ -12,8 +12,9 @@
 
 #include "osal.h"
 #include "gd32f30x.h"
+#include "bsp_adc.h"
 
-
+static uint8_t tcp_buffer[1024];
 void adc_task_init(void);
 static TaskHandle_t adc_TaskHandel = NULL;
 extern FlagStatus adc_task_FLAG;

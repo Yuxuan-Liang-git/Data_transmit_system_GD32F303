@@ -1,10 +1,16 @@
 #include "bsp_adc.h"
+#include "bsp_delay.h"
 #include "adc_task.h"
 #include "gd32f30x.h"
 #include <string.h>
 
-xSemaphoreHandle binIRQSemaphore;
+xSemaphoreHandle binIRQSemaphore;		//	二值信号量
+//xQueueHandle xQueue_buffer;					//	消息队列句柄
+
 BaseType_t xHighPriorityTaskWoken = pdFALSE;
+uint8_t adc_value[64];
+uint8_t cache_data[2048];
+
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
@@ -162,9 +168,6 @@ void adc_config(void)
 
 
 }
-
-uint16_t count;
-
 //	100us触发一次中断
 void TIMER1_IRQHandler(void)
 {
@@ -172,6 +175,7 @@ void TIMER1_IRQHandler(void)
 //		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
 		/* clear TIMER interrupt flag */
 			
+		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);		
 		//	释放二值信号量，释放成功则	xHighPriorityTaskWoken = pdTRUE
 		xSemaphoreGiveFromISR(binIRQSemaphore,&xHighPriorityTaskWoken);
 		//	检查当前是否有更高优先级的任务需要运行，如果有，则立即切换到该任务
@@ -227,10 +231,10 @@ void ADC0_1_IRQHandler(void)
 				adc_value[4*i+1] = *(ptr+2);
 				adc_value[4*i+0] = *(ptr+3);
 		}
-		memcpy(send_data,adc_value,4);
 		adc_finish_flag = SET;
 		
 //		printf("{plotter:%d}\n", raw_data[0]);
+		
 
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 }

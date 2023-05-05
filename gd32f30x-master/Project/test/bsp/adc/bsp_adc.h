@@ -6,7 +6,7 @@
 #include "systick.h"
 #include "system.h"
 
-#define COMn                             1U
+//#define COMn                             1U
 
 #define DEV_COM0                        USART0
 #define DEV_COM0_CLK                    RCU_USART0
@@ -28,8 +28,8 @@ static uint32_t raw_data[16];
 //extern uint8_t adc_value[64];
 //extern FlagStatus adc_finish_flag;
 
-static uint8_t adc_value[64];
-static uint8_t send_data[4];
+extern uint8_t adc_value[64];
+extern uint8_t cache_data[2048];
 static FlagStatus adc_finish_flag;
 
 static uint32_t adc_channels[]= {

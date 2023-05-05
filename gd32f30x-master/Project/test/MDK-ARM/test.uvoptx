@@ -167,25 +167,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>1478</LineNumber>
+          <LineNumber>30</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134225886</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\osal\FreeRTOS\kernel\tasks.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\test\../osal/FreeRTOS/kernel/tasks.c\1478</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>16</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134225290</Address>
+          <Address>134225328</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -194,23 +178,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\User\system\adc_task.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\test\../User/system/adc_task.c\16</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>224</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134219918</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\bsp\adc\bsp_adc.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\test\../bsp/adc/bsp_adc.c\224</Expression>
+          <Expression>\\test\../User/system/adc_task.c\30</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -248,6 +216,26 @@
           <count>6</count>
           <WinNumber>1</WinNumber>
           <ItemText>ptr</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>count,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>tcp_buffer</ItemText>
+        </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>cache_data[3]</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>adc_value</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
