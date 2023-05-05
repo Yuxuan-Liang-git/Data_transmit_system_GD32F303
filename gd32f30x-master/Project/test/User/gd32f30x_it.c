@@ -15,10 +15,15 @@
 #include "FreeRTOSConfig.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "adc_task.h"
+#include "bsp_adc.h"
 
 extern void xPortPendSVHandler( void );
 extern void xPortSysTickHandler( void );
 extern void vPortSVCHandler( void );
+
+
+
 
 /*!
     \brief      this function handles NMI exception
@@ -127,3 +132,4 @@ void SysTick_Handler(void)
 
     delay_decrement();
 }
+

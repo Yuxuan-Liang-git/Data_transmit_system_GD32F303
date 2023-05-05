@@ -31,7 +31,7 @@
 #include "gd32f30x.h"
 #include "i2c.h"
 #include "log.h"
-#include "delay.h"
+#include "bsp_delay.h"
 
 #define SDA_H	gpio_bit_set(IIC_GPIO_PERIPH, SDAT_PIN)
 #define SDA_L	gpio_bit_reset(IIC_GPIO_PERIPH, SDAT_PIN)

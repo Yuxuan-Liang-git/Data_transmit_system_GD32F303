@@ -6,7 +6,7 @@
  * 
  * Copyright © 2021 Jerry, All Rights Reserved
  */
-#include "delay.h"
+#include "bsp_delay.h"
 #include "gd32f30x_timer.h"
 
 #define DELAY_TIMER_RCU_PERIPH  RCU_TIMER6

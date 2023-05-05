@@ -7,11 +7,10 @@
  * Copyright © 2021 Jerry, All Rights Reserved
  */
 #include "gd32f30x.h"
-#include "gd32f303e_eval.h"
 #include "osal.h"
 #include "system.h"
-#include "uart_printf.h"
-#include "delay.h"
+#include "bsp_usart.h"
+#include "bsp_delay.h"
 
 /*!
     \brief      main function

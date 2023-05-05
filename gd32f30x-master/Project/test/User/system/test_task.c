@@ -8,22 +8,20 @@
  */
 #include "stdio.h"
 #include "osal.h"
-#include "gd32f303e_eval.h"
-#include "delay.h"
+#include "bsp_delay.h"
+
+#include "test_task.h"
 
 /*******************************************************************/
 /***       			    Local Function                           ***/
 /*******************************************************************/
 static void test_task(void *para)
 {
-//    float f = 0.3f;
     while(1)
     {
 				printf("task: %s, freestack: %d, proi: %d\n", OS_TaskGetName(NULL), OS_TaskGetFreeStackSpace(NULL), OS_TaskGetPriority(NULL));
-//        f *= 3.0f;
 
         OS_SysInfo();
-
         OS_MsDelay(1000);			
     }
 }

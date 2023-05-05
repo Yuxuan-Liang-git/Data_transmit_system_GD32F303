@@ -14,6 +14,7 @@
 
 #include "gd32f30x.h"
 
+
 /* function declarations */
 /* this function handles NMI exception */
 void NMI_Handler(void);
@@ -33,5 +34,6 @@ void DebugMon_Handler(void);
 void PendSV_Handler(void);
 /* this function handles SysTick exception */
 void SysTick_Handler(void);
+
 
 #endif /* GD32F30X_IT_H */

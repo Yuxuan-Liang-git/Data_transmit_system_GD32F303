@@ -6,7 +6,7 @@
  * 
  * Copyright © 2021 Jerry, All Rights Reserved
  */
-#include "uart_printf.h"
+#include "bsp_usart.h"
 #include "config.h"
 
 /* retarget the C library printf function to the USART */

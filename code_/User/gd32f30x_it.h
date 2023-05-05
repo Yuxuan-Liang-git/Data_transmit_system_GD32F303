@@ -41,7 +41,7 @@ OF SUCH DAMAGE.
 #include "gd32f30x.h"
 
 extern FlagStatus send_flag;
-extern uint8_t tcp_buffer[1024];
+extern uint8_t tcp_buffer[2048];
 extern uint32_t raw_data[16];
 
 /* function declarations */
