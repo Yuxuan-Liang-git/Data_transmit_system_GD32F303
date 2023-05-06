@@ -14,8 +14,7 @@
 #include "semphr.h"		//	加上这个之后就找得到xSemaphoreHandle了
 
 extern xSemaphoreHandle binIRQSemaphore;
-extern xQueueHandle xQueue_buffer;			
-
+extern xQueueHandle xQueue_buffer;	
 void system_init(void);
 
 #endif

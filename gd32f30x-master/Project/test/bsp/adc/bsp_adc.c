@@ -143,7 +143,7 @@ void adc_config(void)
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);
+				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_7POINT5);
 		}
     /* ADC trigger config */
 		adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);

@@ -8,15 +8,2687 @@ Address is:126
  :5000 
  W5500W5500 
  車妊
-Software Version: V0.2,May  5 2023
+Software Version: V0.2,May  6 2023
 
 task: test_task, freestack: 238, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	187	1
-IDLE           	R	0	117	3
-adc_task       	B	2	224	2
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	13842		75%
+test_task      	12418		46%
+communicate_tas	6912		25%
 IDLE           	0		<1%
-adc_task       	4352		23%
+adc_task       	6192		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	28790		2%
+communicate_tas	734903		71%
+IDLE           	0		<1%
+adc_task       	262906		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	45482		2%
+communicate_tas	1462132		72%
+IDLE           	1504		<1%
+adc_task       	519904		25%
+1941
+1941
+1941
+2189
+2524
+2864
+3166
+3340
+3125
+2798
+2455
+2139
+1927
+2017
+2311
+2661
+2979
+3251
+3275
+3010
+2672
+2330
+2041
+1914
+2116
+2435
+2782
+3096
+3314
+3190
+2888
+2543
+communicate_task finished! 
+2916
+2916
+2916
+2571
+2238
+1976
+1949
+2204
+2533
+2876
+3175
+3331
+3111
+2789
+2443
+2128
+1927
+2027
+2323
+2663
+2993
+3254
+3266
+2996
+2660
+2322
+2031
+1917
+2123
+2444
+2783
+3102
+communicate_task finished! 
+3117
+3117
+3117
+3321
+3163
+2852
+2514
+2183
+1946
+1980
+2262
+2595
+2931
+3218
+3311
+3059
+2726
+2388
+2083
+1914
+2064
+2382
+2724
+3051
+3291
+3231
+2935
+2604
+2266
+1999
+1937
+2176
+communicate_task finished! 
+2197
+2197
+2197
+2531
+2871
+3171
+3331
+3107
+2792
+2450
+2131
+1928
+2021
+2316
+2655
+2992
+3258
+3270
+3000
+2666
+2327
+2032
+1916
+2121
+2446
+2783
+3102
+3318
+3185
+2876
+2535
+2210
+communicate_task finished! 
+2192
+2192
+2192
+1948
+1976
+2252
+2592
+2928
+3216
+3305
+3062
+2729
+2395
+2083
+1916
+2068
+2371
+2718
+3045
+3292
+3231
+2944
+2599
+2267
+1994
+1937
+2169
+2500
+2841
+3149
+3329
+3135
+communicate_task finished! 
+3323
+3323
+3323
+3149
+2834
+2491
+2172
+1937
+1997
+2275
+2619
+2953
+3228
+3290
+3039
+2707
+2364
+2064
+1912
+2086
+2404
+2747
+3067
+3299
+3218
+2915
+2578
+2248
+1979
+1944
+2200
+2531
+communicate_task finished! 
+2557
+2557
+2557
+2897
+3190
+3321
+3092
+2763
+2421
+2107
+1921
+2039
+2349
+2684
+3012
+3271
+3257
+2973
+2638
+2298
+2016
+1922
+2144
+2474
+2809
+3123
+3322
+3165
+2854
+2509
+2183
+1949
+communicate_task finished! 
+1937
+1937
+1937
+1995
+2287
+2623
+2960
+3236
+3288
+3035
+2701
+2356
+2064
+1911
+2090
+2409
+2748
+3075
+3302
+3210
+2907
+2570
+2236
+1973
+1949
+2200
+2534
+2876
+3174
+3324
+3114
+2787
+communicate_task finished! 
+2761
+2761
+2761
+2421
+2105
+1916
+2042
+2352
+2692
+3018
+3275
+3255
+2970
+2637
+2299
+2011
+1923
+2147
+2475
+2817
+3126
+3322
+3161
+2847
+2506
+2180
+1944
+1974
+2264
+2601
+2939
+3219
+communicate_task finished! 
+3230
+3230
+3230
+3295
+3035
+2706
+2366
+2062
+1915
+2087
+2400
+2744
+3069
+3302
+3213
+2916
+2580
+2242
+1981
+1948
+2195
+2533
+2865
+3170
+3331
+3117
+2793
+2451
+2133
+1924
+2019
+2317
+communicate_task finished! 
+2003
+2003
+2003
+2297
+2636
+2969
+3249
+3282
+3017
+2686
+2343
+2046
+1912
+2100
+2418
+2766
+3081
+3310
+3198
+2905
+2555
+2227
+1968
+1957
+2215
+2550
+2887
+3177
+3327
+3099
+2774
+2428
+communicate_task finished! 
+2408
+2408
+2408
+2097
+1920
+2053
+2359
+2701
+3033
+3282
+3246
+2962
+2620
+2283
+2004
+1930
+2158
+2486
+2827
+3141
+3326
+3150
+2832
+2492
+2170
+1940
+1989
+2276
+2614
+2948
+3228
+3298
+communicate_task finished! 
+3283
+3283
+3283
+3015
+2679
+2340
+2042
+1912
+2108
+2426
+2771
+3087
+3312
+3193
+2897
+2552
+2223
+1965
+1957
+2222
+2552
+2894
+3191
+3320
+3097
+2772
+2424
+2116
+1923
+2035
+2338
+2682
+communicate_task finished! 
+2708
+2708
+2708
+3037
+3282
+3241
+2956
+2614
+2279
+1999
+1930
+2162
+2492
+2834
+3146
+3326
+3148
+2830
+2483
+2167
+1935
+1993
+2286
+2619
+2955
+3235
+3294
+3036
+2702
+2363
+2058
+1910
+communicate_task finished! 
+2071
+2071
+2071
+1915
+2075
+2393
+2738
+3058
+3295
+3226
+2929
+2590
+2257
+1985
+1939
+2188
+2520
+2853
+3162
+3328
+3123
+2804
+2466
+2143
+1929
+2013
+2303
+2642
+2978
+3248
+3278
+3013
+communicate_task finished! 
+2990
+2990
+2990
+2650
+2313
+2023
+1920
+2130
+2455
+2794
+3109
+3324
+3173
+2867
+2525
+2196
+1951
+1970
+2249
+2587
+2917
+3211
+3309
+3068
+2741
+2400
+2089
+1917
+2055
+2365
+2711
+3036
+communicate_task finished! 
+3059
+3059
+3059
+3299
+3219
+2925
+2583
+2253
+1982
+1944
+2190
+2527
+2863
+3166
+3334
+3124
+2795
+2457
+2134
+1927
+2018
+2314
+2653
+2983
+3254
+3274
+3005
+2672
+2332
+2039
+1914
+2114
+communicate_task finished! 
+2140
+2140
+2140
+2466
+2812
+3124
+3321
+3165
+2851
+2509
+2185
+1950
+1979
+2262
+2600
+2928
+3218
+3303
+3058
+2725
+2384
+2078
+1913
+2071
+2379
+2723
+3050
+3291
+3228
+2935
+2596
+2263
+communicate_task finished! 
+2238
+2238
+2238
+1975
+1947
+2204
+2537
+2877
+3178
+3329
+3110
+2784
+2443
+2126
+1925
+2023
+2322
+2663
+2997
+3260
+3271
+2994
+2662
+2322
+2026
+1920
+2126
+2449
+2793
+3103
+3318
+3183
+communicate_task finished! 
+3312
+3312
+3312
+3190
+2882
+2547
+2212
+1959
+1963
+2228
+2566
+2907
+3197
+3319
+3084
+2762
+2416
+2105
+1920
+2044
+2352
+2693
+3021
+3278
+3250
+2968
+2625
+2295
+2006
+1930
+2148
+2480
+communicate_task finished! 
+2506
+2506
+2506
+2844
+3148
+3330
+3137
+2824
+2477
+2149
+1936
+2003
+2287
+2631
+2966
+3240
+3286
+3026
+2698
+2354
+2055
+1920
+2097
+2417
+2766
+3082
+3303
+3204
+2906
+2564
+2231
+1973
+communicate_task finished! 
+1958
+1958
+1958
+1965
+2240
+2575
+2912
+3202
+3316
+3075
+2747
+2406
+2096
+1917
+2049
+2356
+2701
+3027
+3283
+3249
+2961
+2626
+2287
+2001
+1930
+2158
+2485
+2826
+3139
+3325
+3152
+2836
+communicate_task finished! 
+2798
+2798
+2798
+2460
+2142
+1930
+2016
+2309
+2645
+2983
+3246
+3277
+3010
+2674
+2336
+2040
+1910
+2115
+2435
+2774
+3094
+3313
+3191
+2885
+2548
+2215
+1960
+1963
+2226
+2563
+2903
+3195
+communicate_task finished! 
+2892
+2892
+2892
+3189
+3323
+3093
+2765
+2427
+2113
+1925
+2040
+2344
+2682
+3014
+3271
+3258
+2977
+2640
+2301
+2016
+1923
+2144
+2467
+2807
+3125
+3322
+3167
+2851
+2516
+2190
+1948
+1984
+communicate_task finished! 
+2000
+2000
+2000
+2285
+2628
+2962
+3239
+3290
+3033
+2697
+2356
+2054
+1912
+2092
+2411
+2760
+3076
+3302
+3207
+2909
+2574
+2237
+1973
+1948
+2207
+2538
+2879
+3177
+3329
+3108
+2782
+2439
+communicate_task finished! 
+2416
+2416
+2416
+2103
+1921
+2041
+2350
+2690
+3018
+3277
+3248
+2964
+2629
+2297
+2012
+1926
+2147
+2477
+2819
+3129
+3325
+3159
+2845
+2503
+2180
+1945
+1984
+2265
+2605
+2941
+3222
+3298
+communicate_task finished! 
+3288
+3288
+3288
+3027
+2693
+2351
+2055
+1913
+2097
+2414
+2756
+3079
+3307
+3124
+2912
+2563
+2233
+1968
+1947
+2211
+2544
+2884
+3183
+3327
+3105
+2780
+2444
+2123
+1925
+2026
+2329
+2672
+communicate_task finished! 
+2694
+2694
+2694
+3023
+3275
+3250
+2968
+2629
+2293
+2005
+1928
+2149
+2477
+2822
+3131
+3324
+3156
+2843
+2501
+2178
+1944
+1988
+2268
+2606
+2942
+3227
+3298
+3052
+2717
+2373
+2070
+1914
+communicate_task finished! 
+2084
+2084
+2084
+1915
+2064
+2379
+2724
+3043
+3288
+3238
+2947
+2601
+2270
+1993
+1932
+2174
+2510
+2838
+3148
+3329
+3135
+2818
+2475
+2152
+1932
+2003
+2294
+2632
+2969
+3243
+3288
+3025
+communicate_task finished! 
+2995
+2995
+2995
+2665
+2330
+2033
+1916
+2122
+2447
+2781
+3098
+3316
+3188
+2873
+2537
+2210
+1958
+1964
+2235
+2573
+2905
+3204
+3317
+3091
+2752
+2413
+2101
+1916
+2047
+2352
+2699
+3025
+communicate_task finished! 
+3042
+3042
+3042
+3287
+3236
+2941
+2609
+2268
+1991
+1935
+2177
+2504
+2847
+3149
+3331
+3133
+2817
+2474
+2153
+1935
+2003
+2298
+2630
+2968
+3241
+3285
+3023
+2693
+2348
+2052
+1912
+2098
+communicate_task finished! 
+2117
+2117
+2117
+2440
+2784
+3101
+3310
+3186
+2883
+2538
+2212
+1960
+1964
+2232
+2569
+2907
+3199
+3318
+3085
+2754
+2411
+2099
+1918
+2050
+2352
+2697
+3027
+3281
+3248
+2966
+2629
+2287
+communicate_task finished! 
+2649
+2649
+2649
+2309
+2020
+1918
+2135
+2457
+2804
+3115
+3318
+3173
+2858
+2519
+2192
+1950
+1975
+2247
+2584
+2926
+3212
+3307
+3065
+2736
+2393
+2088
+1916
+2064
+2370
+2711
+3039
+3288
+communicate_task finished! 
+3292
+3292
+3292
+3228
+2939
+2598
+2266
+1992
+1937
+2180
+2508
+2851
+3156
+3330
+3133
+2812
+2472
+2149
+1932
+2004
+2296
+2638
+2968
+3247
+3282
+3020
+2685
+2346
+2080
+1909
+2104
+2419
+communicate_task finished! 
+2428
+2428
+2428
+2772
+3093
+3310
+3195
+2892
+2549
+2217
+1959
+1958
+2222
+2558
+2896
+3193
+3322
+3090
+2765
+2424
+2114
+1925
+2040
+2346
+2689
+3016
+3274
+3257
+2975
+2637
+2303
+2016
+communicate_task finished! 
+2006
+2006
+2006
+1928
+2151
+2487
+2825
+3137
+3324
+3155
+2844
+2499
+2172
+1939
+1987
+2272
+2611
+2947
+3225
+3299
+3048
+2716
+2369
+2071
+1913
+2081
+2394
+2744
+3061
+3298
+3223
+2923
+communicate_task finished! 
+2920
+2920
+2920
+2580
+2241
+1978
+1945
+2196
+2529
+2869
+3171
+3333
+3114
+2796
+2452
+2137
+1922
+2015
+2316
+2656
+2987
+3256
+3271
+3000
+2664
+2332
+2032
+1915
+2115
+2441
+2784
+3100
+communicate_task finished! 
+2761
+2761
+2761
+3079
+3303
+3212
+2903
+2564
+2234
+1972
+1950
+2209
+2544
+2881
+3179
+3325
+3107
+2778
+2440
+2121
+1923
+2030
+2330
+2673
+2998
+3266
+3264
+2992
+2656
+2316
+2027
+1920
+communicate_task finished! 
+1927
+1927
+1927
+2151
+2476
+2817
+3130
+3326
+3161
+2849
+2504
+2180
+1944
+1982
+2270
+2602
+2940
+3222
+3304
+3050
+2726
+2380
+2074
+1914
+2073
+2388
+2730
+3058
+3295
+3229
+2932
+2596
+communicate_task finished! 
+2567
+2567
+2567
+2241
+1973
+1949
+2205
+2537
+2881
+3174
+3327
+3109
+2784
+2442
+2127
+1926
+2026
+2326
+2667
+2997
+3264
+ta32s6k:1
+ te2s9t_94t
+a26s5k4, 
+fr2e3e15
+s20t2a8c
+k: 1197185
+, 2pr1o2i7:
+ 1
+t2a44s9k
+2na7m9e7 
+   3 1st0a6t
+3e 3  1 7
+ pcroiomrmiuntyi c a  tfree_esttaasckk   f niumnbiers
+hed! 
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname  2 77 8 
+cou2n7t7 8
+  2 7 78%
+c2pu
+439
+2122
+1924
+20t3e4
+st2_3ta3s1
+k 26 7 0 
+  30	068
+35738		226%2
+
+c32o6m6mu
+ni2c9at8e8_
+tas2	6251900
+902331		172
+%201
+7a
+19d2c1_
+ta2sk1 34 
+  245 6 
+ 27	97798
+07351	12
+	253%317
+
+3175
+2865
+2525
+2196
+1949
+1971
+2245
+2585
+2920
+3210
+communicate_task finished! 
+1930
+1930
+1930
+2155
+2487
+2830
+3135
+3322
+3151
+2836
+2496
+2168
+1942
+1992
+2275
+2618
+2950
+3229
+3294
+3040
+2711
+2374
+2068
+1912
+2079
+2399
+2740
+3065
+3299
+3222
+2924
+2585
+communicate_task finished! 
+2944
+2944
+2944
+2598
+2267
+1992
+1934
+2173
+2509
+2847
+3154
+3327
+3130
+2816
+2474
+2153
+1938
+2003
+2292
+2628
+2967
+3242
+3284
+3021
+2694
+2351
+2053
+1925
+2098
+2418
+2757
+3076
+communicate_task finished! 
+3096
+3096
+3096
+3313
+3191
+2884
+2547
+2220
+1964
+1959
+2230
+2565
+2900
+3193
+3320
+3084
+2758
+2417
+2108
+1920
+2040
+2348
+2691
+3016
+3271
+3246
+2971
+2631
+2294
+2040
+1926
+2151
+communicate_task finished! 
+2169
+2169
+2169
+2499
+2836
+3148
+3331
+3137
+2823
+2484
+2158
+1936
+1994
+2288
+2627
+2963
+3242
+3289
+3025
+2696
+2354
+2051
+1911
+2091
+2414
+2753
+3076
+3296
+3210
+2907
+2568
+2240
+communicate_task finished! 
+2225
+2225
+2225
+1966
+1957
+2213
+2548
+2889
+3186
+3322
+3101
+2776
+2429
+2119
+1920
+2032
+2335
+2674
+3005
+3265
+3260
+2983
+2649
+2312
+2022
+1920
+2137
+2461
+2803
+3117
+3321
+3170
+communicate_task finished! 
+3159
+3159
+3159
+2849
+2509
+2188
+1942
+1979
+2261
+2602
+2932
+3219
+3302
+3055
+2727
+2380
+2080
+1914
+2070
+2382
+2726
+3049
+3289
+3230
+2929
+2597
+2266
+1992
+1935
+2179
+2592
+2851
+communicate_task finished! 
+2486
+2486
+2486
+2827
+3138
+3327
+3153
+2836
+2492
+2173
+1940
+1991
+2276
+2612
+2947
+3228
+3296
+3040
+2709
+2369
+2072
+1913
+2084
+2400
+2743
+3067
+3296
+3222
+2920
+2584
+2250
+1978
+communicate_task finished! 
+1973
+1973
+1973
+1950
+2208
+2540
+2883
+3176
+3324
+3111
+2780
+2441
+2127
+1923
+2029
+2327
+2666
+3000
+3258
+3266
+2992
+2652
+2319
+2026
+1918
+2130
+2456
+2794
+3108
+3320
+3177
+2866
+communicate_task finished! 
+2856
+2856
+2856
+2517
+2191
+1951
+1975
+2252
+2592
+2925
+3217
+3312
+3062
+2734
+2389
+2087
+1916
+2063
+2376
+2721
+3043
+3285
+3234
+2945
+2605
+2269
+1998
+1933
+2172
+2499
+2845
+3148
+communicate_task finished! 
+3157
+3157
+3157
+3329
+3127
+2806
+2468
+2146
+1930
+2007
+2303
+2646
+2975
+3246
+3284
+3014
+2682
+2324
+2045
+1910
+2105
+2426
+2766
+3087
+3310
+3199
+2896
+2555
+2227
+1963
+1958
+2215
+communicate_task finished! 
+1948
+1948
+1948
+2200
+2527
+2868
+3174
+3328
+3111
+2791
+2452
+2135
+1932
+2018
+2319
+2656
+2986
+3256
+3271
+3003
+2663
+2328
+2030
+1916
+2118
+2442
+2783
+3098
+3319
+3187
+2881
+2537
+communicate_task finished! 
+2519
+2519
+2519
+2196
+1952
+1970
+2250
+2586
+2923
+3209
+3310
+3067
+2738
+2392
+2090
+1914
+2059
+2374
+2714
+3043
+3285
+3241
+2947
+2611
+2277
+2002
+1933
+2169
+2502
+2838
+3145
+3328
+communicate_task finished! 
+3337
+3337
+3337
+3126
+2804
+2460
+2141
+1930
+2016
+2308
+2651
+2982
+3251
+3279
+3018
+2675
+2338
+2046
+1913
+2110
+2429
+2771
+3091
+3313
+3195
+2892
+2545
+2218
+1960
+1959
+2225
+2557
+communicate_task finished! 
+2575
+2575
+2575
+2912
+3201
+3316
+3078
+2752
+2408
+2098
+1916
+2047
+2359
+2697
+3031
+3278
+3249
+2963
+2623
+2289
+2008
+1928
+2159
+2485
+2821
+3132
+3331
+3157
+2838
+2496
+2177
+1939
+communicate_task finished! 
+1936
+1936
+1936
+1999
+2285
+2621
+2959
+3233
+3289
+3030
+2701
+2360
+2060
+1912
+2095
+2406
+2750
+3066
+3302
+3214
+2915
+2575
+2240
+1977
+1949
+2199
+2534
+2871
+3173
+3329
+3110
+2789
+communicate_task finished! 
+3139
+3139
+3139
+2818
+2474
+2155
+1935
+2002
+2293
+2632
+2968
+3240
+3288
+3023
+2690
+2348
+2050
+1912
+2099
+2416
+2761
+3081
+3309
+3207
+2904
+2567
+2232
+1974
+1946
+2209
+2542
+2881
+communicate_task finished! 
+2888
+2888
+2888
+3189
+3323
+3095
+2770
+2429
+2113
+1921
+2037
+2336
+2677
+3010
+3270
+3253
+2977
+2643
+2309
+2019
+1923
+2136
+2464
+2810
+3117
+3326
+3173
+2857
+2515
+2190
+1951
+1977
+communicate_task finished! 
+1979
+1979
+1979
+2261
+2597
+2933
+3219
+3300
+3060
+2725
+2381
+2078
+1915
+2071
+2388
+2723
+3054
+3290
+3230
+2933
+2593
+2263
+1989
+1939
+2177
+2515
+2851
+3155
+3334
+3130
+2811
+2469
+communicate_task finished! 
+2449
+2449
+2449
+2136
+1927
+2018
+2316
+2658
+2986
+3255
+3275
+3006
+2666
+2332
+2034
+1920
+2116
+2435
+2782
+3095
+3313
+3184
+2882
+2545
+2212
+1959
+1962
+2231
+2565
+2905
+3196
+3319
+communicate_task finished! 
+3178
+3178
+3178
+3324
+3108
+2782
+2438
+2125
+1920
+2028
+2328
+2668
+2996
+3262
+3266
+2987
+2654
+2319
+2026
+1918
+2131
+2451
+2797
+3111
+3317
+3178
+2867
+2528
+2194
+1951
+1972
+2242
+communicate_task finished! 
+2259
+2259
+2259
+2592
+2932
+3219
+3308
+3060
+2730
+2389
+2079
+1916
+2072
+2375
+2720
+3044
+3287
+3233
+2939
+2603
+2273
+1993
+1938
+2174
+2503
+2847
+3155
+3332
+3138
+2816
+2468
+2153
+communicate_task finished! 
+2143
+2143
+2143
+1928
+2012
+2311
+2648
+2980
+3252
+3278
+3009
+2674
+2334
+2043
+1916
+2110
+2433
+2777
+3093
+3312
+3190
+2887
+2549
+2219
+1964
+1958
+2224
+2560
+2900
+3194
+3328
+3091
+communicate_task finished! 
+3076
+3076
+3076
+2748
+2409
+2095
+1916
+2050
+2360
+2703
+3028
+3281
+3250
+2963
+2618
+2288
+2010
+1928
+2153
+2484
+2828
+3137
+3324
+3152
+2834
+2496
+2171
+1939
+1990
+2274
+2614
+2950
+communicate_task finished! 
+2965
+2965
+2965
+3241
+3285
+3021
+2690
+2350
+2047
+1900
+2100
+2416
+2755
+3076
+3305
+3204
+2903
+2561
+2229
+1969
+1951
+2212
+2549
+2882
+3179
+3323
+3103
+2776
+2432
+2121
+1922
+2030
+communicate_task finished! 
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	79948		1%
+communicate_tas	2919545		72%
+adc_task       	1034992		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	94621		1%
+communicate_tas	3645940		72%
+adc_task       	1290488		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	109371		1%
+communicate_tas	4372924		72%
+adc_task       	1546338		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	124138		1%
+communicate_tas	5099634		72%
+adc_task       	1801939		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	138680		1%
+communicate_tas	5826152		72%
+adc_task       	2057631		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	153356		1%
+communicate_tas	6552546		72%
+adc_task       	2313123		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1975	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	168175		1%
+communicate_tas	7279446		72%
+adc_task       	2568986		25%
+CH: 1 Unexpected1 length 0
+SEND_OK Problem!!
+1927
+1927
+1927
+2014
+2316
+2655
+2988
+3257
+3268
+3001
+2667
+2329
+2036
+1917
+2114
+2439
+2782
+3101
+3315
+3186
+2879
+2533
+2212
+1959
+1962
+2232
+2568
+2906
+3197
+3315
+3081
+2752
+communicate_task finished! 
+Address is:126 
+ IPW5500
+ W5500 IP   : 192.168.1.126
+ W5500  : 255.255.255.0
+ W5500      : 192.168.1.1
+ TCP,W5500 TCP 
+ IP:192.168.1.102
+ :5000 
+ W5500W5500 
+ 車妊
+Software Version: V0.2,May  6 2023
+
+task: test_task, freestack: 238, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	187	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	12418		46%
+communicate_tas	6912		25%
+IDLE           	0		<1%
+adc_task       	6192		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	28790		2%
+communicate_tas	734903		71%
+IDLE           	0		<1%
+adc_task       	262906		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	44192		2%
+communicate_tas	1460338		72%
+adc_task       	519136		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	58716		1%
+communicate_tas	2186563		72%
+adc_task       	774566		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	73246		1%
+communicate_tas	2912782		72%
+adc_task       	1030187		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	88006		1%
+communicate_tas	3639699		72%
+adc_task       	1285844		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	102777		1%
+communicate_tas	4366368		72%
+adc_task       	1541638		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	117533		1%
+communicate_tas	5093069		72%
+adc_task       	1797220		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	132223		1%
+communicate_tas	5819821		72%
+adc_task       	2053010		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	147046		1%
+communicate_tas	6546723		72%
+adc_task       	2308868		25%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	161610		1%
+communicate_tas	7273182		72%
+adc_task       	2564342		25%
+CH: 1 Unexpected1 length 0
+SEND_OK Problem!!
+Address is:126 
+ IPW5500
+ W5500 IP   : 192.168.1.126
+ W5500  : 255.255.255.0
+ W5500      : 192.168.1.1
+ TCP,W5500 TCP 
+ IP:192.168.1.102
+ :5000 
+ W5500W5500 
+ 車妊
+Software Version: V0.2,May  6 2023
+
+task: test_task, freestack: 238, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	187	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	12495		47%
+communicate_tas	6828		26%
+IDLE           	0		<1%
+adc_task       	5754		21%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	29243		2%
+communicate_tas	744744		72%
+IDLE           	0		<1%
+adc_task       	246203		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	110	4
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	46091		2%
+communicate_tas	1481649		73%
+IDLE           	1359		<1%
+adc_task       	486742		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	62136		2%
+communicate_tas	2217753		73%
+adc_task       	726895		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	76824		1%
+communicate_tas	2954215		73%
+adc_task       	966122		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	91603		1%
+communicate_tas	3690216		73%
+adc_task       	1205449		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	106333		1%
+communicate_tas	4426708		74%
+adc_task       	1444696		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	121234		1%
+communicate_tas	5163283		74%
+adc_task       	1684185		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	136075		1%
+communicate_tas	5899599		74%
+adc_task       	1923406		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	150989		1%
+communicate_tas	6635957		74%
+adc_task       	2162856		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	217	2
+
+taskname     count     %cpu
+test_task      	165839		1%
+communicate_tas	7372616		74%
+adc_task       	2402161		24%
+CH: 1 Unexpected1 length 0
+SEND_OK Problem!!
+Address is:126 
+ IPW5500
+ W5500 IP   : 192.168.1.126
+ W5500  : 255.255.255.0
+ W5500      : 192.168.1.1
+ TCP,W5500 TCP 
+ IP:192.168.1.102
+ :5000 
+ W5500W5500 
+ 車妊
+Software Version: V0.2,May  6 2023
+
+task: test_task, freestack: 238, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	187	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	12681		47%
+communicate_tas	7064		26%
+IDLE           	0		<1%
+adc_task       	5789		21%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+IDLE           	R	0	117	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	29375		2%
+communicate_tas	751478		73%
+IDLE           	0		<1%
+adc_task       	246276		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	45205		2%
+communicate_tas	1491730		73%
+adc_task       	486314		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	59862		1%
+communicate_tas	2234787		73%
+adc_task       	725876		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	74744		1%
+communicate_tas	2977663		74%
+adc_task       	965200		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	89729		1%
+communicate_tas	3720357		74%
+adc_task       	1204500		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	104783		1%
+communicate_tas	4463440		74%
+adc_task       	1444116		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	119824		1%
+communicate_tas	5206546		74%
+adc_task       	1683538		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	134796		1%
+communicate_tas	5949712		74%
+adc_task       	1923163		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	149909		1%
+communicate_tas	6693028		74%
+adc_task       	2162848		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	2005	3
+adc_task       	B	4	219	2
+
+taskname     count     %cpu
+test_task      	164751		1%
+communicate_tas	7435895		74%
+adc_task       	2402165		24%
+CH: 1 Unexpected1 length 0
+SEND_OK Problem!!

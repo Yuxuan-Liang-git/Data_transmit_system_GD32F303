@@ -28,6 +28,7 @@ static void adc_task(void *para)
 			xQueueReset(xQueue_buffer);
 			//	将缓存数据存入消息队列中
 			xQueueSendToBack(xQueue_buffer,cache_data,0);
+			
 			memset(cache_data,0,sizeof cache_data);
 			memcpy(cache_data,adc_value,64);	
 			count = 1;
@@ -44,5 +45,5 @@ static void adc_task(void *para)
  */
 void adc_task_init(void)
 {
-		xTaskCreate(adc_task, "adc_task", 256, NULL, OS_TASK_PRIO2, &adc_TaskHandel);
+		xTaskCreate(adc_task, "adc_task", 256, NULL, OS_TASK_PRIO4, &adc_TaskHandel);
 }
