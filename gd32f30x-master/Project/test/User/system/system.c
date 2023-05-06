@@ -15,6 +15,8 @@
 #include "adc_task.h"
 #include "communicate_task.h"
 
+
+
 void system_init(void)
 {
     printf("Software Version: %s,%s\n\n", GET_SOFTWARE_VER_STR(), get_complie_time());

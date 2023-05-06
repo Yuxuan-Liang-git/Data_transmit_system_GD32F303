@@ -10,2560 +10,2387 @@ Address is:126
  иоз│
 Software Version: V0.2,May  6 2023
 
-task: test_task, freestack: 238, proi: 1
+task: test_task, freestack: 233, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	187	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
 IDLE           	R	0	117	4
 adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	12418		46%
-communicate_tas	6912		25%
+test_task      	12149		46%
+communicate_tas	6994		27%
 IDLE           	0		<1%
-adc_task       	6192		23%
+adc_task       	5864		22%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
 IDLE           	R	0	117	4
 adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	28790		2%
-communicate_tas	734903		71%
+test_task      	27926		2%
+communicate_tas	752254		73%
 IDLE           	0		<1%
-adc_task       	262906		25%
+adc_task       	244502		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
 IDLE           	R	0	110	4
 adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	45482		2%
-communicate_tas	1462132		72%
-IDLE           	1504		<1%
-adc_task       	519904		25%
-1941
-1941
-1941
-2189
-2524
-2864
-3166
-3340
-3125
-2798
-2455
-2139
-1927
-2017
-2311
-2661
-2979
-3251
-3275
-3010
-2672
-2330
-2041
-1914
-2116
-2435
-2782
-3096
-3314
-3190
-2888
-2543
-communicate_task finished! 
-2916
-2916
-2916
-2571
-2238
-1976
-1949
-2204
-2533
-2876
-3175
-3331
-3111
-2789
-2443
-2128
-1927
-2027
-2323
-2663
-2993
-3254
-3266
-2996
-2660
-2322
-2031
-1917
-2123
-2444
-2783
-3102
-communicate_task finished! 
-3117
-3117
-3117
-3321
-3163
-2852
-2514
-2183
-1946
-1980
-2262
-2595
-2931
-3218
-3311
-3059
-2726
-2388
-2083
-1914
-2064
-2382
-2724
-3051
-3291
-3231
-2935
-2604
-2266
-1999
-1937
-2176
-communicate_task finished! 
-2197
-2197
-2197
-2531
-2871
-3171
-3331
-3107
-2792
-2450
-2131
-1928
-2021
-2316
-2655
-2992
-3258
-3270
-3000
-2666
-2327
-2032
-1916
-2121
-2446
-2783
-3102
-3318
-3185
-2876
-2535
-2210
-communicate_task finished! 
-2192
-2192
-2192
-1948
-1976
-2252
-2592
-2928
-3216
-3305
-3062
-2729
-2395
-2083
-1916
-2068
-2371
-2718
-3045
-3292
-3231
-2944
-2599
-2267
-1994
-1937
-2169
-2500
-2841
-3149
-3329
-3135
-communicate_task finished! 
-3323
-3323
-3323
-3149
-2834
-2491
-2172
-1937
-1997
-2275
-2619
-2953
-3228
-3290
-3039
-2707
-2364
-2064
-1912
-2086
-2404
-2747
-3067
-3299
-3218
-2915
-2578
-2248
-1979
-1944
-2200
-2531
-communicate_task finished! 
-2557
-2557
-2557
-2897
-3190
-3321
-3092
-2763
-2421
-2107
-1921
-2039
-2349
-2684
-3012
-3271
-3257
-2973
-2638
-2298
-2016
-1922
-2144
-2474
-2809
-3123
-3322
-3165
-2854
-2509
-2183
-1949
-communicate_task finished! 
-1937
-1937
-1937
-1995
-2287
-2623
-2960
-3236
-3288
-3035
-2701
-2356
-2064
-1911
-2090
-2409
-2748
-3075
-3302
-3210
-2907
-2570
-2236
-1973
-1949
-2200
-2534
-2876
-3174
-3324
-3114
-2787
-communicate_task finished! 
-2761
-2761
-2761
-2421
-2105
-1916
-2042
-2352
-2692
-3018
-3275
-3255
-2970
-2637
-2299
-2011
-1923
-2147
-2475
-2817
-3126
-3322
-3161
-2847
-2506
-2180
-1944
-1974
-2264
-2601
-2939
-3219
-communicate_task finished! 
-3230
-3230
-3230
-3295
-3035
-2706
-2366
-2062
-1915
-2087
-2400
-2744
-3069
-3302
-3213
-2916
-2580
-2242
-1981
-1948
-2195
-2533
-2865
-3170
-3331
-3117
-2793
-2451
-2133
-1924
-2019
-2317
-communicate_task finished! 
-2003
-2003
-2003
-2297
-2636
-2969
-3249
-3282
-3017
-2686
-2343
-2046
-1912
-2100
-2418
-2766
-3081
-3310
-3198
-2905
-2555
-2227
-1968
-1957
-2215
-2550
-2887
-3177
-3327
-3099
-2774
-2428
-communicate_task finished! 
-2408
-2408
-2408
-2097
-1920
-2053
-2359
-2701
-3033
-3282
-3246
-2962
-2620
-2283
-2004
-1930
-2158
-2486
-2827
-3141
-3326
-3150
-2832
-2492
-2170
-1940
-1989
-2276
-2614
-2948
-3228
-3298
-communicate_task finished! 
-3283
-3283
-3283
-3015
-2679
-2340
-2042
-1912
-2108
-2426
-2771
-3087
-3312
-3193
-2897
-2552
-2223
-1965
-1957
-2222
-2552
-2894
-3191
-3320
-3097
-2772
-2424
-2116
-1923
-2035
-2338
-2682
-communicate_task finished! 
-2708
-2708
-2708
-3037
-3282
-3241
-2956
-2614
-2279
-1999
-1930
-2162
-2492
-2834
-3146
-3326
-3148
-2830
-2483
-2167
-1935
-1993
-2286
-2619
-2955
-3235
-3294
-3036
-2702
-2363
-2058
-1910
-communicate_task finished! 
-2071
-2071
-2071
-1915
-2075
-2393
-2738
-3058
-3295
-3226
-2929
-2590
-2257
-1985
-1939
-2188
-2520
-2853
-3162
-3328
-3123
-2804
-2466
-2143
-1929
-2013
-2303
-2642
-2978
-3248
-3278
-3013
-communicate_task finished! 
-2990
-2990
-2990
-2650
-2313
-2023
-1920
-2130
-2455
-2794
-3109
-3324
-3173
-2867
-2525
-2196
-1951
-1970
-2249
-2587
-2917
-3211
-3309
-3068
-2741
-2400
-2089
-1917
-2055
-2365
-2711
-3036
-communicate_task finished! 
-3059
-3059
-3059
-3299
-3219
-2925
-2583
-2253
-1982
-1944
-2190
-2527
-2863
-3166
-3334
-3124
-2795
-2457
-2134
-1927
-2018
-2314
-2653
-2983
-3254
-3274
-3005
-2672
-2332
-2039
-1914
-2114
-communicate_task finished! 
-2140
-2140
-2140
-2466
-2812
-3124
-3321
-3165
-2851
-2509
-2185
-1950
-1979
-2262
-2600
-2928
-3218
-3303
-3058
-2725
-2384
-2078
-1913
-2071
-2379
-2723
-3050
-3291
-3228
-2935
-2596
-2263
-communicate_task finished! 
-2238
-2238
-2238
-1975
-1947
-2204
-2537
-2877
-3178
-3329
-3110
-2784
-2443
-2126
-1925
-2023
-2322
-2663
-2997
-3260
-3271
-2994
-2662
-2322
-2026
-1920
-2126
-2449
-2793
-3103
-3318
-3183
-communicate_task finished! 
-3312
-3312
-3312
-3190
-2882
-2547
-2212
-1959
-1963
-2228
-2566
-2907
-3197
-3319
-3084
-2762
-2416
-2105
-1920
-2044
-2352
-2693
-3021
-3278
-3250
-2968
-2625
-2295
-2006
-1930
-2148
-2480
-communicate_task finished! 
-2506
-2506
-2506
-2844
-3148
-3330
-3137
-2824
-2477
-2149
-1936
-2003
-2287
-2631
-2966
-3240
-3286
-3026
-2698
-2354
-2055
-1920
-2097
-2417
-2766
-3082
-3303
-3204
-2906
-2564
-2231
-1973
-communicate_task finished! 
-1958
-1958
-1958
-1965
-2240
-2575
-2912
-3202
-3316
-3075
-2747
-2406
-2096
-1917
-2049
-2356
-2701
-3027
-3283
-3249
-2961
-2626
-2287
-2001
-1930
-2158
-2485
-2826
-3139
-3325
-3152
-2836
-communicate_task finished! 
-2798
-2798
-2798
-2460
-2142
-1930
-2016
-2309
-2645
-2983
-3246
-3277
-3010
-2674
-2336
-2040
-1910
-2115
-2435
-2774
-3094
-3313
-3191
-2885
-2548
-2215
-1960
-1963
-2226
-2563
-2903
-3195
-communicate_task finished! 
-2892
-2892
-2892
-3189
-3323
-3093
-2765
-2427
-2113
-1925
-2040
-2344
-2682
-3014
-3271
-3258
-2977
-2640
-2301
-2016
-1923
-2144
-2467
-2807
-3125
-3322
-3167
-2851
-2516
-2190
-1948
-1984
-communicate_task finished! 
-2000
-2000
-2000
-2285
-2628
-2962
-3239
-3290
-3033
-2697
-2356
-2054
-1912
-2092
-2411
-2760
-3076
-3302
-3207
-2909
-2574
-2237
-1973
-1948
-2207
-2538
-2879
-3177
-3329
-3108
-2782
-2439
-communicate_task finished! 
-2416
-2416
-2416
-2103
-1921
-2041
-2350
-2690
-3018
-3277
-3248
-2964
-2629
-2297
-2012
-1926
-2147
-2477
-2819
-3129
-3325
-3159
-2845
-2503
-2180
-1945
-1984
-2265
-2605
-2941
-3222
-3298
-communicate_task finished! 
-3288
-3288
-3288
-3027
-2693
-2351
-2055
-1913
-2097
-2414
-2756
-3079
-3307
-3124
-2912
-2563
-2233
-1968
-1947
-2211
-2544
-2884
-3183
-3327
-3105
-2780
-2444
-2123
-1925
-2026
-2329
-2672
-communicate_task finished! 
-2694
-2694
-2694
-3023
-3275
-3250
-2968
-2629
-2293
-2005
-1928
-2149
-2477
-2822
-3131
-3324
-3156
-2843
-2501
-2178
-1944
-1988
-2268
-2606
-2942
-3227
-3298
-3052
-2717
-2373
-2070
-1914
-communicate_task finished! 
-2084
-2084
-2084
-1915
-2064
-2379
-2724
-3043
-3288
-3238
-2947
-2601
-2270
-1993
-1932
-2174
-2510
-2838
-3148
-3329
-3135
-2818
-2475
-2152
-1932
-2003
-2294
-2632
-2969
-3243
-3288
-3025
-communicate_task finished! 
-2995
-2995
-2995
-2665
-2330
-2033
-1916
-2122
-2447
-2781
-3098
-3316
-3188
-2873
-2537
-2210
-1958
-1964
-2235
-2573
-2905
-3204
-3317
-3091
-2752
-2413
-2101
-1916
-2047
-2352
-2699
-3025
-communicate_task finished! 
-3042
-3042
-3042
-3287
-3236
-2941
-2609
-2268
-1991
-1935
-2177
-2504
-2847
-3149
-3331
-3133
-2817
-2474
-2153
-1935
-2003
-2298
-2630
-2968
-3241
-3285
-3023
-2693
-2348
-2052
-1912
-2098
-communicate_task finished! 
-2117
-2117
-2117
-2440
-2784
-3101
-3310
-3186
-2883
-2538
-2212
-1960
-1964
-2232
-2569
-2907
-3199
-3318
-3085
-2754
-2411
-2099
-1918
-2050
-2352
-2697
-3027
-3281
-3248
-2966
-2629
-2287
-communicate_task finished! 
-2649
-2649
-2649
-2309
-2020
-1918
-2135
-2457
-2804
-3115
-3318
-3173
-2858
-2519
-2192
-1950
-1975
-2247
-2584
-2926
-3212
-3307
-3065
-2736
-2393
-2088
-1916
-2064
-2370
-2711
-3039
-3288
-communicate_task finished! 
-3292
-3292
-3292
-3228
-2939
-2598
-2266
-1992
-1937
-2180
-2508
-2851
-3156
-3330
-3133
-2812
-2472
-2149
-1932
-2004
-2296
-2638
-2968
-3247
-3282
-3020
-2685
-2346
-2080
-1909
-2104
-2419
-communicate_task finished! 
-2428
-2428
-2428
-2772
-3093
-3310
-3195
-2892
-2549
-2217
-1959
-1958
-2222
-2558
-2896
-3193
-3322
-3090
-2765
-2424
-2114
-1925
-2040
-2346
-2689
-3016
-3274
-3257
-2975
-2637
-2303
-2016
-communicate_task finished! 
-2006
-2006
-2006
-1928
-2151
-2487
-2825
-3137
-3324
-3155
-2844
-2499
-2172
-1939
-1987
-2272
-2611
-2947
-3225
-3299
-3048
-2716
-2369
-2071
-1913
-2081
-2394
-2744
-3061
-3298
-3223
-2923
-communicate_task finished! 
-2920
-2920
-2920
-2580
-2241
-1978
-1945
-2196
-2529
-2869
-3171
-3333
-3114
-2796
-2452
-2137
-1922
-2015
-2316
-2656
-2987
-3256
-3271
-3000
-2664
-2332
-2032
-1915
-2115
-2441
-2784
-3100
-communicate_task finished! 
-2761
-2761
-2761
-3079
-3303
-3212
-2903
-2564
-2234
-1972
-1950
-2209
-2544
-2881
-3179
-3325
-3107
-2778
-2440
-2121
-1923
-2030
-2330
-2673
-2998
-3266
-3264
-2992
-2656
-2316
-2027
-1920
-communicate_task finished! 
-1927
-1927
-1927
-2151
-2476
-2817
-3130
-3326
-3161
-2849
-2504
-2180
-1944
-1982
-2270
-2602
-2940
-3222
-3304
-3050
-2726
-2380
-2074
-1914
-2073
-2388
-2730
-3058
-3295
-3229
-2932
-2596
-communicate_task finished! 
-2567
-2567
-2567
-2241
-1973
-1949
-2205
-2537
-2881
-3174
-3327
-3109
-2784
-2442
-2127
-1926
-2026
-2326
-2667
-2997
-3264
-ta32s6k:1
- te2s9t_94t
-a26s5k4, 
-fr2e3e15
-s20t2a8c
-k: 1197185
-, 2pr1o2i7:
- 1
-t2a44s9k
-2na7m9e7 
-   3 1st0a6t
-3e 3  1 7
- pcroiomrmiuntyi c a  tfree_esttaasckk   f niumnbiers
-hed! 
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname  2 77 8 
-cou2n7t7 8
-  2 7 78%
-c2pu
-439
-2122
-1924
-20t3e4
-st2_3ta3s1
-k 26 7 0 
-  30	068
-35738		226%2
-
-c32o6m6mu
-ni2c9at8e8_
-tas2	6251900
-902331		172
-%201
-7a
-19d2c1_
-ta2sk1 34 
-  245 6 
- 27	97798
-07351	12
-	253%317
-
-3175
-2865
-2525
-2196
-1949
-1971
-2245
-2585
-2920
-3210
-communicate_task finished! 
-1930
-1930
-1930
-2155
-2487
-2830
-3135
-3322
-3151
-2836
-2496
-2168
-1942
-1992
-2275
-2618
-2950
-3229
-3294
-3040
-2711
-2374
-2068
-1912
-2079
-2399
-2740
-3065
-3299
-3222
-2924
-2585
-communicate_task finished! 
-2944
-2944
-2944
-2598
-2267
-1992
-1934
-2173
-2509
-2847
-3154
-3327
-3130
-2816
-2474
-2153
-1938
-2003
-2292
-2628
-2967
-3242
-3284
-3021
-2694
-2351
-2053
-1925
-2098
-2418
-2757
-3076
-communicate_task finished! 
-3096
-3096
-3096
-3313
-3191
-2884
-2547
-2220
-1964
-1959
-2230
-2565
-2900
-3193
-3320
-3084
-2758
-2417
-2108
-1920
-2040
-2348
-2691
-3016
-3271
-3246
-2971
-2631
-2294
-2040
-1926
-2151
-communicate_task finished! 
-2169
-2169
-2169
-2499
-2836
-3148
-3331
-3137
-2823
-2484
-2158
-1936
-1994
-2288
-2627
-2963
-3242
-3289
-3025
-2696
-2354
-2051
-1911
-2091
-2414
-2753
-3076
-3296
-3210
-2907
-2568
-2240
-communicate_task finished! 
-2225
-2225
-2225
-1966
-1957
-2213
-2548
-2889
-3186
-3322
-3101
-2776
-2429
-2119
-1920
-2032
-2335
-2674
-3005
-3265
-3260
-2983
-2649
-2312
-2022
-1920
-2137
-2461
-2803
-3117
-3321
-3170
-communicate_task finished! 
-3159
-3159
-3159
-2849
-2509
-2188
-1942
-1979
-2261
-2602
-2932
-3219
-3302
-3055
-2727
-2380
-2080
-1914
-2070
-2382
-2726
-3049
-3289
-3230
-2929
-2597
-2266
-1992
-1935
-2179
-2592
-2851
-communicate_task finished! 
-2486
-2486
-2486
-2827
-3138
-3327
-3153
-2836
-2492
-2173
-1940
-1991
-2276
-2612
-2947
-3228
-3296
-3040
-2709
-2369
-2072
-1913
-2084
-2400
-2743
-3067
-3296
-3222
-2920
-2584
-2250
-1978
-communicate_task finished! 
-1973
-1973
-1973
-1950
-2208
-2540
-2883
-3176
-3324
-3111
-2780
-2441
-2127
-1923
-2029
-2327
-2666
-3000
-3258
-3266
-2992
-2652
-2319
-2026
-1918
-2130
-2456
-2794
-3108
-3320
-3177
-2866
-communicate_task finished! 
-2856
-2856
-2856
-2517
-2191
-1951
-1975
-2252
-2592
-2925
-3217
-3312
-3062
-2734
-2389
-2087
-1916
-2063
-2376
-2721
-3043
-3285
-3234
-2945
-2605
-2269
-1998
-1933
-2172
-2499
-2845
-3148
-communicate_task finished! 
-3157
-3157
-3157
-3329
-3127
-2806
-2468
-2146
-1930
-2007
-2303
-2646
-2975
-3246
-3284
-3014
-2682
-2324
-2045
-1910
-2105
-2426
-2766
-3087
-3310
-3199
-2896
-2555
-2227
-1963
-1958
-2215
-communicate_task finished! 
-1948
-1948
-1948
-2200
-2527
-2868
-3174
-3328
-3111
-2791
-2452
-2135
-1932
-2018
-2319
-2656
-2986
-3256
-3271
-3003
-2663
-2328
-2030
-1916
-2118
-2442
-2783
-3098
-3319
-3187
-2881
-2537
-communicate_task finished! 
-2519
-2519
-2519
-2196
-1952
-1970
-2250
-2586
-2923
-3209
-3310
-3067
-2738
-2392
-2090
-1914
-2059
-2374
-2714
-3043
-3285
-3241
-2947
-2611
-2277
-2002
-1933
-2169
-2502
-2838
-3145
-3328
-communicate_task finished! 
-3337
-3337
-3337
-3126
-2804
-2460
-2141
-1930
-2016
-2308
-2651
-2982
-3251
-3279
-3018
-2675
-2338
-2046
-1913
-2110
-2429
-2771
-3091
-3313
-3195
-2892
-2545
-2218
-1960
-1959
-2225
-2557
-communicate_task finished! 
-2575
-2575
-2575
-2912
-3201
-3316
-3078
-2752
-2408
-2098
-1916
-2047
-2359
-2697
-3031
-3278
-3249
-2963
-2623
-2289
-2008
-1928
-2159
-2485
-2821
-3132
-3331
-3157
-2838
-2496
-2177
-1939
-communicate_task finished! 
-1936
-1936
-1936
-1999
-2285
-2621
-2959
-3233
-3289
-3030
-2701
-2360
-2060
-1912
-2095
-2406
-2750
-3066
-3302
-3214
-2915
-2575
-2240
-1977
-1949
-2199
-2534
-2871
-3173
-3329
-3110
-2789
-communicate_task finished! 
-3139
-3139
-3139
-2818
-2474
-2155
-1935
-2002
-2293
-2632
-2968
-3240
-3288
-3023
-2690
-2348
-2050
-1912
-2099
-2416
-2761
-3081
-3309
-3207
-2904
-2567
-2232
-1974
-1946
-2209
-2542
-2881
-communicate_task finished! 
-2888
-2888
-2888
-3189
-3323
-3095
-2770
-2429
-2113
-1921
-2037
-2336
-2677
-3010
-3270
-3253
-2977
-2643
-2309
-2019
-1923
-2136
-2464
-2810
-3117
-3326
-3173
-2857
-2515
-2190
-1951
-1977
-communicate_task finished! 
-1979
-1979
-1979
-2261
-2597
-2933
-3219
-3300
-3060
-2725
-2381
-2078
-1915
-2071
-2388
-2723
-3054
-3290
-3230
-2933
-2593
-2263
-1989
-1939
-2177
-2515
-2851
-3155
-3334
-3130
-2811
-2469
-communicate_task finished! 
-2449
-2449
-2449
-2136
-1927
-2018
-2316
-2658
-2986
-3255
-3275
-3006
-2666
-2332
-2034
-1920
-2116
-2435
-2782
-3095
-3313
-3184
-2882
-2545
-2212
-1959
-1962
-2231
-2565
-2905
-3196
-3319
-communicate_task finished! 
-3178
-3178
-3178
-3324
-3108
-2782
-2438
-2125
-1920
-2028
-2328
-2668
-2996
-3262
-3266
-2987
-2654
-2319
-2026
-1918
-2131
-2451
-2797
-3111
-3317
-3178
-2867
-2528
-2194
-1951
-1972
-2242
-communicate_task finished! 
-2259
-2259
-2259
-2592
-2932
-3219
-3308
-3060
-2730
-2389
-2079
-1916
-2072
-2375
-2720
-3044
-3287
-3233
-2939
-2603
-2273
-1993
-1938
-2174
-2503
-2847
-3155
-3332
-3138
-2816
-2468
-2153
-communicate_task finished! 
-2143
-2143
-2143
-1928
-2012
-2311
-2648
-2980
-3252
-3278
-3009
-2674
-2334
-2043
-1916
-2110
-2433
-2777
-3093
-3312
-3190
-2887
-2549
-2219
-1964
-1958
-2224
-2560
-2900
-3194
-3328
-3091
-communicate_task finished! 
-3076
-3076
-3076
-2748
-2409
-2095
-1916
-2050
-2360
-2703
-3028
-3281
-3250
-2963
-2618
-2288
-2010
-1928
-2153
-2484
-2828
-3137
-3324
-3152
-2834
-2496
-2171
-1939
-1990
-2274
-2614
-2950
-communicate_task finished! 
-2965
-2965
-2965
-3241
-3285
-3021
-2690
-2350
-2047
-1900
-2100
-2416
-2755
-3076
-3305
-3204
-2903
-2561
-2229
-1969
-1951
-2212
-2549
-2882
-3179
-3323
-3103
-2776
-2432
-2121
-1922
-2030
-communicate_task finished! 
+test_task      	43834		2%
+communicate_tas	1497138		73%
+IDLE           	754		<1%
+adc_task       	483252		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	79948		1%
-communicate_tas	2919545		72%
-adc_task       	1034992		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	94621		1%
-communicate_tas	3645940		72%
-adc_task       	1290488		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	109371		1%
-communicate_tas	4372924		72%
-adc_task       	1546338		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	124138		1%
-communicate_tas	5099634		72%
-adc_task       	1801939		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	138680		1%
-communicate_tas	5826152		72%
-adc_task       	2057631		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	153356		1%
-communicate_tas	6552546		72%
-adc_task       	2313123		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	1975	3
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	168175		1%
-communicate_tas	7279446		72%
-adc_task       	2568986		25%
-CH: 1 Unexpected1 length 0
-SEND_OK Problem!!
-1927
-1927
-1927
-2014
-2316
-2655
-2988
-3257
-3268
-3001
-2667
-2329
-2036
-1917
-2114
-2439
-2782
-3101
-3315
-3186
-2879
-2533
-2212
-1959
-1962
-2232
-2568
-2906
-3197
-3315
-3081
-2752
-communicate_task finished! 
-Address is:126 
- IPW5500
- W5500 IP   : 192.168.1.126
- W5500  : 255.255.255.0
- W5500      : 192.168.1.1
- TCP,W5500 TCP 
- IP:192.168.1.102
- :5000 
- W5500W5500 
- иоз│
-Software Version: V0.2,May  6 2023
-
-task: test_task, freestack: 238, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	187	1
-communicate_tas	R	1	2005	3
-IDLE           	R	0	117	4
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	12418		46%
-communicate_tas	6912		25%
-IDLE           	0		<1%
-adc_task       	6192		23%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-IDLE           	R	0	117	4
-adc_task       	B	4	224	2
-
-taskname     count     %cpu
-test_task      	28790		2%
-communicate_tas	734903		71%
-IDLE           	0		<1%
-adc_task       	262906		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	44192		2%
-communicate_tas	1460338		72%
-adc_task       	519136		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	58716		1%
-communicate_tas	2186563		72%
-adc_task       	774566		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	73246		1%
-communicate_tas	2912782		72%
-adc_task       	1030187		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	88006		1%
-communicate_tas	3639699		72%
-adc_task       	1285844		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	102777		1%
-communicate_tas	4366368		72%
-adc_task       	1541638		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	117533		1%
-communicate_tas	5093069		72%
-adc_task       	1797220		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	132223		1%
-communicate_tas	5819821		72%
-adc_task       	2053010		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	147046		1%
-communicate_tas	6546723		72%
-adc_task       	2308868		25%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	161610		1%
-communicate_tas	7273182		72%
-adc_task       	2564342		25%
-CH: 1 Unexpected1 length 0
-SEND_OK Problem!!
-Address is:126 
- IPW5500
- W5500 IP   : 192.168.1.126
- W5500  : 255.255.255.0
- W5500      : 192.168.1.1
- TCP,W5500 TCP 
- IP:192.168.1.102
- :5000 
- W5500W5500 
- иоз│
-Software Version: V0.2,May  6 2023
-
-task: test_task, freestack: 238, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	187	1
-communicate_tas	R	1	2005	3
-IDLE           	R	0	117	4
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	12495		47%
-communicate_tas	6828		26%
-IDLE           	0		<1%
-adc_task       	5754		21%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-IDLE           	R	0	117	4
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	29243		2%
-communicate_tas	744744		72%
-IDLE           	0		<1%
-adc_task       	246203		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
 IDLE           	R	0	110	4
-adc_task       	B	4	217	2
+adc_task       	B	4	222	2
 
 taskname     count     %cpu
-test_task      	46091		2%
-communicate_tas	1481649		73%
-IDLE           	1359		<1%
-adc_task       	486742		24%
+test_task      	59896		1%
+communicate_tas	2237746		73%
+IDLE           	2680		<1%
+adc_task       	725398		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
 
 taskname     count     %cpu
-test_task      	62136		2%
-communicate_tas	2217753		73%
-adc_task       	726895		24%
+test_task      	76250		1%
+communicate_tas	2983793		74%
+IDLE           	2680		<1%
+adc_task       	964440		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
 
 taskname     count     %cpu
-test_task      	76824		1%
-communicate_tas	2954215		73%
-adc_task       	966122		24%
+test_task      	92494		1%
+communicate_tas	3729494		74%
+IDLE           	2680		<1%
+adc_task       	1203486		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
 
 taskname     count     %cpu
-test_task      	91603		1%
-communicate_tas	3690216		73%
-adc_task       	1205449		24%
+test_task      	108532		1%
+communicate_tas	4475168		74%
+IDLE           	2680		<1%
+adc_task       	1442479		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
 
 taskname     count     %cpu
-test_task      	106333		1%
-communicate_tas	4426708		74%
-adc_task       	1444696		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	121234		1%
-communicate_tas	5163283		74%
-adc_task       	1684185		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	136075		1%
-communicate_tas	5899599		74%
-adc_task       	1923406		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	150989		1%
-communicate_tas	6635957		74%
-adc_task       	2162856		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	217	2
-
-taskname     count     %cpu
-test_task      	165839		1%
-communicate_tas	7372616		74%
-adc_task       	2402161		24%
+test_task      	124908		1%
+communicate_tas	5220916		74%
+IDLE           	2680		<1%
+adc_task       	1681564		23%
 CH: 1 Unexpected1 length 0
 SEND_OK Problem!!
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	141372		1%
+communicate_tas	5497191		68%
+IDLE           	460465		5%
+adc_task       	1932521		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	157775		1%
+communicate_tas	6242147		69%
+IDLE           	460465		5%
+adc_task       	2172928		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	174054		1%
+communicate_tas	6988418		69%
+IDLE           	460465		4%
+adc_task       	2412139		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	190542		1%
+communicate_tas	7734058		70%
+IDLE           	460465		4%
+adc_task       	2651098		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	207058		1%
+communicate_tas	8479633		70%
+IDLE           	460465		3%
+adc_task       	2890192		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	223728		1%
+communicate_tas	9225293		70%
+IDLE           	460465		3%
+adc_task       	3129334		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	240399		1%
+communicate_tas	9971176		71%
+IDLE           	460465		3%
+adc_task       	3368541		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	256902		1%
+communicate_tas	10717456		71%
+IDLE           	460465		3%
+adc_task       	3607809		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	273217		1%
+communicate_tas	11463847		71%
+IDLE           	460465		2%
+adc_task       	3847055		23%
+CH: 1 Unexpected1 length 0
+SEND_OK Problem!!
+SEND_OK Problem!!
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+communicate_tas	B	1	1467	3
+
+taskname     count     %cpu
+test_task      	292554		1%
+communicate_tas	11925734		69%
+IDLE           	734656		4%
+adc_task       	4092363		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	308902		1%
+communicate_tas	12671720		70%
+IDLE           	734656		4%
+adc_task       	4331334		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	325500		1%
+communicate_tas	13417940		70%
+IDLE           	734656		3%
+adc_task       	4570665		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	342058		1%
+communicate_tas	14164167		70%
+IDLE           	734656		3%
+adc_task       	4809876		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	358615		1%
+communicate_tas	14909840		70%
+IDLE           	734656		3%
+adc_task       	5048806		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	375236		1%
+communicate_tas	15656189		70%
+IDLE           	734656		3%
+adc_task       	5288176		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	391744		1%
+communicate_tas	16402192		71%
+IDLE           	734656		3%
+adc_task       	5527180		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	408372		1%
+communicate_tas	17148381		71%
+IDLE           	734656		3%
+adc_task       	5766514		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	424944		1%
+communicate_tas	17894597		71%
+IDLE           	734656		2%
+adc_task       	6005721		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	441510		1%
+communicate_tas	18640269		71%
+IDLE           	734656		2%
+adc_task       	6244642		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	458133		1%
+communicate_tas	19386615		71%
+IDLE           	734656		2%
+adc_task       	6484014		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	474634		1%
+communicate_tas	20132626		71%
+IDLE           	734656		2%
+adc_task       	6723016		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	491236		1%
+communicate_tas	20878834		71%
+IDLE           	734656		2%
+adc_task       	6962357		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	507795		1%
+communicate_tas	21625065		71%
+IDLE           	734656		2%
+adc_task       	7201562		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	524362		1%
+communicate_tas	22370733		71%
+IDLE           	734656		2%
+adc_task       	7440488		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	540991		1%
+communicate_tas	23117075		72%
+IDLE           	734656		2%
+adc_task       	7679859		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	557489		1%
+communicate_tas	23863086		72%
+IDLE           	734656		2%
+adc_task       	7918864		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	574108		1%
+communicate_tas	24609288		72%
+IDLE           	734656		2%
+adc_task       	8158194		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	590689		1%
+communicate_tas	25355494		72%
+IDLE           	734656		2%
+adc_task       	8397404		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	607263		1%
+communicate_tas	26101154		72%
+IDLE           	734656		2%
+adc_task       	8636330		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	623891		1%
+communicate_tas	26847492		72%
+IDLE           	734656		1%
+adc_task       	8875703		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	640395		1%
+communicate_tas	27593494		72%
+IDLE           	734656		1%
+adc_task       	9114716		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	657017		1%
+communicate_tas	28339686		72%
+IDLE           	734656		1%
+adc_task       	9354051		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	673588		1%
+communicate_tas	29085902		72%
+IDLE           	734656		1%
+adc_task       	9593259		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	690147		1%
+communicate_tas	29831574		72%
+IDLE           	734656		1%
+adc_task       	9832191		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	706761		1%
+communicate_tas	30577932		72%
+IDLE           	734656		1%
+adc_task       	10071559		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	723324		1%
+communicate_tas	31323883		72%
+IDLE           	734656		1%
+adc_task       	10310562		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	739967		1%
+communicate_tas	32070056		72%
+IDLE           	734656		1%
+adc_task       	10549894		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	756572		1%
+communicate_tas	32816237		72%
+IDLE           	734656		1%
+adc_task       	10789103		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	773262		1%
+communicate_tas	33562519		72%
+IDLE           	734656		1%
+adc_task       	11028345		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	789652		1%
+communicate_tas	34308716		72%
+IDLE           	734656		1%
+adc_task       	11267496		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	806227		1%
+communicate_tas	35054298		72%
+IDLE           	734656		1%
+adc_task       	11506399		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	822881		1%
+communicate_tas	35800461		72%
+IDLE           	734656		1%
+adc_task       	11745731		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	839488		1%
+communicate_tas	36546644		72%
+IDLE           	734656		1%
+adc_task       	11984937		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	856176		1%
+communicate_tas	37292923		72%
+IDLE           	734656		1%
+adc_task       	12224187		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	872567		1%
+communicate_tas	38039120		72%
+IDLE           	734656		1%
+adc_task       	12463338		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	889110		1%
+communicate_tas	38784727		73%
+IDLE           	734656		1%
+adc_task       	12702251		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	905729		1%
+communicate_tas	39530921		73%
+IDLE           	734656		1%
+adc_task       	12941587		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	922331		1%
+communicate_tas	40277104		73%
+IDLE           	734656		1%
+adc_task       	13180798		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	939027		1%
+communicate_tas	41023381		73%
+IDLE           	734656		1%
+adc_task       	13420041		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	955410		1%
+communicate_tas	41769585		73%
+IDLE           	734656		1%
+adc_task       	13659190		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	971980		1%
+communicate_tas	42515165		73%
+IDLE           	734656		1%
+adc_task       	13898105		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	988635		1%
+communicate_tas	43261332		73%
+IDLE           	734656		1%
+adc_task       	14137433		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1005247		1%
+communicate_tas	44007506		73%
+IDLE           	734656		1%
+adc_task       	14376643		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1022008		1%
+communicate_tas	44753710		73%
+IDLE           	734656		1%
+adc_task       	14615892		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1038463		1%
+communicate_tas	45499846		73%
+IDLE           	734656		1%
+adc_task       	14855036		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1055027		1%
+communicate_tas	46246101		73%
+IDLE           	734656		1%
+adc_task       	15094242		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1071921		1%
+communicate_tas	46992412		73%
+IDLE           	734656		1%
+adc_task       	15333543		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1088686		1%
+communicate_tas	47738468		73%
+IDLE           	734656		1%
+adc_task       	15572746		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1105421		1%
+communicate_tas	48484549		73%
+IDLE           	734656		1%
+adc_task       	15811954		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1122320		1%
+communicate_tas	49230239		73%
+IDLE           	734656		1%
+adc_task       	16051104		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1138973		1%
+communicate_tas	49976404		73%
+IDLE           	734656		1%
+adc_task       	16290311		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1155446		1%
+communicate_tas	50722673		73%
+IDLE           	734656		1%
+adc_task       	16529498		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1172098		1%
+communicate_tas	51468841		73%
+IDLE           	734656		1%
+adc_task       	16768703		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1188835		1%
+communicate_tas	52215075		73%
+IDLE           	734656		1%
+adc_task       	17007947		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1205336		1%
+communicate_tas	52961316		73%
+IDLE           	734656		1%
+adc_task       	17247132		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1222028		1%
+communicate_tas	53707598		73%
+IDLE           	734656		1%
+adc_task       	17486501		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1238664		1%
+communicate_tas	54453468		73%
+IDLE           	734656		<1%
+adc_task       	17725510		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1255373		1%
+communicate_tas	55199575		73%
+IDLE           	734656		<1%
+adc_task       	17964844		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1272034		1%
+communicate_tas	55945698		73%
+IDLE           	734656		<1%
+adc_task       	18204056		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1288796		1%
+communicate_tas	56691902		73%
+IDLE           	734656		<1%
+adc_task       	18443311		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1305260		1%
+communicate_tas	57438026		73%
+IDLE           	734656		<1%
+adc_task       	18682457		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1321916		1%
+communicate_tas	58184186		73%
+IDLE           	734656		<1%
+adc_task       	18921667		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1338870		1%
+communicate_tas	58930425		73%
+IDLE           	734656		<1%
+adc_task       	19160978		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1355441		1%
+communicate_tas	59677134		73%
+IDLE           	734656		<1%
+adc_task       	19400300		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1372248		1%
+communicate_tas	60423296		73%
+IDLE           	734656		<1%
+adc_task       	19639545		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1388748		1%
+communicate_tas	61169535		73%
+IDLE           	734656		<1%
+adc_task       	19878734		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1405521		1%
+communicate_tas	61915739		73%
+IDLE           	734656		<1%
+adc_task       	20118101		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1422228		1%
+communicate_tas	62661540		73%
+IDLE           	734656		<1%
+adc_task       	20357107		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1438940		1%
+communicate_tas	63407646		73%
+IDLE           	734656		<1%
+adc_task       	20596439		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1455613		1%
+communicate_tas	64153763		73%
+IDLE           	734656		<1%
+adc_task       	20835645		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1472374		1%
+communicate_tas	64899971		73%
+IDLE           	734656		<1%
+adc_task       	21074893		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1488838		1%
+communicate_tas	65646095		73%
+IDLE           	734656		<1%
+adc_task       	21314041		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1505497		1%
+communicate_tas	66392257		73%
+IDLE           	734656		<1%
+adc_task       	21553245		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1522451		1%
+communicate_tas	67138498		73%
+IDLE           	734656		<1%
+adc_task       	21792556		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1539030		1%
+communicate_tas	67885198		73%
+IDLE           	734656		<1%
+adc_task       	22031879		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1555839		1%
+communicate_tas	68631359		73%
+IDLE           	734656		<1%
+adc_task       	22271122		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1572342		1%
+communicate_tas	69377590		73%
+IDLE           	734656		<1%
+adc_task       	22510316		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1589118		1%
+communicate_tas	70123786		73%
+IDLE           	734656		<1%
+adc_task       	22749685		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1605753		1%
+communicate_tas	70869659		73%
+IDLE           	734656		<1%
+adc_task       	22988694		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1622456		1%
+communicate_tas	71615771		73%
+IDLE           	734656		<1%
+adc_task       	23228025		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1639212		1%
+communicate_tas	72361800		73%
+IDLE           	734656		<1%
+adc_task       	23467237		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1655981		1%
+communicate_tas	73107996		73%
+IDLE           	734656		<1%
+adc_task       	23706491		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1672449		1%
+communicate_tas	73854116		73%
+IDLE           	734656		<1%
+adc_task       	23945639		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1689105		1%
+communicate_tas	74600273		73%
+IDLE           	734656		<1%
+adc_task       	24184852		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1706062		1%
+communicate_tas	75346511		73%
+IDLE           	734656		<1%
+adc_task       	24424166		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1722637		1%
+communicate_tas	76093210		73%
+IDLE           	734656		<1%
+adc_task       	24663492		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1739444		1%
+communicate_tas	76839373		73%
+IDLE           	734656		<1%
+adc_task       	24902741		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1755945		1%
+communicate_tas	77585610		73%
+IDLE           	734656		<1%
+adc_task       	25141929		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1772708		1%
+communicate_tas	78331815		73%
+IDLE           	734656		<1%
+adc_task       	25381302		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1789421		1%
+communicate_tas	79077610		73%
+IDLE           	734656		<1%
+adc_task       	25620311		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1806118		1%
+communicate_tas	79823730		73%
+IDLE           	734656		<1%
+adc_task       	25859642		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1822788		1%
+communicate_tas	80569850		73%
+IDLE           	734656		<1%
+adc_task       	26098848		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1839562		1%
+communicate_tas	81316046		73%
+IDLE           	734656		<1%
+adc_task       	26338094		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1856022		1%
+communicate_tas	82062172		73%
+IDLE           	734656		<1%
+adc_task       	26577246		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1872687		1%
+communicate_tas	82808323		73%
+IDLE           	734656		<1%
+adc_task       	26816452		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1889653		1%
+communicate_tas	83554557		73%
+IDLE           	734656		<1%
+adc_task       	27055760		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1906260		1%
+communicate_tas	84301383		73%
+IDLE           	734656		<1%
+adc_task       	27295144		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1922979		1%
+communicate_tas	85047543		73%
+IDLE           	734656		<1%
+adc_task       	27534391		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1939788		1%
+communicate_tas	85793608		73%
+IDLE           	734656		<1%
+adc_task       	27773769		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1956837		1%
+communicate_tas	86539207		73%
+IDLE           	734656		<1%
+adc_task       	28012960		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1973567		1%
+communicate_tas	87285169		73%
+IDLE           	734656		<1%
+adc_task       	28252173		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1990278		1%
+communicate_tas	88031338		73%
+IDLE           	734656		<1%
+adc_task       	28491421		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2007339		1%
+communicate_tas	88777076		73%
+IDLE           	734656		<1%
+adc_task       	28730652		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2024313		1%
+communicate_tas	89522900		73%
+IDLE           	734656		<1%
+adc_task       	28969883		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2041078		1%
+communicate_tas	90268861		73%
+IDLE           	734656		<1%
+adc_task       	29209090		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2058127		1%
+communicate_tas	91014615		73%
+IDLE           	734656		<1%
+adc_task       	29448317		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2074848		1%
+communicate_tas	91760623		73%
+IDLE           	734656		<1%
+adc_task       	29687525		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2091257		1%
+communicate_tas	92507016		73%
+IDLE           	734656		<1%
+adc_task       	29926753		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2107882		1%
+communicate_tas	93253344		73%
+IDLE           	734656		<1%
+adc_task       	30166023		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2124696		1%
+communicate_tas	93999404		73%
+IDLE           	734656		<1%
+adc_task       	30405275		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2141196		1%
+communicate_tas	94745704		73%
+IDLE           	734656		<1%
+adc_task       	30644506		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2157922		1%
+communicate_tas	95491707		73%
+IDLE           	734656		<1%
+adc_task       	30883714		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2175023		1%
+communicate_tas	96237409		73%
+IDLE           	734656		<1%
+adc_task       	31122942		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2192065		1%
+communicate_tas	96983165		73%
+IDLE           	734656		<1%
+adc_task       	31362176		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2208890		1%
+communicate_tas	97729219		73%
+IDLE           	734656		<1%
+adc_task       	31601546		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2225937		1%
+communicate_tas	98474823		73%
+IDLE           	734656		<1%
+adc_task       	31840735		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2242664		1%
+communicate_tas	99220791		73%
+IDLE           	734656		<1%
+adc_task       	32079947		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2259369		1%
+communicate_tas	99966959		73%
+IDLE           	734656		<1%
+adc_task       	32319203		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2276437		1%
+communicate_tas	100712689		73%
+IDLE           	734656		<1%
+adc_task       	32558435		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2293500		1%
+communicate_tas	101458426		73%
+IDLE           	734656		<1%
+adc_task       	32797664		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2310268		1%
+communicate_tas	102204383		73%
+IDLE           	734656		<1%
+adc_task       	33036875		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2327325		1%
+communicate_tas	102950131		73%
+IDLE           	734656		<1%
+adc_task       	33276103		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2344030		1%
+communicate_tas	103696146		73%
+IDLE           	734656		<1%
+adc_task       	33515317		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2360501		1%
+communicate_tas	104442473		73%
+IDLE           	734656		<1%
+adc_task       	33754548		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2377116		1%
+communicate_tas	105188807		73%
+IDLE           	734656		<1%
+adc_task       	33993820		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2394007		1%
+communicate_tas	105934792		73%
+IDLE           	734656		<1%
+adc_task       	34233071		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2410813		1%
+communicate_tas	106681400		73%
+IDLE           	734656		<1%
+adc_task       	34472583		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2427625		1%
+communicate_tas	107427281		73%
+IDLE           	734656		<1%
+adc_task       	34711795		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2444479		1%
+communicate_tas	108173303		73%
+IDLE           	734656		<1%
+adc_task       	34951047		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2461555		1%
+communicate_tas	108919028		73%
+IDLE           	734656		<1%
+adc_task       	35190277		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2478611		1%
+communicate_tas	109664764		73%
+IDLE           	734656		<1%
+adc_task       	35429515		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2495428		1%
+communicate_tas	110410669		73%
+IDLE           	734656		<1%
+adc_task       	35668728		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2512496		1%
+communicate_tas	111156406		73%
+IDLE           	734656		<1%
+adc_task       	35907956		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2529201		1%
+communicate_tas	111902421		73%
+IDLE           	734656		<1%
+adc_task       	36147173		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2545672		1%
+communicate_tas	112648755		73%
+IDLE           	734656		<1%
+adc_task       	36386398		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2562288		1%
+communicate_tas	113395092		73%
+IDLE           	734656		<1%
+adc_task       	36625665		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2579178		1%
+communicate_tas	114141082		73%
+IDLE           	734656		<1%
+adc_task       	36864913		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2595974		1%
+communicate_tas	114887695		73%
+IDLE           	734656		<1%
+adc_task       	37104429		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2612787		1%
+communicate_tas	115633575		73%
+IDLE           	734656		<1%
+adc_task       	37343641		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2629632		1%
+communicate_tas	116379607		73%
+IDLE           	734656		<1%
+adc_task       	37582892		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2646704		1%
+communicate_tas	117125334		73%
+IDLE           	734656		<1%
+adc_task       	37822123		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2663770		1%
+communicate_tas	117871068		73%
+IDLE           	734656		<1%
+adc_task       	38061355		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2680581		1%
+communicate_tas	118616979		73%
+IDLE           	734656		<1%
+adc_task       	38300566		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2697635		1%
+communicate_tas	119362733		73%
+IDLE           	734656		<1%
+adc_task       	38539788		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2714352		1%
+communicate_tas	120108742		73%
+IDLE           	734656		<1%
+adc_task       	38778996		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2730837		1%
+communicate_tas	120855064		73%
+IDLE           	734656		<1%
+adc_task       	39018221		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2747461		1%
+communicate_tas	121601395		73%
+IDLE           	734656		<1%
+adc_task       	39257486		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2764433		1%
+communicate_tas	122347309		73%
+IDLE           	734656		<1%
+adc_task       	39496727		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2781232		1%
+communicate_tas	123093925		73%
+IDLE           	734656		<1%
+adc_task       	39736237		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2798051		1%
+communicate_tas	123839798		74%
+IDLE           	734656		<1%
+adc_task       	39975452		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2814897		1%
+communicate_tas	124585829		74%
+IDLE           	734656		<1%
+adc_task       	40214701		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2831969		1%
+communicate_tas	125331562		74%
+IDLE           	734656		<1%
+adc_task       	40453927		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2849030		1%
+communicate_tas	126077301		74%
+IDLE           	734656		<1%
+adc_task       	40693158		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2865847		1%
+communicate_tas	126823209		74%
+IDLE           	734656		<1%
+adc_task       	40932369		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2882886		1%
+communicate_tas	127568968		74%
+IDLE           	734656		<1%
+adc_task       	41171601		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2899590		1%
+communicate_tas	128314986		74%
+IDLE           	734656		<1%
+adc_task       	41410813		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2916070		1%
+communicate_tas	129061308		74%
+IDLE           	734656		<1%
+adc_task       	41650042		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2932699		1%
+communicate_tas	129807628		74%
+IDLE           	734656		<1%
+adc_task       	41889314		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2949598		1%
+communicate_tas	130553615		74%
+IDLE           	734656		<1%
+adc_task       	42128556		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2966399		1%
+communicate_tas	131300229		74%
+IDLE           	734656		<1%
+adc_task       	42368066		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2983213		1%
+communicate_tas	132046108		74%
+IDLE           	734656		<1%
+adc_task       	42607278		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3000065		1%
+communicate_tas	132792132		74%
+IDLE           	734656		<1%
+adc_task       	42846529		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3017132		1%
+communicate_tas	133537865		74%
+IDLE           	734656		<1%
+adc_task       	43085759		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3034195		1%
+communicate_tas	134283605		74%
+IDLE           	734656		<1%
+adc_task       	43324987		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3051013		1%
+communicate_tas	135029516		74%
+IDLE           	734656		<1%
+adc_task       	43564191		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3068056		1%
+communicate_tas	135775272		74%
+IDLE           	734656		<1%
+adc_task       	43803423		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3084755		1%
+communicate_tas	136521296		74%
+IDLE           	734656		<1%
+adc_task       	44042635		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3101229		1%
+communicate_tas	137267620		74%
+IDLE           	734656		<1%
+adc_task       	44281867		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3117858		1%
+communicate_tas	138013946		74%
+IDLE           	734656		<1%
+adc_task       	44521135		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3134826		1%
+communicate_tas	138759862		74%
+IDLE           	734656		<1%
+adc_task       	44760381		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3151633		1%
+communicate_tas	139506474		74%
+IDLE           	734656		<1%
+adc_task       	44999887		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3168447		1%
+communicate_tas	140252353		74%
+IDLE           	734656		<1%
+adc_task       	45239100		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3185307		1%
+communicate_tas	140998377		74%
+IDLE           	734656		<1%
+adc_task       	45478342		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3202382		1%
+communicate_tas	141744101		74%
+IDLE           	734656		<1%
+adc_task       	45717573		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3219445		1%
+communicate_tas	142489836		74%
+IDLE           	734656		<1%
+adc_task       	45956805		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3236226		1%
+communicate_tas	143235788		74%
+IDLE           	734656		<1%
+adc_task       	46196004		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3253275		1%
+communicate_tas	143981537		74%
+IDLE           	734656		<1%
+adc_task       	46435238		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3269978		1%
+communicate_tas	144727561		74%
+IDLE           	734656		<1%
+adc_task       	46674445		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3286447		1%
+communicate_tas	145473889		74%
+IDLE           	734656		<1%
+adc_task       	46913678		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	3303073		1%
+communicate_tas	146220216		74%
+IDLE           	734656		<1%
+adc_task       	47152948		23%
 Address is:126 
  IPW5500
  W5500 IP   : 192.168.1.126
@@ -2579,116 +2406,1707 @@ Software Version: V0.2,May  6 2023
 task: test_task, freestack: 238, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	187	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
 IDLE           	R	0	117	4
 adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	12681		47%
-communicate_tas	7064		26%
+test_task      	12097		46%
+communicate_tas	7145		27%
 IDLE           	0		<1%
-adc_task       	5789		21%
+adc_task       	5896		22%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
 IDLE           	R	0	117	4
 adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	29375		2%
-communicate_tas	751478		73%
+test_task      	28117		2%
+communicate_tas	752234		73%
 IDLE           	0		<1%
-adc_task       	246276		23%
+adc_task       	244502		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
 adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	45205		2%
-communicate_tas	1491730		73%
-adc_task       	486314		23%
+test_task      	44167		2%
+communicate_tas	1497221		73%
+IDLE           	758		<1%
+adc_task       	483294		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	59862		1%
-communicate_tas	2234787		73%
-adc_task       	725876		23%
+test_task      	60312		1%
+communicate_tas	2238727		73%
+IDLE           	1722		<1%
+adc_task       	725372		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	74744		1%
-communicate_tas	2977663		74%
-adc_task       	965200		23%
+test_task      	76407		1%
+communicate_tas	2984850		74%
+IDLE           	1722		<1%
+adc_task       	964317		23%
 task: test_task, freestack: 175, proi: 1
 taskname     state     priority    freestack   number
 test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
+communicate_tas	R	1	1493	3
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
 
 taskname     count     %cpu
-test_task      	89729		1%
-communicate_tas	3720357		74%
-adc_task       	1204500		23%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
-
-taskname     count     %cpu
-test_task      	104783		1%
-communicate_tas	4463440		74%
-adc_task       	1444116		23%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
-
-taskname     count     %cpu
-test_task      	119824		1%
-communicate_tas	5206546		74%
-adc_task       	1683538		23%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
-
-taskname     count     %cpu
-test_task      	134796		1%
-communicate_tas	5949712		74%
-adc_task       	1923163		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
-
-taskname     count     %cpu
-test_task      	149909		1%
-communicate_tas	6693028		74%
-adc_task       	2162848		24%
-task: test_task, freestack: 175, proi: 1
-taskname     state     priority    freestack   number
-test_task      	X	1	175	1
-communicate_tas	R	1	2005	3
-adc_task       	B	4	219	2
-
-taskname     count     %cpu
-test_task      	164751		1%
-communicate_tas	7435895		74%
-adc_task       	2402165		24%
+test_task      	92662		1%
+communicate_tas	3730547		74%
+IDLE           	1722		<1%
+adc_task       	1203341		23%
 CH: 1 Unexpected1 length 0
 SEND_OK Problem!!
+SEND_OK Problem!!
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
+communicate_tas	B	1	1467	3
+
+taskname     count     %cpu
+test_task      	111561		1%
+communicate_tas	4126310		68%
+IDLE           	340734		5%
+adc_task       	1450041		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	127827		1%
+communicate_tas	4872449		69%
+IDLE           	340734		4%
+adc_task       	1688988		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	224	2
+
+taskname     count     %cpu
+test_task      	144397		1%
+communicate_tas	5618177		69%
+IDLE           	340734		4%
+adc_task       	1928037		24%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	161039		1%
+communicate_tas	6364372		70%
+IDLE           	340734		3%
+adc_task       	2167224		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	177702		1%
+communicate_tas	7110696		70%
+IDLE           	340734		3%
+adc_task       	2406453		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	193992		1%
+communicate_tas	7857204		71%
+IDLE           	340734		3%
+adc_task       	2645740		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	210269		1%
+communicate_tas	8603414		71%
+IDLE           	340734		2%
+adc_task       	2884733		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	226856		1%
+communicate_tas	9349128		71%
+IDLE           	340734		2%
+adc_task       	3123779		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	243494		1%
+communicate_tas	10095330		71%
+IDLE           	340734		2%
+adc_task       	3362962		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	260155		1%
+communicate_tas	10841659		72%
+IDLE           	340734		2%
+adc_task       	3602189		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	276530		1%
+communicate_tas	11588169		72%
+IDLE           	340734		2%
+adc_task       	3841520		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	292793		1%
+communicate_tas	12334307		72%
+IDLE           	340734		1%
+adc_task       	4080469		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	309330		1%
+communicate_tas	13080453		72%
+IDLE           	340734		1%
+adc_task       	4319620		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	325962		1%
+communicate_tas	13826276		72%
+IDLE           	340734		1%
+adc_task       	4558707		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	342619		1%
+communicate_tas	14572611		72%
+IDLE           	340734		1%
+adc_task       	4797931		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	359079		1%
+communicate_tas	15319033		72%
+IDLE           	340734		1%
+adc_task       	5037262		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	375343		1%
+communicate_tas	16065181		72%
+IDLE           	340734		1%
+adc_task       	5276202		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	391885		1%
+communicate_tas	16811316		72%
+IDLE           	340734		1%
+adc_task       	5515357		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	408520		1%
+communicate_tas	17557134		72%
+IDLE           	340734		1%
+adc_task       	5754443		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	425185		1%
+communicate_tas	18303461		73%
+IDLE           	340734		1%
+adc_task       	5993670		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	441622		1%
+communicate_tas	19049813		73%
+IDLE           	340734		1%
+adc_task       	6232965		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	457885		1%
+communicate_tas	19796043		73%
+IDLE           	340734		1%
+adc_task       	6471950		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	474415		1%
+communicate_tas	20542194		73%
+IDLE           	340734		1%
+adc_task       	6711102		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	491053		1%
+communicate_tas	21288010		73%
+IDLE           	340734		1%
+adc_task       	6950191		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	507711		1%
+communicate_tas	22034337		73%
+IDLE           	340734		1%
+adc_task       	7189421		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	524161		1%
+communicate_tas	22780760		73%
+IDLE           	340734		1%
+adc_task       	7428764		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	540419		1%
+communicate_tas	23526903		73%
+IDLE           	340734		1%
+adc_task       	7667716		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	556962		1%
+communicate_tas	24273041		73%
+IDLE           	340734		1%
+adc_task       	7906864		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	573613		1%
+communicate_tas	25018852		73%
+IDLE           	340734		<1%
+adc_task       	8145946		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	590351		1%
+communicate_tas	25765105		73%
+IDLE           	340734		<1%
+adc_task       	8385169		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	606709		1%
+communicate_tas	26511539		73%
+IDLE           	340734		<1%
+adc_task       	8624462		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	623057		1%
+communicate_tas	27257684		73%
+IDLE           	340734		<1%
+adc_task       	8863451		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	639602		1%
+communicate_tas	28003823		73%
+IDLE           	340734		<1%
+adc_task       	9102599		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	656264		1%
+communicate_tas	28750115		73%
+IDLE           	340734		<1%
+adc_task       	9341958		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	672844		1%
+communicate_tas	29496378		73%
+IDLE           	340734		<1%
+adc_task       	9581138		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	689469		1%
+communicate_tas	30242739		73%
+IDLE           	340734		<1%
+adc_task       	9820367		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	705867		1%
+communicate_tas	30989098		73%
+IDLE           	340734		<1%
+adc_task       	10059534		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	722549		1%
+communicate_tas	31735256		73%
+IDLE           	340734		<1%
+adc_task       	10298719		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	739542		1%
+communicate_tas	32481325		73%
+IDLE           	340734		<1%
+adc_task       	10537970		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	756295		1%
+communicate_tas	33227412		73%
+IDLE           	340734		<1%
+adc_task       	10777153		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	772817		1%
+communicate_tas	33974489		73%
+IDLE           	340734		<1%
+adc_task       	11016536		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	789287		1%
+communicate_tas	34721362		73%
+IDLE           	340734		<1%
+adc_task       	11255987		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	805840		1%
+communicate_tas	35467565		73%
+IDLE           	340734		<1%
+adc_task       	11495156		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	822524		1%
+communicate_tas	36213715		73%
+IDLE           	340734		<1%
+adc_task       	11734346		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	839524		1%
+communicate_tas	36959777		73%
+IDLE           	340734		<1%
+adc_task       	11973596		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	856022		1%
+communicate_tas	37706728		73%
+IDLE           	340734		<1%
+adc_task       	12212940		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	872762		1%
+communicate_tas	38452975		73%
+IDLE           	340734		<1%
+adc_task       	12452168		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	889234		1%
+communicate_tas	39199843		73%
+IDLE           	340734		<1%
+adc_task       	12691621		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	905796		1%
+communicate_tas	39946043		73%
+IDLE           	340734		<1%
+adc_task       	12930783		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	922479		1%
+communicate_tas	40692197		73%
+IDLE           	340734		<1%
+adc_task       	13169968		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	939466		1%
+communicate_tas	41438272		73%
+IDLE           	340734		<1%
+adc_task       	13409217		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	955969		1%
+communicate_tas	42185223		73%
+IDLE           	340734		<1%
+adc_task       	13648556		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	972708		1%
+communicate_tas	42931472		73%
+IDLE           	340734		<1%
+adc_task       	13887786		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	989185		1%
+communicate_tas	43678337		73%
+IDLE           	340734		<1%
+adc_task       	14127238		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1005745		1%
+communicate_tas	44424538		73%
+IDLE           	340734		<1%
+adc_task       	14366404		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1022575		1%
+communicate_tas	45170537		73%
+IDLE           	340734		<1%
+adc_task       	14605597		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1039732		1%
+communicate_tas	45916445		73%
+IDLE           	340734		<1%
+adc_task       	14844843		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1056241		1%
+communicate_tas	46663385		73%
+IDLE           	340734		<1%
+adc_task       	15084185		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1073135		1%
+communicate_tas	47409478		73%
+IDLE           	340734		<1%
+adc_task       	15323414		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1089617		1%
+communicate_tas	48156334		73%
+IDLE           	340734		<1%
+adc_task       	15562867		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1106175		1%
+communicate_tas	48902538		73%
+IDLE           	340734		<1%
+adc_task       	15802034		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1123015		1%
+communicate_tas	49648534		73%
+IDLE           	340734		<1%
+adc_task       	16041222		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1140168		1%
+communicate_tas	50394443		73%
+IDLE           	340734		<1%
+adc_task       	16280471		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1156668		1%
+communicate_tas	51141392		73%
+IDLE           	340734		<1%
+adc_task       	16519814		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1173555		1%
+communicate_tas	51887497		73%
+IDLE           	340734		<1%
+adc_task       	16759040		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1190037		1%
+communicate_tas	52634352		73%
+IDLE           	340734		<1%
+adc_task       	16998495		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1206585		1%
+communicate_tas	53380559		73%
+IDLE           	340734		<1%
+adc_task       	17237667		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1223415		1%
+communicate_tas	54126562		73%
+IDLE           	340734		<1%
+adc_task       	17476858		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1240558		1%
+communicate_tas	54872482		73%
+IDLE           	340734		<1%
+adc_task       	17716108		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1257055		1%
+communicate_tas	55619434		73%
+IDLE           	340734		<1%
+adc_task       	17955451		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1273939		1%
+communicate_tas	56365538		73%
+IDLE           	340734		<1%
+adc_task       	18194677		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1290424		1%
+communicate_tas	57112399		74%
+IDLE           	340734		<1%
+adc_task       	18434127		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1306975		1%
+communicate_tas	57858609		74%
+IDLE           	340734		<1%
+adc_task       	18673294		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1323810		1%
+communicate_tas	58604610		74%
+IDLE           	340734		<1%
+adc_task       	18912481		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1340961		1%
+communicate_tas	59350518		74%
+IDLE           	340734		<1%
+adc_task       	19151734		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1357461		1%
+communicate_tas	60097463		74%
+IDLE           	340734		<1%
+adc_task       	19391083		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1374346		1%
+communicate_tas	60843563		74%
+IDLE           	340734		<1%
+adc_task       	19630312		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1390823		1%
+communicate_tas	61590424		74%
+IDLE           	340734		<1%
+adc_task       	19869769		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1407374		1%
+communicate_tas	62336634		74%
+IDLE           	340734		<1%
+adc_task       	20108933		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1424212		1%
+communicate_tas	63082630		74%
+IDLE           	340734		<1%
+adc_task       	20348122		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1441358		1%
+communicate_tas	63828552		74%
+IDLE           	340734		<1%
+adc_task       	20587367		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1457852		1%
+communicate_tas	64575510		74%
+IDLE           	340734		<1%
+adc_task       	20826706		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1474734		1%
+communicate_tas	65321614		74%
+IDLE           	340734		<1%
+adc_task       	21065939		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1491204		1%
+communicate_tas	66068484		74%
+IDLE           	340734		<1%
+adc_task       	21305393		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1507761		1%
+communicate_tas	66814688		74%
+IDLE           	340734		<1%
+adc_task       	21544558		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1524586		1%
+communicate_tas	67560700		74%
+IDLE           	340734		<1%
+adc_task       	21783744		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1541726		1%
+communicate_tas	68306620		74%
+IDLE           	340734		<1%
+adc_task       	22022997		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1558226		1%
+communicate_tas	69053568		74%
+IDLE           	340734		<1%
+adc_task       	22262342		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1575120		1%
+communicate_tas	69799660		74%
+IDLE           	340734		<1%
+adc_task       	22501572		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1591593		1%
+communicate_tas	70546527		74%
+IDLE           	340734		<1%
+adc_task       	22741023		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1608149		1%
+communicate_tas	71292727		74%
+IDLE           	340734		<1%
+adc_task       	22980194		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1624991		1%
+communicate_tas	72038722		74%
+IDLE           	340734		<1%
+adc_task       	23219379		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1642144		1%
+communicate_tas	72784632		74%
+IDLE           	340734		<1%
+adc_task       	23458628		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1658649		1%
+communicate_tas	73531577		74%
+IDLE           	340734		<1%
+adc_task       	23697971		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1675541		1%
+communicate_tas	74277672		74%
+IDLE           	340734		<1%
+adc_task       	23937200		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1692017		1%
+communicate_tas	75024538		74%
+IDLE           	340734		<1%
+adc_task       	24176649		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1708572		1%
+communicate_tas	75770741		74%
+IDLE           	340734		<1%
+adc_task       	24415820		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1725399		1%
+communicate_tas	76516747		74%
+IDLE           	340734		<1%
+adc_task       	24655009		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1742556		1%
+communicate_tas	77262658		74%
+IDLE           	340734		<1%
+adc_task       	24894254		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1759049		1%
+communicate_tas	78009609		74%
+IDLE           	340734		<1%
+adc_task       	25133603		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1775942		1%
+communicate_tas	78755704		74%
+IDLE           	340734		<1%
+adc_task       	25372828		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1792433		1%
+communicate_tas	79502556		74%
+IDLE           	340734		<1%
+adc_task       	25612280		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1808987		1%
+communicate_tas	80248758		74%
+IDLE           	340734		<1%
+adc_task       	25851453		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1825826		1%
+communicate_tas	80994759		74%
+IDLE           	340734		<1%
+adc_task       	26090635		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1842971		1%
+communicate_tas	81740678		74%
+IDLE           	340734		<1%
+adc_task       	26329883		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1859474		1%
+communicate_tas	82487623		74%
+IDLE           	340734		<1%
+adc_task       	26569228		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1876357		1%
+communicate_tas	83233730		74%
+IDLE           	340734		<1%
+adc_task       	26808452		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1892836		1%
+communicate_tas	83980585		74%
+IDLE           	340734		<1%
+adc_task       	27047911		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1909386		1%
+communicate_tas	84726790		74%
+IDLE           	340734		<1%
+adc_task       	27287083		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1926224		1%
+communicate_tas	85472794		74%
+IDLE           	340734		<1%
+adc_task       	27526264		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1943373		1%
+communicate_tas	86218709		74%
+IDLE           	340734		<1%
+adc_task       	27765513		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1959866		1%
+communicate_tas	86965666		74%
+IDLE           	340734		<1%
+adc_task       	28004852		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1976759		1%
+communicate_tas	87711767		74%
+IDLE           	340734		<1%
+adc_task       	28244076		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	1993242		1%
+communicate_tas	88458627		74%
+IDLE           	340734		<1%
+adc_task       	28483525		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2009785		1%
+communicate_tas	89204844		74%
+IDLE           	340734		<1%
+adc_task       	28722693		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2026614		1%
+communicate_tas	89950849		74%
+IDLE           	340734		<1%
+adc_task       	28961881		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2043763		1%
+communicate_tas	90696764		74%
+IDLE           	340734		<1%
+adc_task       	29201131		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2060251		1%
+communicate_tas	91443718		74%
+IDLE           	340734		<1%
+adc_task       	29440479		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2077134		1%
+communicate_tas	92189826		74%
+IDLE           	340734		<1%
+adc_task       	29679707		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2093609		1%
+communicate_tas	92936688		74%
+IDLE           	340734		<1%
+adc_task       	29919164		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2110163		1%
+communicate_tas	93682896		74%
+IDLE           	340734		<1%
+adc_task       	30158330		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2127002		1%
+communicate_tas	94428896		74%
+IDLE           	340734		<1%
+adc_task       	30397513		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2144146		1%
+communicate_tas	95174814		74%
+IDLE           	340734		<1%
+adc_task       	30636761		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2160654		1%
+communicate_tas	95921760		74%
+IDLE           	340734		<1%
+adc_task       	30876101		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2177537		1%
+communicate_tas	96667863		74%
+IDLE           	340734		<1%
+adc_task       	31115332		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2194011		1%
+communicate_tas	97414735		74%
+IDLE           	340734		<1%
+adc_task       	31354778		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2210561		1%
+communicate_tas	98160941		74%
+IDLE           	340734		<1%
+adc_task       	31593949		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2227394		1%
+communicate_tas	98906945		74%
+IDLE           	340734		<1%
+adc_task       	31833133		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2244547		1%
+communicate_tas	99652855		74%
+IDLE           	340734		<1%
+adc_task       	32072380		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2261049		1%
+communicate_tas	100399804		74%
+IDLE           	340734		<1%
+adc_task       	32311720		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2277947		1%
+communicate_tas	101145895		74%
+IDLE           	340734		<1%
+adc_task       	32550945		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2294422		1%
+communicate_tas	101892763		74%
+IDLE           	340734		<1%
+adc_task       	32790395		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2311274		1%
+communicate_tas	102639590		74%
+IDLE           	340734		<1%
+adc_task       	33029797		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2327766		1%
+communicate_tas	103386394		74%
+IDLE           	340734		<1%
+adc_task       	33269103		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2344463		1%
+communicate_tas	104132373		74%
+IDLE           	340734		<1%
+adc_task       	33508258		23%
+task: test_task, freestack: 175, proi: 1
+taskname     state     priority    freestack   number
+test_task      	X	1	175	1
+communicate_tas	R	1	1467	3
+IDLE           	R	0	110	4
+adc_task       	B	4	222	2
+
+taskname     count     %cpu
+test_task      	2361219		1%
+communicate_tas	104878574		74%
+IDLE           	340734		<1%
+adc_task       	33747614		23%

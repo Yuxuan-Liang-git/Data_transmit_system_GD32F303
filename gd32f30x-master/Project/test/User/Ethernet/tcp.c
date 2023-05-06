@@ -18,7 +18,6 @@
 
 uint8 buff[2048];				                              	         /*定义一个2KB的缓存*/
 extern uint8 local_ip[4];
-uint32_t temp;
 
 void tcp_com_init(uint8 address)
 {
@@ -62,14 +61,6 @@ void do_tcp_communicate(uint8 * data,int len)
 				data[len]=0x00;  											                 /*添加字符串结束符*/
 //				printf("%d\r\n",data);
 				send(SOCK_TCPC,data,len);								     	         /*向Server发送数据*/
-//				for(int i=0;i<32;i++)
-//				{
-
-//					temp = (data[64*i + 0] << 24) + (data[64*i + 1] << 16) + (data[64*i + 2] << 8) + data[64*i + 3];
-//					printf("%d\n",temp);
-////					u32 = (u8[3] << 24) + (u8[2] << 16) + (u8[1] << 8) + u8[0];
-//				}
-//				printf("communicate_task finished! \n");
 			}	
 //      printf("SOCK_ESTABLISHED\n");      
 		  break;

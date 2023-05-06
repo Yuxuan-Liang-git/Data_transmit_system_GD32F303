@@ -24,10 +24,10 @@ uint16_t address;
 */
 int main(void)
 {  
-		SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
+//		SystemInit();
     delay_init();
     uart_printf_init();
-		adc_init();				//	其中创建二值信号量，实现中断与任务的同步
+		adc_init();
 		addr_init();
 		address=get_addr();
 		printf("Address is:%d \n\r",address);	

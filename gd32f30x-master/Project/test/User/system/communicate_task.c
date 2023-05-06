@@ -2,20 +2,19 @@
 #include "communicate_task.h"
 #include "system.h"
 #include "tcp.h"
-uint8_t communicate_data[2048];
 
 /*******************************************************************/
 /***       			    Local Function                           ***/
 /*******************************************************************/
 static void communicate_task(void *para)
 {
-
+	uint8_t cache_data[2048];
 	while(1)
 	{
 		//	没有收到队列信息时就堵塞在这里
-		xQueueReceive(xQueue_buffer,communicate_data,portMAX_DELAY);	
-		do_tcp_communicate(communicate_data,2048);
-
+		xQueueReceive(xQueue_buffer,cache_data,portMAX_DELAY);
+		do_tcp_communicate(cache_data,2048);
+				
 	}
 }
 
