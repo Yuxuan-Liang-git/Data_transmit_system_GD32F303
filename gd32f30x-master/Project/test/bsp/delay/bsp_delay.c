@@ -16,8 +16,8 @@
 
 //int_time = CLK / ((prescaler + 1) * period)
 //int_time = 1us
-#define DELAY_TIMER_PRESCALER   1
-#define DELAY_TIMER_PERIOD      60
+#define DELAY_TIMER_PRESCALER   0
+#define DELAY_TIMER_PERIOD      (SystemCoreClock / 1000 /1000)-1	//120	//SystemCoreClock / 1000 /1000
 
 volatile uint32_t g_timeticks = 0;
 

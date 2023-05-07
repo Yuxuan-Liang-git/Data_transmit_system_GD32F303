@@ -14,6 +14,7 @@ extern uint8_t send_data[4];
 int main(void)
 {
 	SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
+	nvic_priority_group_set(NVIC_PRIGROUP_PRE4_SUB0);
 	systick_config(); // 初始化systick计时器
 	Delay_Timer_Init();		//	us级延时
 	led_init();
@@ -35,7 +36,7 @@ int main(void)
 		{
 //			do_tcp_communicate(adc_value,64);
 			
-			do_tcp_communicate(tcp_buffer,2048);
+			do_tcp_communicate(tcp_buffer,4096);
 			memset(tcp_buffer,0,sizeof tcp_buffer);
 			
 			send_flag = RESET;

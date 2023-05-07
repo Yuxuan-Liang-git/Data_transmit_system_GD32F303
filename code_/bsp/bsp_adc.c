@@ -65,7 +65,7 @@ void timer_config(void)
 		timer_initpara.prescaler         = 120-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
-		timer_initpara.period            = 100-1; //计数值
+		timer_initpara.period            = 50-1; //计数值
 		timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
 //		timer_initpara.repetitioncounter = 0; //设置重复计数器值，0表示不重复计数，每次溢出都产生更新事件
 		timer_init(TIMER1,&timer_initpara);
@@ -73,7 +73,7 @@ void timer_config(void)
 
 		timer_interrupt_enable(TIMER1,TIMER_INT_UP);//使能溢出中断
 
-		nvic_irq_enable(TIMER1_IRQn, 1, 1);//配置中断优先级
+		nvic_irq_enable(TIMER1_IRQn, 1, 0);//配置中断优先级
 		timer_enable(TIMER1);//使能定时器  
 	
 }
@@ -149,10 +149,10 @@ void adc_config(void)
     /* ADC DMA function enable */
     adc_dma_mode_enable(ADC0);
 		adc_enable(ADC0);
-		delay_1ms(1);
+		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		nvic_irq_enable(ADC0_1_IRQn, 0,0);
+		nvic_irq_enable(ADC0_1_IRQn, 2,0);
 		// 清除ADC规则组转换结束中断标志
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 		//	使能ADC规则组转换结束中断

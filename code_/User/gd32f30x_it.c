@@ -43,8 +43,8 @@ OF SUCH DAMAGE.
 #include "string.h"
 
 uint8_t count;
-uint8_t cache_data[2048];
-uint8_t tcp_buffer[2048];
+uint8_t cache_data[4096];
+uint8_t tcp_buffer[4096];
 
 
 FlagStatus send_flag;
@@ -162,7 +162,7 @@ void TIMER1_IRQHandler(void)
 		if(adc_finish_flag == SET)
 		{
 			
-			if(count<32)	//	6.4ms发一次
+			if(count<64)	//	6.4ms发一次
 			{
 				memcpy(cache_data+64*count,adc_value,64);
 //				printf("{plotter:%d}\n", raw_data[0]);
@@ -170,7 +170,7 @@ void TIMER1_IRQHandler(void)
 			} 
 			else
 			{
-				memcpy(tcp_buffer,cache_data,2048);
+				memcpy(tcp_buffer,cache_data,4096);
 				memset(cache_data,0,sizeof cache_data);
 				memcpy(cache_data,adc_value,64);	
 				count = 1;

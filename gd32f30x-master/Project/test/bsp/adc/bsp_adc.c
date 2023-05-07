@@ -7,7 +7,7 @@
 xSemaphoreHandle binIRQSemaphore;		//	二值信号量
 xQueueHandle xQueue_buffer;					//	消息队列句柄
 
-
+BaseType_t xHighPriorityTaskWoken = pdFALSE;
 uint8_t adc_value[64];
 uint8_t cache_data[2048];
 
@@ -18,7 +18,7 @@ void adc_init(void)
 {
 		adc_rcu_config();
 		adc_gpio_config();
-		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
+//		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
 		
 		binIRQSemaphore = xSemaphoreCreateBinary();		//	创建二值信号量，实现中断与任务的同步
     /* TIMER configuration */
@@ -158,7 +158,7 @@ void adc_config(void)
 		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		nvic_irq_enable(ADC0_1_IRQn, 0,0);
+		nvic_irq_enable(ADC0_1_IRQn, 2,0);
 		// 清除ADC规则组转换结束中断标志
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 		//	使能ADC规则组转换结束中断
@@ -176,8 +176,6 @@ void TIMER1_IRQHandler(void)
 		/* clear TIMER interrupt flag */
 			
 		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);		
-			
-		BaseType_t xHighPriorityTaskWoken = pdFALSE;
 		//	释放二值信号量，释放成功则	xHighPriorityTaskWoken = pdTRUE
 		xSemaphoreGiveFromISR(binIRQSemaphore,&xHighPriorityTaskWoken);
 		//	检查当前是否有更高优先级的任务需要运行，如果有，则立即切换到该任务

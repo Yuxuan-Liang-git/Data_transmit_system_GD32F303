@@ -18,7 +18,7 @@
 void OS_Init(void)
 {
     OLOGI("OS Version: %s\n", OS_GetVersion());
-    nvic_priority_group_set(NVIC_PRIGROUP_PRE4_SUB0);
+    nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
 }
 
 /**

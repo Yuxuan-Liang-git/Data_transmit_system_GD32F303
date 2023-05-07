@@ -18,8 +18,8 @@
 
 uint16 SSIZE[MAX_SOCK_NUM]={0,0,0,0,0,0,0,0}; // Max Tx buffer
 uint16 RSIZE[MAX_SOCK_NUM]={0,0,0,0,0,0,0,0}; // Max Rx buffer
-uint8 txsize[MAX_SOCK_NUM] = {2,2,2,2,2,2,2,2};//tx buffer set	K bits
-uint8 rxsize[MAX_SOCK_NUM] = {2,2,2,2,2,2,2,2};//rx buffet set  K bits
+uint8 txsize[MAX_SOCK_NUM] = {0,16,0,0,0,0,0,0};//tx buffer set	K bits
+uint8 rxsize[MAX_SOCK_NUM] = {0,16,0,0,0,0,0,0};//rx buffet set  K bits
 
 /**
 *@brief		This function is to get the Max size to receive.
