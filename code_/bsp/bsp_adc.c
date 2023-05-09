@@ -14,7 +14,7 @@ void adc_init(void)
 {
 		adc_rcu_config();
 		adc_gpio_config();
-		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
+//		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
     /* TIMER configuration */
     timer_config();
     /* DMA configuration */
@@ -62,7 +62,7 @@ void timer_config(void)
 		timer_deinit(TIMER1); //复位定时器
 
 		//配置TIMER1，时钟为120M/60/50  25us触发一次
-		timer_initpara.prescaler         = 120-1;//预分频
+		timer_initpara.prescaler         = 60-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
 		timer_initpara.period            = 50-1; //计数值
@@ -102,7 +102,7 @@ void dma_config(void)
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
     dma_data_parameter.direction = DMA_PERIPHERAL_TO_MEMORY;
     dma_data_parameter.number = 16;		//	16路通道，16个数据
-    dma_data_parameter.priority = DMA_PRIORITY_HIGH;
+    dma_data_parameter.priority = DMA_PRIORITY_ULTRA_HIGH;
     dma_init(DMA0, DMA_CH0, &dma_data_parameter);
   
     dma_circulation_enable(DMA0, DMA_CH0);
@@ -152,7 +152,7 @@ void adc_config(void)
 		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		nvic_irq_enable(ADC0_1_IRQn, 2,0);
+		nvic_irq_enable(ADC0_1_IRQn, 0,0);
 		// 清除ADC规则组转换结束中断标志
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 		//	使能ADC规则组转换结束中断

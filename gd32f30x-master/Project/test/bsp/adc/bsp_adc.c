@@ -18,7 +18,7 @@ void adc_init(void)
 {
 		adc_rcu_config();
 		adc_gpio_config();
-//		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
+
 		
 		binIRQSemaphore = xSemaphoreCreateBinary();		//	创建二值信号量，实现中断与任务的同步
     /* TIMER configuration */
@@ -158,7 +158,7 @@ void adc_config(void)
 		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		nvic_irq_enable(ADC0_1_IRQn, 2,0);
+		nvic_irq_enable(ADC0_1_IRQn, 0,0);
 		// 清除ADC规则组转换结束中断标志
 		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 		//	使能ADC规则组转换结束中断

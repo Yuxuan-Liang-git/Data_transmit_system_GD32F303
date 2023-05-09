@@ -24,6 +24,7 @@ uint16_t address;
 */
 int main(void)
 {  
+		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
 		SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
     delay_init();
     uart_printf_init();
@@ -32,8 +33,8 @@ int main(void)
 		address=get_addr();
 		printf("Address is:%d \n\r",address);	
 		tcp_com_init(address);
-	
-		OS_Init();
+
+    OS_Init();
     system_init();
     OS_StartScheduler();
     while(1) { OLOGI("!"); }//OS_StartScheduler 调用失败将返回，添加死循环更容易排查问题

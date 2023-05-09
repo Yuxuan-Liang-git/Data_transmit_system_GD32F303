@@ -171,9 +171,9 @@ void TIMER1_IRQHandler(void)
 			else
 			{
 				memcpy(tcp_buffer,cache_data,4096);
-				memset(cache_data,0,sizeof cache_data);
+//				memset(cache_data,0,sizeof cache_data);
 				memcpy(cache_data,adc_value,64);	
-				count = 1;
+				count = 0;
 				send_flag = SET;
 			}
 			

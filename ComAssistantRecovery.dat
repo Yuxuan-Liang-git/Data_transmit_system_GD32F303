@@ -8,47 +8,6 @@ Address is:126
  :5000 
  W5500W5500 
  車妊
-CH: 1 Unexpected1 length 0
-SEND_OK Problem!!
-CH: 1 Unexpected1 length 0
-SEND_OK Problem!!
-CH: 1 Unexpected1 length 0
-SEND_OK Problem!!
-Address is:126 
- IPW5500
- W5500 IP   : 192.168.1.126
- W5500  : 255.255.255.0
- W5500      : 192.168.1.1
- TCP,W5500 TCP 
- IP:192.168.1.102
- :5000 
- W5500W5500 
- 車妊
-SEND_OK Problem!!
-SEND_OK Problem!!
-Address is:126 
- IPW5500
- W5500 IP   : 192.168.1.126
- W5500  : 255.255.255.0
- W5500      : 192.168.1.1
- TCP,W5500 TCP 
- IP:192.168.1.102
- :5000 
- W5500W5500 
- 車妊
-SEND_OK Problem!!
-Address is:126 
- IPW5500
- W5500 IP   : 192.168.1.126
- W5500  : 255.255.255.0
- W5500      : 192.168.1.1
- TCP,W5500 TCP 
- IP:192.168.1.102
- :5000 
- W5500W5500 
- 車妊
-SEND_OK Problem!!
-SEND_OK Problem!!
 Address is:126 
  IPW5500
  W5500 IP   : 192.168.1.126
@@ -81,7 +40,6 @@ Address is:126
  W5500W5500 
  車妊
 SEND_OK Problem!!
-SEND_OK Problem!!
 Address is:126 
  IPW5500
  W5500 IP   : 192.168.1.126
@@ -93,14 +51,3 @@ Address is:126
  W5500W5500 
  車妊
 SEND_OK Problem!!
-SEND_OK Problem!!
-Address is:126 
- IPW5500
- W5500 IP   : 192.168.1.126
- W5500  : 255.255.255.0
- W5500      : 192.168.1.1
- TCP,W5500 TCP 
- IP:192.168.1.102
- :5000 
- W5500W5500 
- 車妊

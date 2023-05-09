@@ -37,7 +37,7 @@ int main(void)
 //			do_tcp_communicate(adc_value,64);
 			
 			do_tcp_communicate(tcp_buffer,4096);
-			memset(tcp_buffer,0,sizeof tcp_buffer);
+//			memset(tcp_buffer,0,sizeof tcp_buffer);
 			
 			send_flag = RESET;
 		}
