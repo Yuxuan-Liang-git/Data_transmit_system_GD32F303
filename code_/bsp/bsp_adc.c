@@ -5,10 +5,10 @@
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
-uint32_t raw_data[16];
-uint8_t adc_value[64];
-uint8_t send_data[4];
+uint32_t raw_data[16*64*2];
+uint8_t adc_value[16*64*2*4];
 FlagStatus adc_finish_flag;
+uint8_t * ptr;
 
 void adc_init(void)
 {
@@ -65,7 +65,7 @@ void timer_config(void)
 		timer_initpara.prescaler         = 60-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
-		timer_initpara.period            = 50-1; //计数值
+		timer_initpara.period            = 100-1; //计数值
 		timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
 //		timer_initpara.repetitioncounter = 0; //设置重复计数器值，0表示不重复计数，每次溢出都产生更新事件
 		timer_init(TIMER1,&timer_initpara);
@@ -101,14 +101,21 @@ void dma_config(void)
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
     dma_data_parameter.direction = DMA_PERIPHERAL_TO_MEMORY;
-    dma_data_parameter.number = 16;		//	16路通道，16个数据
+    dma_data_parameter.number = 16*64*2;		//	16路通道，64个数据一组，双缓冲区
     dma_data_parameter.priority = DMA_PRIORITY_ULTRA_HIGH;
     dma_init(DMA0, DMA_CH0, &dma_data_parameter);
   
     dma_circulation_enable(DMA0, DMA_CH0);
+		dma_memory_to_memory_disable(DMA0,DMA_CH0);
+		
+		//	开启DMA中断、DMA半中断
+		dma_interrupt_enable(DMA0,DMA_CH0,DMA_INT_FTF);
+		dma_interrupt_enable(DMA0,DMA_CH0,DMA_INT_HTF);
   
     /* enable DMA channel */
     dma_channel_enable(DMA0, DMA_CH0);
+		
+		nvic_irq_enable(DMA0_Channel0_IRQn,0,0);
 }
 
 //	PA0~7: CH0 CH1 CH2 CH3 CH4 CH5 CH6 CH7
@@ -129,7 +136,6 @@ void adc_config(void)
     adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
 		/* ADC scan mode function enable */
     adc_special_function_config(ADC0, ADC_SCAN_MODE, ENABLE);
-
     /* ADC channel length config */
     adc_channel_length_config(ADC0, ADC_REGULAR_CHANNEL,16);
     /* ADC regular channel config */
@@ -139,36 +145,30 @@ void adc_config(void)
 				// 对每个通道进行处理
 				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);
 		}
-    /* ADC trigger config */
+    /* ADC trigger config */	//	用定时器手动触发ADC采样
 		adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);
    
     /* ADC external trigger enable */
-		//	只需要规则组
+		//	只需要规则组 
     adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
     /* enable ADC interface */
     /* ADC DMA function enable */
     adc_dma_mode_enable(ADC0);
 		adc_enable(ADC0);
-		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		nvic_irq_enable(ADC0_1_IRQn, 0,0);
-		// 清除ADC规则组转换结束中断标志
-		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
-		//	使能ADC规则组转换结束中断
-		adc_interrupt_enable(ADC0,ADC_INT_EOC);
 		
 		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
-
-
 }
 
-void ADC0_1_IRQHandler(void)
+void DMA0_Channel0_IRQHandler(void)
 {
-		uint8_t i;
-		uint8_t * ptr; 
-		adc_regular_data_read(ADC0);
-		for (i = 0;i<16;i++)
+	uint16_t i;
+   if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
+  {
+    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
+ 
+		for (i = 0;i<((sizeof(raw_data)/sizeof(raw_data[0]))/2);i++)
 		{
 				ptr = (uint8_t *)&raw_data[i];
 				adc_value[4*i+3] = *(ptr+0);
@@ -176,10 +176,42 @@ void ADC0_1_IRQHandler(void)
 				adc_value[4*i+1] = *(ptr+2);
 				adc_value[4*i+0] = *(ptr+3);
 		}
-		memcpy(send_data,adc_value,4);
 		adc_finish_flag = SET;
-		
-		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
 
+	}
+		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
+  {
+    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
+	
+		for (i = 0;i<((sizeof(raw_data)/sizeof(raw_data[0]))/2);i++)
+		{
+				ptr = (uint8_t *)&raw_data[i]+(sizeof(raw_data)/sizeof(raw_data[0]))/2;
+				adc_value[4*i+3] = *(ptr+0);
+				adc_value[4*i+2] = *(ptr+1);
+				adc_value[4*i+1] = *(ptr+2);
+				adc_value[4*i+0] = *(ptr+3);
+		}
+		adc_finish_flag = SET;
+	}
 }
+
+//void ADC0_1_IRQHandler(void)
+//{
+//		uint8_t i;
+//		uint8_t * ptr; 
+//		adc_regular_data_read(ADC0);
+//		for (i = 0;i<16;i++)
+//		{
+//				ptr = (uint8_t *)&raw_data[i];
+//				adc_value[4*i+3] = *(ptr+0);
+//				adc_value[4*i+2] = *(ptr+1);
+//				adc_value[4*i+1] = *(ptr+2);
+//				adc_value[4*i+0] = *(ptr+3);
+//		}
+//		memcpy(send_data,adc_value,4);
+//		adc_finish_flag = SET;
+//		
+//		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
+
+//}
 

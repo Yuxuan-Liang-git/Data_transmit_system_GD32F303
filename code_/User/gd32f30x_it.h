@@ -42,7 +42,7 @@ OF SUCH DAMAGE.
 
 extern FlagStatus send_flag;
 extern uint8_t tcp_buffer[4096];
-extern uint32_t raw_data[16];
+extern uint32_t raw_data[16*64*2];
 
 /* function declarations */
 /* this function handles NMI exception */

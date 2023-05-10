@@ -155,32 +155,33 @@ void SysTick_Handler(void)
 //	100us触发一次中断
 void TIMER1_IRQHandler(void)
 {
-		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
-		/* clear TIMER interrupt flag */
-		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
-		if(adc_finish_flag == SET)
+		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP))
 		{
-			
-			if(count<64)	//	6.4ms发一次
-			{
-				memcpy(cache_data+64*count,adc_value,64);
-//				printf("{plotter:%d}\n", raw_data[0]);
-				count++;
-			} 
-			else
-			{
-				memcpy(tcp_buffer,cache_data,4096);
-//				memset(cache_data,0,sizeof cache_data);
-				memcpy(cache_data,adc_value,64);	
-				count = 0;
-				send_flag = SET;
-			}
-			
-//			send_flag = SET;
-			
-			adc_finish_flag = RESET;
-		}
+			adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
+			/* clear TIMER interrupt flag */
+			timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
+//		if(adc_finish_flag == SET)
+//		{
+//			
+//			if(count<64)	//	6.4ms发一次
+//			{
+//				memcpy(cache_data+64*count,adc_value,64);
+////				printf("{plotter:%d}\n", raw_data[0]);
+//				count++;
+//			} 
+//			else
+//			{
+//				memcpy(tcp_buffer,cache_data,4096);
+////				memset(cache_data,0,sizeof cache_data);
+//				memcpy(cache_data,adc_value,64);	
+//				count = 0;
+//				send_flag = SET;
+//			}
+//			
+////			send_flag = SET;
+//			
+//			adc_finish_flag = RESET;
+//		}
 
     }
 }

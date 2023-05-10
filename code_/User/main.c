@@ -32,14 +32,14 @@ int main(void)
 
 	while(1)
 	{
-		if(send_flag == SET)
+		if(adc_finish_flag == SET)
 		{
 //			do_tcp_communicate(adc_value,64);
 			
-			do_tcp_communicate(tcp_buffer,4096);
+			do_tcp_communicate(adc_value,(sizeof(adc_value)/sizeof(adc_value[0])/2));
 //			memset(tcp_buffer,0,sizeof tcp_buffer);
 			
-			send_flag = RESET;
+			adc_finish_flag = RESET;
 		}
 	}
 	

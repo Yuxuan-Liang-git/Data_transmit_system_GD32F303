@@ -22,7 +22,7 @@ void dma_config(void);
 void adc_config(void);
 void timer_config(void);
 
-extern uint8_t adc_value[64];
+extern uint8_t adc_value[16*64*2*4];
 extern FlagStatus adc_finish_flag;
 
 static uint32_t adc_channels[]= {
