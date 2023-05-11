@@ -27,18 +27,11 @@ int main(void)
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
 
-	delay_time = 5000;
-
-
 	while(1)
 	{
 		if(adc_finish_flag == SET)
 		{
-//			do_tcp_communicate(adc_value,64);
-			
-			do_tcp_communicate(adc_value,(sizeof(adc_value)/sizeof(adc_value[0])/2));
-//			memset(tcp_buffer,0,sizeof tcp_buffer);
-			
+			do_tcp_communicate(adc_value,buffer_len*4);
 			adc_finish_flag = RESET;
 		}
 	}

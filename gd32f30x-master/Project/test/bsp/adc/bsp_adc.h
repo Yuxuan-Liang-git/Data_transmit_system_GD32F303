@@ -15,6 +15,8 @@
 #define DEV_COM0_GPIO_PORT              GPIOA
 #define DEV_COM0_GPIO_CLK               RCU_GPIOA
 
+#define buffer_len	16*64
+
 void adc_init(void);
 void adc_rcu_config(void);
 void adc_gpio_config(void);
@@ -23,13 +25,9 @@ void adc_config(void);
 void timer_config(void);
 uint32_t *get_raw_data(void);
 
-static uint32_t raw_data[16];
+static uint32_t raw_data[buffer_len*2];
+static uint8_t adc_value[buffer_len*2*4];
 
-//extern uint8_t adc_value[64];
-//extern FlagStatus adc_finish_flag;
-
-extern uint8_t adc_value[64];
-extern uint8_t cache_data[2048];
 static FlagStatus adc_finish_flag;
 
 static uint32_t adc_channels[]= {

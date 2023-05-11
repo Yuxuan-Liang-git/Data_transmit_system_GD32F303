@@ -152,7 +152,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>38</LineNumber>
+          <LineNumber>184</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -161,57 +161,25 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\User\main.c</Filename>
+          <Filename>..\bsp\bsp_adc.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>39</LineNumber>
+          <LineNumber>210</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134223102</Address>
+          <Address>134218484</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\main.c</Filename>
+          <Filename>..\bsp\bsp_adc.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\template\../User/main.c\39</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>42</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134223110</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\template\../User/main.c\42</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>35</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134223094</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\User\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\template\../User/main.c\35</Expression>
+          <Expression>\\template\../bsp/bsp_adc.c\210</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -223,72 +191,52 @@
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[0]</ItemText>
+          <ItemText>adc_finish_flag</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[1]</ItemText>
+          <ItemText>address,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[2],0x0A</ItemText>
+          <ItemText>local_ip,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[3],0x0A</ItemText>
+          <ItemText>i,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[64],0x0A</ItemText>
+          <ItemText>j,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[65],0x0A</ItemText>
+          <ItemText>temp_value,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[66],0x0A</ItemText>
+          <ItemText>temp_value[j]</ItemText>
         </Ww>
         <Ww>
           <count>8</count>
           <WinNumber>1</WinNumber>
-          <ItemText>cache_data[67],0x0A</ItemText>
+          <ItemText>raw_data[1008],0x0A</ItemText>
         </Ww>
         <Ww>
           <count>9</count>
           <WinNumber>1</WinNumber>
-          <ItemText>count,0x0A</ItemText>
+          <ItemText>raw_data[1024],0x0A</ItemText>
         </Ww>
         <Ww>
           <count>10</count>
           <WinNumber>1</WinNumber>
-          <ItemText>adc_finish_flag</ItemText>
-        </Ww>
-        <Ww>
-          <count>11</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>address,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>12</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>local_ip,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>13</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>i,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>14</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>j,0x0A</ItemText>
+          <ItemText>raw_data[1040],0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>

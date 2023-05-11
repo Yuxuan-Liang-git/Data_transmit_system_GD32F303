@@ -15,6 +15,8 @@
 #define DEV_COM0_GPIO_PORT              GPIOA
 #define DEV_COM0_GPIO_CLK               RCU_GPIOA
 
+#define buffer_len	16*64
+
 void adc_init(void);
 void adc_rcu_config(void);
 void adc_gpio_config(void);

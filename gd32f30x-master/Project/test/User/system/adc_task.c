@@ -24,11 +24,8 @@ static void adc_task(void *para)
 		} 
 		else
 		{
-			//	清空消息队列
-			xQueueReset(xQueue_buffer);
 			//	将缓存数据存入消息队列中
 			xQueueSendToBack(xQueue_buffer,cache_data,0);
-			memset(cache_data,0,sizeof cache_data);
 			memcpy(cache_data,adc_value,64);	
 			count = 1;
 		}

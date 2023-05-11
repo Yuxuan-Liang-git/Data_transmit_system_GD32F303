@@ -5,10 +5,12 @@
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
-uint32_t raw_data[16*64*2];
-uint8_t adc_value[16*64*2*4];
+uint32_t raw_data[buffer_len*2];
+uint8_t adc_value[buffer_len*2*4];
+uint32_t temp_value[64];
 FlagStatus adc_finish_flag;
 uint8_t * ptr;
+
 
 void adc_init(void)
 {
@@ -62,7 +64,7 @@ void timer_config(void)
 		timer_deinit(TIMER1); //复位定时器
 
 		//配置TIMER1，时钟为120M/60/50  25us触发一次
-		timer_initpara.prescaler         = 60-1;//预分频
+		timer_initpara.prescaler         = 120-1;//预分频
 		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
 		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
 		timer_initpara.period            = 100-1; //计数值
@@ -163,12 +165,12 @@ void adc_config(void)
 
 void DMA0_Channel0_IRQHandler(void)
 {
-	uint16_t i;
-   if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
+	uint16_t i,j;
+	uint8_t *ptr; 
+	if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
   {
-    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
- 
-		for (i = 0;i<((sizeof(raw_data)/sizeof(raw_data[0]))/2);i++)
+    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
+		for (i = 0;i<buffer_len;i++)
 		{
 				ptr = (uint8_t *)&raw_data[i];
 				adc_value[4*i+3] = *(ptr+0);
@@ -176,42 +178,28 @@ void DMA0_Channel0_IRQHandler(void)
 				adc_value[4*i+1] = *(ptr+2);
 				adc_value[4*i+0] = *(ptr+3);
 		}
-		adc_finish_flag = SET;
-
-	}
-		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
-  {
-    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
-	
-		for (i = 0;i<((sizeof(raw_data)/sizeof(raw_data[0]))/2);i++)
+		for (j = 0;j<32;j++)
 		{
-				ptr = (uint8_t *)&raw_data[i]+(sizeof(raw_data)/sizeof(raw_data[0]))/2;
+				temp_value[j] = raw_data[16*j];
+		}
+		adc_finish_flag = SET;
+	}
+	else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
+  {
+    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
+		for (i = 0;i<buffer_len;i++)
+		{
+				ptr = (uint8_t *)&raw_data[i+buffer_len];
 				adc_value[4*i+3] = *(ptr+0);
 				adc_value[4*i+2] = *(ptr+1);
 				adc_value[4*i+1] = *(ptr+2);
-				adc_value[4*i+0] = *(ptr+3);
+				adc_value[4*i+0] = *(ptr+3);	
+		}
+		for (j = 32;j<64;j++)
+		{
+				temp_value[j] = raw_data[16*j];
 		}
 		adc_finish_flag = SET;
 	}
 }
-
-//void ADC0_1_IRQHandler(void)
-//{
-//		uint8_t i;
-//		uint8_t * ptr; 
-//		adc_regular_data_read(ADC0);
-//		for (i = 0;i<16;i++)
-//		{
-//				ptr = (uint8_t *)&raw_data[i];
-//				adc_value[4*i+3] = *(ptr+0);
-//				adc_value[4*i+2] = *(ptr+1);
-//				adc_value[4*i+1] = *(ptr+2);
-//				adc_value[4*i+0] = *(ptr+3);
-//		}
-//		memcpy(send_data,adc_value,4);
-//		adc_finish_flag = SET;
-//		
-//		adc_interrupt_flag_clear(ADC0,ADC_INT_FLAG_EOC);
-
-//}
 
