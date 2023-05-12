@@ -1,34 +1,44 @@
 #include "gd32f303e_eval.h"
 #include "adc_task.h"
+uint8_t adc_value[tcp_cache_size];
+uint8_t *ptr; 
 
 /*******************************************************************/
 /***       			    Local Function                           ***/
 /*******************************************************************/
 static void adc_task(void *para)
 {
-	uint8_t count = 0;
+	uint32_t uNotifyValue;
 	while(1)
 	{
-		//	没有收到二值信号量时就堵塞在这里
-		while(xSemaphoreTake(binIRQSemaphore,portMAX_DELAY)!=pdTRUE){}
-			
-//		//	可以把raw_data打印出来看
-//		uint32_t *ptr;
-//		ptr = get_raw_data();
-//		printf("{plotter:%d}\n",*ptr);
-			
-		if(count<32)	
-		{
-			memcpy(cache_data+64*count,adc_value,64);
-			count++;
-		} 
-		else
-		{
-			//	将缓存数据存入消息队列中
-			xQueueSendToBack(xQueue_buffer,cache_data,0);
-			memcpy(cache_data,adc_value,64);	
-			count = 1;
-		}
+			xTaskNotifyWait(0x00,0xffffffff,&uNotifyValue,portMAX_DELAY);	//	等待DMA中断
+			OS_MsDelay(1000);
+			printf("Gotcha bitch!!!!!!! \n");
+			printf("Gotcha bitch!!!!!!! \n \n");
+
+//		uint16_t i;
+//		if(uNotifyValue &0x01)
+//		{
+//			for (i = 0;i<dma_cache_size;i++)
+//			{
+//					ptr = (uint8_t *)&raw_data[i];
+//					adc_value[4*i+3] = *(ptr+0);
+//					adc_value[4*i+2] = *(ptr+1);
+//					adc_value[4*i+1] = *(ptr+2);
+//					adc_value[4*i+0] = *(ptr+3);
+//			}
+//		}
+//		else if(uNotifyValue &0x02)
+//		{
+//			for (i = 0;i<dma_cache_size;i++)
+//			{
+//					ptr = (uint8_t *)&raw_data[i+dma_cache_size];
+//					adc_value[4*i+3] = *(ptr+0);
+//					adc_value[4*i+2] = *(ptr+1);
+//					adc_value[4*i+1] = *(ptr+2);
+//					adc_value[4*i+0] = *(ptr+3);
+//			}			
+//		}
 				
 	}
 }

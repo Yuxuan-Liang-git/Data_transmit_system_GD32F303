@@ -3,11 +3,14 @@
 #include "adc_task.h"
 #include "gd32f30x.h"
 #include <string.h>
+#include "osal.h"
+#include "system.h"
 
-xSemaphoreHandle binIRQSemaphore;		//	二值信号量
 xQueueHandle xQueue_buffer;					//	消息队列句柄
 
 BaseType_t xHighPriorityTaskWoken = pdFALSE;
+uint32_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
+
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
@@ -16,8 +19,6 @@ void adc_init(void)
 		adc_rcu_config();
 		adc_gpio_config();
 
-		
-		binIRQSemaphore = xSemaphoreCreateBinary();		//	创建二值信号量，实现中断与任务的同步
     /* TIMER configuration */
     timer_config();		
     /* DMA configuration */
@@ -103,10 +104,9 @@ void dma_config(void)
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
     dma_data_parameter.direction = DMA_PERIPHERAL_TO_MEMORY;
-    dma_data_parameter.number = buffer_len*2;		//	16路通道，16个数据
+    dma_data_parameter.number = dma_cache_size*2;		
     dma_data_parameter.priority = DMA_PRIORITY_ULTRA_HIGH;
     dma_init(DMA0, DMA_CH0, &dma_data_parameter);
-  
     dma_circulation_enable(DMA0, DMA_CH0);
 		dma_memory_to_memory_disable(DMA0,DMA_CH0);
 		
@@ -117,7 +117,7 @@ void dma_config(void)
     /* enable DMA channel */
     dma_channel_enable(DMA0, DMA_CH0);
 		
-		nvic_irq_enable(DMA0_Channel0_IRQn,0,0);
+		nvic_irq_enable(DMA0_Channel0_IRQn,6,0);
 }
 
 //	PA0~7: CH0 CH1 CH2 CH3 CH4 CH5 CH6 CH7
@@ -150,6 +150,7 @@ void adc_config(void)
 		}
     /* ADC trigger config */
 		adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);
+   
     /* ADC external trigger enable */
 		//	只需要规则组
     adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
@@ -160,49 +161,33 @@ void adc_config(void)
 		delay_ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-//		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
+
 }
 //	100us触发一次中断
 void TIMER1_IRQHandler(void)
 {
 		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
 		/* clear TIMER interrupt flag */
-		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);		
+		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
+		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
     }
 }
 
 void DMA0_Channel0_IRQHandler(void)
 {
-	uint16_t i;
-	uint8_t *ptr; 
-	if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
-  {
-    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
-		xQueueSendFromISR();
-		for (i = 0;i<buffer_len;i++)
+		BaseType_t xHighPriorityTaskWoken = pdFALSE;
+		if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
 		{
-				ptr = (uint8_t *)&raw_data[i];
-				adc_value[4*i+3] = *(ptr+0);
-				adc_value[4*i+2] = *(ptr+1);
-				adc_value[4*i+1] = *(ptr+2);
-				adc_value[4*i+0] = *(ptr+3);
+			xTaskNotifyFromISR(adc_TaskHandel,0x01,eSetBits,&xHighPriorityTaskWoken);
+			portYIELD_FROM_ISR(xHighPriorityTaskWoken);
+			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
 		}
-	}
-	else
-  {
-    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
-		for (i = 0;i<buffer_len;i++)
+		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
 		{
-				ptr = (uint8_t *)&raw_data[i+buffer_len];
-				adc_value[4*i+3] = *(ptr+0);
-				adc_value[4*i+2] = *(ptr+1);
-				adc_value[4*i+1] = *(ptr+2);
-				adc_value[4*i+0] = *(ptr+3);
-		}
-	}
-	//	释放二值信号量，释放成功则	xHighPriorityTaskWoken = pdTRUE
-	xSemaphoreGiveFromISR(binIRQSemaphore,&xHighPriorityTaskWoken);
-	//	检查当前是否有更高优先级的任务需要运行，如果有，则立即切换到该任务
-	portYIELD_FROM_ISR(xHighPriorityTaskWoken);
+			xTaskNotifyFromISR(adc_TaskHandel,0x02,eSetBits,&xHighPriorityTaskWoken);
+			portYIELD_FROM_ISR(xHighPriorityTaskWoken);
+			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
+		}		
 }
+
+

@@ -152,7 +152,9 @@ void adc_config(void)
     /* enable ADC interface */
     /* ADC DMA function enable */
     adc_dma_mode_enable(ADC0);
+		delay_1ms(1);
 		adc_enable(ADC0);
+		delay_1ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
 //		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
@@ -160,31 +162,31 @@ void adc_config(void)
 
 void DMA0_Channel0_IRQHandler(void)
 {
-	uint16_t j;
-	if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
-	{
-		dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
-		if(adc_dma_flag == ADC_DMA_RST)
+		uint16_t j;
+		if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
 		{
-			adc_dma_flag = ADC_DMA_HF;
+			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
+			if(adc_dma_flag == ADC_DMA_RST)
+			{
+				adc_dma_flag = ADC_DMA_HF;
+			}
+	//		for(j=0;j<dma_cache_size*2/16;j++)
+	//		{
+	//			temp_data[j]=raw_data[j*16];
+	//		}
 		}
-//		for(j=0;j<dma_cache_size*2/16;j++)
-//		{
-//			temp_data[j]=raw_data[j*16];
-//		}
-	}
-	else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
-	{
-		dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
-		if(adc_dma_flag == ADC_DMA_RST)
+		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
 		{
-			adc_dma_flag = ADC_DMA_F;
-		}
-//		for(j=0;j<dma_cache_size*2/16;j++)
-//		{
-//			temp_data[j]=raw_data[j*16];
-//		}
-	}		
+			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
+			if(adc_dma_flag == ADC_DMA_RST)
+			{
+				adc_dma_flag = ADC_DMA_F;
+			}
+	//		for(j=0;j<dma_cache_size*2/16;j++)
+	//		{
+	//			temp_data[j]=raw_data[j*16];
+	//		}
+		}		
 	
 
 }

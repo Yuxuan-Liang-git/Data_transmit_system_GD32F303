@@ -13,9 +13,9 @@
 #include "FreeRTOS.h"
 #include "semphr.h"		//	加上这个之后就找得到xSemaphoreHandle了
 
-extern xSemaphoreHandle binIRQSemaphore;
-extern xQueueHandle xQueue_buffer;			
-
+extern xQueueHandle xQueue_buffer;	
+extern TaskHandle_t adc_TaskHandel;
+extern TaskHandle_t communicate_TaskHandel;
 void system_init(void);
 
 #endif

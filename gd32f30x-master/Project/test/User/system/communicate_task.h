@@ -4,8 +4,8 @@
 
 #include "osal.h"
 #include "gd32f30x.h"
+#include "system.h"
 
 void communicate_task_init(void);
-static TaskHandle_t communicate_TaskHandel = NULL;
 
 #endif

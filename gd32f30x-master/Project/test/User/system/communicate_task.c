@@ -11,10 +11,11 @@ static void communicate_task(void *para)
 	uint8_t cache_data[2048];
 	while(1)
 	{
-		//	没有收到队列信息时就堵塞在这里
-		xQueueReceive(xQueue_buffer,cache_data,portMAX_DELAY);
-		do_tcp_communicate(cache_data,2048);
-				
+        OS_MsDelay(1000);		
+//		//	没有收到队列信息时就堵塞在这里
+//		xQueueReceive(xQueue_buffer,cache_data,portMAX_DELAY);
+//		do_tcp_communicate(cache_data,2048);
+//				
 	}
 }
 
