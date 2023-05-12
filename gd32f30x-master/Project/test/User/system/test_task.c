@@ -19,10 +19,8 @@ static void test_task(void *para)
 {
     while(1)
     {
-				printf("task: %s, freestack: %d, proi: %d\n", OS_TaskGetName(NULL), OS_TaskGetFreeStackSpace(NULL), OS_TaskGetPriority(NULL));
-
         OS_SysInfo();
-        OS_MsDelay(1000);			
+        OS_MsDelay(500);			
     }
 }
 
@@ -34,5 +32,5 @@ static void test_task(void *para)
  */
 void test_task_init(void)
 {
-    OS_TaskCreate(test_task, "test_task", 256, NULL, OS_TASK_PRIO1, NULL);
+    OS_TaskCreate(test_task, "test_task", 256, NULL, OS_TASK_PRIO3, NULL);
 }

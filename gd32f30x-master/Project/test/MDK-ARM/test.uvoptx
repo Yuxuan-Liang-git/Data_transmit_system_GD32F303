@@ -167,23 +167,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>15</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\User\system\communicate_task.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>13</LineNumber>
+          <LineNumber>19</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -197,52 +181,20 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>2</Number>
+          <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>185</LineNumber>
+          <LineNumber>226</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\bsp\adc\bsp_adc.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>180</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\bsp\adc\bsp_adc.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>178</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134219930</Address>
+          <Address>134230396</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\FIVE-CYCLE\Downloads\Data_transmit_system_GD32F303-409bc398f246f6c83c8a5ce394a7c1a4db537bdd\gd32f30x-master - 鍓湰 - 鍓湰 - 鍓湰\Project\test\bsp\adc\bsp_adc.c</Filename>
+          <Filename>..\User\Ethernet\socket.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\test\../bsp/adc/bsp_adc.c\178</Expression>
+          <Expression>\\test\../User/Ethernet/socket.c\226</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -300,6 +252,11 @@
           <count>10</count>
           <WinNumber>1</WinNumber>
           <ItemText>adc_value</ItemText>
+        </Ww>
+        <Ww>
+          <count>11</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uNotifyValue</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>

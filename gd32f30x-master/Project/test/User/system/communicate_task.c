@@ -2,20 +2,18 @@
 #include "communicate_task.h"
 #include "system.h"
 #include "tcp.h"
-
+#include "bsp_adc.h"
+uint8_t tcp_cache[tcp_cache_size];
 /*******************************************************************/
 /***       			    Local Function                           ***/
 /*******************************************************************/
 static void communicate_task(void *para)
 {
-	uint8_t cache_data[2048];
 	while(1)
 	{
-        OS_MsDelay(1000);		
-//		//	没有收到队列信息时就堵塞在这里
-//		xQueueReceive(xQueue_buffer,cache_data,portMAX_DELAY);
-//		do_tcp_communicate(cache_data,2048);
-//				
+		//	没有收到队列信息时就堵塞在这里
+		xQueueReceive(xQueue_buffer,tcp_cache,portMAX_DELAY);
+		do_tcp_communicate(tcp_cache,tcp_cache_size);
 	}
 }
 
