@@ -27,16 +27,40 @@ int main(void)
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
 
+
 	while(1)
 	{
-		if(adc_finish_flag == SET)
+		if(adc_dma_flag == ADC_DMA_HF)
 		{
-			do_tcp_communicate(adc_value,buffer_len*4);
-			adc_finish_flag = RESET;
+			uint16_t i;
+			uint8_t *ptr; 
+			for (i = 0;i<dma_cache_size;i++)
+			{
+					ptr = (uint8_t *)&raw_data[i];
+					adc_value[4*i+3] = *(ptr+0);
+					adc_value[4*i+2] = *(ptr+1);
+					adc_value[4*i+1] = *(ptr+2);
+					adc_value[4*i+0] = *(ptr+3);
+			}
+			do_tcp_communicate(adc_value,tcp_cache_size);
+			adc_dma_flag = ADC_DMA_RST;
+		}
+		else if(adc_dma_flag == ADC_DMA_F)
+		{
+			uint16_t i;
+			uint8_t *ptr; 
+			for (i = 0;i<dma_cache_size;i++)
+			{
+					ptr = (uint8_t *)&raw_data[i+dma_cache_size];
+					adc_value[4*i+3] = *(ptr+0);
+					adc_value[4*i+2] = *(ptr+1);
+					adc_value[4*i+1] = *(ptr+2);
+					adc_value[4*i+0] = *(ptr+3);
+			}
+			do_tcp_communicate(adc_value,tcp_cache_size);
+			adc_dma_flag = ADC_DMA_RST;
 		}
 	}
-	
-	return 0;
 }
 
 //	回传系统时钟

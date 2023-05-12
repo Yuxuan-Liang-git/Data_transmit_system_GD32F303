@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 12 00:48:22 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 12 11:16:15 2023
 <BR><P>
 <H3>Maximum Stack Usage =        132 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -318,8 +318,8 @@ Global Symbols
 <P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_it.o(i.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_xd.o(RESET)
 </UL>
-<P><STRONG><a name="[15]"></a>DMA0_Channel0_IRQHandler</STRONG> (Thumb, 224 bytes, Stack size 16 bytes, bsp_adc.o(i.DMA0_Channel0_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DMA0_Channel0_IRQHandler &rArr; dma_interrupt_flag_get
+<P><STRONG><a name="[15]"></a>DMA0_Channel0_IRQHandler</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, bsp_adc.o(i.DMA0_Channel0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DMA0_Channel0_IRQHandler &rArr; dma_interrupt_flag_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_interrupt_flag_get
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dma_interrupt_flag_clear
@@ -429,9 +429,9 @@ Global Symbols
 <P><STRONG><a name="[26]"></a>TIMER1_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gd32f30x_it.o(i.TIMER1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIMER1_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_software_trigger_enable
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_software_trigger_enable
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_xd.o(RESET)
 </UL>
@@ -475,11 +475,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
 </UL>
 
-<P><STRONG><a name="[66]"></a>adc_config</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, bsp_adc.o(i.adc_config))
+<P><STRONG><a name="[66]"></a>adc_config</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, bsp_adc.o(i.adc_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = adc_config &rArr; adc_regular_channel_config
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_special_function_config
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_software_trigger_enable
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_regular_channel_config
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_mode_config
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_external_trigger_source_config
@@ -551,9 +550,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
 </UL>
 
-<P><STRONG><a name="[61]"></a>adc_software_trigger_enable</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_software_trigger_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
-<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER1_IRQHandler
+<P><STRONG><a name="[62]"></a>adc_software_trigger_enable</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_software_trigger_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER1_IRQHandler
 </UL>
 
 <P><STRONG><a name="[69]"></a>adc_special_function_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_special_function_config))
@@ -860,7 +858,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 228 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = main &rArr; gd_usart_com_init &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
@@ -1114,7 +1112,7 @@ Global Symbols
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Timer_Init
 </UL>
 
-<P><STRONG><a name="[62]"></a>timer_interrupt_flag_clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_clear))
+<P><STRONG><a name="[61]"></a>timer_interrupt_flag_clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_clear))
 <BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER1_IRQHandler
 </UL>
 

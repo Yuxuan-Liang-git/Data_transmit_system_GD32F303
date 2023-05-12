@@ -5,13 +5,11 @@
 
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
-uint32_t raw_data[buffer_len*2];
-uint8_t adc_value[buffer_len*2*4];
-uint32_t temp_value[64];
-FlagStatus adc_finish_flag;
-uint8_t * ptr;
+uint32_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
+uint8_t adc_value[tcp_cache_size];
+ADC_DMA_FLAG adc_dma_flag;
 
-
+uint32_t temp_data[dma_cache_size*2/16];
 void adc_init(void)
 {
 		adc_rcu_config();
@@ -97,13 +95,12 @@ void dma_config(void)
     /* initialize DMA single data mode */
     dma_data_parameter.periph_addr = (uint32_t)(&ADC_RDATA(ADC0));
     dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
-//		dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_ENABLE;
     dma_data_parameter.memory_addr = (uint32_t)(&raw_data);
     dma_data_parameter.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
     dma_data_parameter.direction = DMA_PERIPHERAL_TO_MEMORY;
-    dma_data_parameter.number = 16*64*2;		//	16路通道，64个数据一组，双缓冲区
+    dma_data_parameter.number = dma_cache_size*2;		
     dma_data_parameter.priority = DMA_PRIORITY_ULTRA_HIGH;
     dma_init(DMA0, DMA_CH0, &dma_data_parameter);
   
@@ -117,7 +114,7 @@ void dma_config(void)
     /* enable DMA channel */
     dma_channel_enable(DMA0, DMA_CH0);
 		
-		nvic_irq_enable(DMA0_Channel0_IRQn,0,0);
+		nvic_irq_enable(DMA0_Channel0_IRQn,2,0);
 }
 
 //	PA0~7: CH0 CH1 CH2 CH3 CH4 CH5 CH6 CH7
@@ -149,7 +146,6 @@ void adc_config(void)
 		}
     /* ADC trigger config */	//	用定时器手动触发ADC采样
 		adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);
-   
     /* ADC external trigger enable */
 		//	只需要规则组 
     adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
@@ -159,47 +155,37 @@ void adc_config(void)
 		adc_enable(ADC0);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		
-		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
+//		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
 }
 
 void DMA0_Channel0_IRQHandler(void)
 {
-	uint16_t i,j;
-	uint8_t *ptr; 
+	uint16_t j;
 	if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
-  {
-    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
-		for (i = 0;i<buffer_len;i++)
+	{
+		dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
+		if(adc_dma_flag == ADC_DMA_RST)
 		{
-				ptr = (uint8_t *)&raw_data[i];
-				adc_value[4*i+3] = *(ptr+0);
-				adc_value[4*i+2] = *(ptr+1);
-				adc_value[4*i+1] = *(ptr+2);
-				adc_value[4*i+0] = *(ptr+3);
+			adc_dma_flag = ADC_DMA_HF;
 		}
-		for (j = 0;j<32;j++)
-		{
-				temp_value[j] = raw_data[16*j];
-		}
-		adc_finish_flag = SET;
+//		for(j=0;j<dma_cache_size*2/16;j++)
+//		{
+//			temp_data[j]=raw_data[j*16];
+//		}
 	}
 	else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
-  {
-    dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
-		for (i = 0;i<buffer_len;i++)
+	{
+		dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
+		if(adc_dma_flag == ADC_DMA_RST)
 		{
-				ptr = (uint8_t *)&raw_data[i+buffer_len];
-				adc_value[4*i+3] = *(ptr+0);
-				adc_value[4*i+2] = *(ptr+1);
-				adc_value[4*i+1] = *(ptr+2);
-				adc_value[4*i+0] = *(ptr+3);	
+			adc_dma_flag = ADC_DMA_F;
 		}
-		for (j = 32;j<64;j++)
-		{
-				temp_value[j] = raw_data[16*j];
-		}
-		adc_finish_flag = SET;
-	}
+//		for(j=0;j<dma_cache_size*2/16;j++)
+//		{
+//			temp_data[j]=raw_data[j*16];
+//		}
+	}		
+	
+
 }
 
