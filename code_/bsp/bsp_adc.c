@@ -8,8 +8,10 @@
 uint32_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
 uint8_t adc_value[tcp_cache_size];
 ADC_DMA_FLAG adc_dma_flag;
+uint16_t j = 0;
+uint32_t temp_data[dma_cache_size*2];		//	DMA双缓冲区
+FlagStatus temp_flag;
 
-uint32_t temp_data[dma_cache_size*2/16];
 void adc_init(void)
 {
 		adc_rcu_config();
@@ -55,27 +57,35 @@ void adc_rcu_config(void)
 */
 void timer_config(void)
 {
-		timer_parameter_struct timer_initpara; //定时器结构体 
-		rcu_periph_clock_enable(RCU_TIMER1); //开启定时器时钟
+    timer_oc_parameter_struct timer_ocintpara;
+    timer_parameter_struct timer_initpara;
 
-//		timer_struct_para_init(&timer_initpara);//将定时器结构体内参数配置成默认参数
-		timer_deinit(TIMER1); //复位定时器
+    /* TIMER0 configuration */
+    timer_initpara.prescaler         = 120-1;
+    timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
+    timer_initpara.counterdirection  = TIMER_COUNTER_UP;
+    timer_initpara.period            = 200-1;
+    timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
+    timer_initpara.repetitioncounter = 0;
+    timer_init(TIMER0, &timer_initpara);
 
-		//配置TIMER1，时钟为120M/60/50  25us触发一次
-		timer_initpara.prescaler         = 120-1;//预分频
-		timer_initpara.alignedmode       = TIMER_COUNTER_EDGE; //边缘对齐
-		timer_initpara.counterdirection  = TIMER_COUNTER_UP; //向上计数方式
-		timer_initpara.period            = 100-1; //计数值
-		timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
-//		timer_initpara.repetitioncounter = 0; //设置重复计数器值，0表示不重复计数，每次溢出都产生更新事件
-		timer_init(TIMER1,&timer_initpara);
-//		timer_auto_reload_shadow_enable(TIMER1);//使能自动重加载
+    /* CH0 configuration in PWM mode0 */
+    timer_channel_output_struct_para_init(&timer_ocintpara);
+    timer_ocintpara.ocpolarity  = TIMER_OC_POLARITY_HIGH;
+    timer_ocintpara.outputstate = TIMER_CCX_ENABLE;
+    timer_channel_output_config(TIMER0, TIMER_CH_0, &timer_ocintpara);
 
-		timer_interrupt_enable(TIMER1,TIMER_INT_UP);//使能溢出中断
+    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 100);
+    timer_channel_output_mode_config(TIMER0, TIMER_CH_0, TIMER_OC_MODE_PWM0);
+    timer_channel_output_shadow_config(TIMER0, TIMER_CH_0, TIMER_OC_SHADOW_DISABLE);
 
-		nvic_irq_enable(TIMER1_IRQn, 1, 0);//配置中断优先级
-		timer_enable(TIMER1);//使能定时器  
-	
+    /* TIMER0 primary output enable */
+    timer_primary_output_config(TIMER0, ENABLE);
+    /* auto-reload preload enable */
+    timer_auto_reload_shadow_enable(TIMER0);
+
+    /* enable TIMER0 */
+    timer_enable(TIMER0);
 }
 
 /*!
@@ -95,26 +105,26 @@ void dma_config(void)
     /* initialize DMA single data mode */
     dma_data_parameter.periph_addr = (uint32_t)(&ADC_RDATA(ADC0));
     dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
-    dma_data_parameter.memory_addr = (uint32_t)(&raw_data);
+    dma_data_parameter.memory_addr = (uint32_t)(raw_data);
     dma_data_parameter.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
     dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
     dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_32BIT;
     dma_data_parameter.direction = DMA_PERIPHERAL_TO_MEMORY;
     dma_data_parameter.number = dma_cache_size*2;		
-    dma_data_parameter.priority = DMA_PRIORITY_ULTRA_HIGH;
+    dma_data_parameter.priority = DMA_PRIORITY_HIGH;
     dma_init(DMA0, DMA_CH0, &dma_data_parameter);
   
     dma_circulation_enable(DMA0, DMA_CH0);
-		dma_memory_to_memory_disable(DMA0,DMA_CH0);
+//		dma_memory_to_memory_disable(DMA0,DMA_CH0);
 		
 		//	开启DMA中断、DMA半中断
 		dma_interrupt_enable(DMA0,DMA_CH0,DMA_INT_FTF);
 		dma_interrupt_enable(DMA0,DMA_CH0,DMA_INT_HTF);
-  
+
+		nvic_irq_enable(DMA0_Channel0_IRQn,2,0);
     /* enable DMA channel */
     dma_channel_enable(DMA0, DMA_CH0);
-		
-		nvic_irq_enable(DMA0_Channel0_IRQn,2,0);
+
 }
 
 //	PA0~7: CH0 CH1 CH2 CH3 CH4 CH5 CH6 CH7
@@ -142,30 +152,29 @@ void adc_config(void)
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);
+				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_71POINT5);
 		}
-    /* ADC trigger config */	//	用定时器手动触发ADC采样
-		adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);
+    /* ADC trigger config */	
+		adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_EXTTRIG_REGULAR_T0_CH0);
     /* ADC external trigger enable */
 		//	只需要规则组 
     adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
     /* enable ADC interface */
-    /* ADC DMA function enable */
-    adc_dma_mode_enable(ADC0);
-		delay_1ms(1);
-		adc_enable(ADC0);
-		delay_1ms(1);
+    adc_enable(ADC0);
+    delay_1ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
+
+    /* ADC DMA function enable */
+    adc_dma_mode_enable(ADC0);
 }
 
 void DMA0_Channel0_IRQHandler(void)
 {
-		uint16_t j;
 		if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
 		{
 			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
+//			printf("DMA_INT_FLAG_HTF \n");
 			if(adc_dma_flag == ADC_DMA_RST)
 			{
 				adc_dma_flag = ADC_DMA_HF;
@@ -173,11 +182,17 @@ void DMA0_Channel0_IRQHandler(void)
 		}
 		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
 		{
-			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
+//			printf("DMA_INT_FLAG_FTF \n");
 			if(adc_dma_flag == ADC_DMA_RST)
 			{
 				adc_dma_flag = ADC_DMA_F;
 			}
+//			if(temp_flag == RESET)
+//			{
+//				memcpy(temp_data,raw_data,dma_cache_size*2*sizeof(raw_data[0]));
+//				temp_flag = SET;
+//			}
+			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
 		}		
 }
 

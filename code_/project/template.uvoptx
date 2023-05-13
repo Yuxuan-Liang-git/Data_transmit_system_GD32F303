@@ -152,9 +152,25 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>166</LineNumber>
+          <LineNumber>36</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134218276</Address>
+          <Address>134222992</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\User\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\template\../User/main.c\36</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>192</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134218372</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -163,7 +179,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\bsp\bsp_adc.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\template\../bsp/bsp_adc.c\166</Expression>
+          <Expression>\\template\../bsp/bsp_adc.c\192</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -236,6 +252,21 @@
           <count>13</count>
           <WinNumber>1</WinNumber>
           <ItemText>adc_dma_flag</ItemText>
+        </Ww>
+        <Ww>
+          <count>14</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>temp_data</ItemText>
+        </Ww>
+        <Ww>
+          <count>15</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>raw_data</ItemText>
+        </Ww>
+        <Ww>
+          <count>16</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>temp_data</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>

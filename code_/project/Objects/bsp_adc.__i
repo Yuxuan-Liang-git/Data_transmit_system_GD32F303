@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet
+-I.\RTE\_Target_1
+-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include
+-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD
+-o .\objects\bsp_adc.o --omf_browse .\objects\bsp_adc.crf --depend .\objects\bsp_adc.d "..\bsp\bsp_adc.c"

@@ -8,6 +8,7 @@ uint16_t delay_time;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
 uint32_t temp;
 uint32_t ADC0_0,ADC0_1;
+FlagStatus finished_flag;
 
 extern uint8_t send_data[4];
 
@@ -25,8 +26,21 @@ int main(void)
 	address=get_addr();
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
+	temp_flag = RESET;
+	finished_flag = SET;
 	while(1)
 	{
+	//		if(temp_flag == SET && finished_flag == SET)
+	//		{
+	//			
+	//			uint16_t j;
+	//			for(j=0;j<(dma_cache_size/8);j++)
+	//			{
+	//					printf("{plotter:%.d}\n", temp_data[16*j]);
+	//					delay_ms(1);
+	//			}
+	//			finished_flag = RESET;
+	//		}
 		if(adc_dma_flag == ADC_DMA_HF)
 		{
 			uint16_t i;
