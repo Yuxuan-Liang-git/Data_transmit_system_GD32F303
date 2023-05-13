@@ -21,13 +21,10 @@ int main(void)
 	addr_init();
 	adc_init();
 	gd_usart_com_init(DEV_COM0);
-	
 	led_on();
 	address=get_addr();
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
-
-
 	while(1)
 	{
 		if(adc_dma_flag == ADC_DMA_HF)

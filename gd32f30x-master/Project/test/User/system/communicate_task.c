@@ -26,5 +26,5 @@ static void communicate_task(void *para)
 void communicate_task_init(void)
 {
 	//	FreeRTOS里优先级是数量越大优先级越高
-		xTaskCreate(communicate_task, "communicate_task", 2048, NULL, OS_TASK_PRIO1, &communicate_TaskHandel);
+		xTaskCreate(communicate_task, "communicate_task", 1024, NULL, 4, &communicate_TaskHandel);
 }

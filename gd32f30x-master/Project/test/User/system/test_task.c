@@ -32,5 +32,5 @@ static void test_task(void *para)
  */
 void test_task_init(void)
 {
-    OS_TaskCreate(test_task, "test_task", 256, NULL, OS_TASK_PRIO3, NULL);
+    OS_TaskCreate(test_task, "test_task", 256, NULL, 2, NULL);
 }

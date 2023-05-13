@@ -51,5 +51,5 @@ static void adc_task(void *para)
  */
 void adc_task_init(void)
 {
-		xTaskCreate(adc_task, "adc_task", 512, NULL, OS_TASK_PRIO2, &adc_TaskHandel);
+		xTaskCreate(adc_task, "adc_task", 256, NULL, 3, &adc_TaskHandel);
 }

@@ -24,9 +24,10 @@ uint16_t address;
 */
 int main(void)
 {  
-    OS_Init();
 		SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
-    delay_init();
+    OS_Init();
+		//	systick_config();		//	Systick在xStartScheduler里配置好了
+    delay_init();			//	用TIM6统计各任务用时
     uart_printf_init();
 		addr_init();
 		address=get_addr();

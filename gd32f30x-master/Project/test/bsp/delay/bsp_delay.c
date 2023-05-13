@@ -42,7 +42,7 @@ void delay_timer_init(void)
     
     timer_init(DELAY_TIMER_PERIPH, &timer_parameter);
     timer_interrupt_enable(DELAY_TIMER_PERIPH, TIMER_INT_UP);
-    nvic_irq_enable(DELAY_TIMER_NVIC_IRQ, 0, 0);
+    nvic_irq_enable(DELAY_TIMER_NVIC_IRQ, 14, 0);
     timer_enable(DELAY_TIMER_PERIPH);
 }
 

@@ -39,7 +39,7 @@ void uart_printf_init(void)
     usart_parity_config(DBG_USART, DBG_USART_PARITY_MODE);
     usart_stop_bit_set(DBG_USART, DBG_USART_STOP_BIT_LEN);
     usart_hardware_flow_rts_config(DBG_USART, USART_RTS_DISABLE);
-	usart_hardware_flow_cts_config(DBG_USART, USART_CTS_DISABLE);
+		usart_hardware_flow_cts_config(DBG_USART, USART_CTS_DISABLE);
     usart_receive_config(DBG_USART, USART_RECEIVE_ENABLE);
     usart_transmit_config(DBG_USART, USART_TRANSMIT_ENABLE);
 

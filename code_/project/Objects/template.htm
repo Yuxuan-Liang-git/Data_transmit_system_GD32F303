@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri May 12 13:48:25 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat May 13 15:17:31 2023
 <BR><P>
 <H3>Maximum Stack Usage =        132 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -475,10 +475,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
 </UL>
 
-<P><STRONG><a name="[66]"></a>adc_config</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, bsp_adc.o(i.adc_config))
+<P><STRONG><a name="[66]"></a>adc_config</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, bsp_adc.o(i.adc_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = adc_config &rArr; adc_regular_channel_config
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_special_function_config
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_software_trigger_enable
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_regular_channel_config
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_mode_config
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_external_trigger_source_config
@@ -552,7 +553,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[62]"></a>adc_software_trigger_enable</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_software_trigger_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER1_IRQHandler
+<BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER1_IRQHandler
 </UL>
 
 <P><STRONG><a name="[69]"></a>adc_special_function_config</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_special_function_config))

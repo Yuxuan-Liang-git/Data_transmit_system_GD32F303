@@ -157,7 +157,7 @@ void adc_config(void)
 		delay_1ms(1);
     /* ADC calibration and reset calibration */
     adc_calibration_enable(ADC0);
-//		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
+		adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
 }
 
 void DMA0_Channel0_IRQHandler(void)
@@ -170,10 +170,6 @@ void DMA0_Channel0_IRQHandler(void)
 			{
 				adc_dma_flag = ADC_DMA_HF;
 			}
-	//		for(j=0;j<dma_cache_size*2/16;j++)
-	//		{
-	//			temp_data[j]=raw_data[j*16];
-	//		}
 		}
 		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
 		{
@@ -182,12 +178,6 @@ void DMA0_Channel0_IRQHandler(void)
 			{
 				adc_dma_flag = ADC_DMA_F;
 			}
-	//		for(j=0;j<dma_cache_size*2/16;j++)
-	//		{
-	//			temp_data[j]=raw_data[j*16];
-	//		}
 		}		
-	
-
 }
 
