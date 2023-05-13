@@ -46,7 +46,7 @@ void Delay_Timer_Init(void)
 	timer_init(DELAY_TIMER,&tmr);
 
 	timer_interrupt_enable(DELAY_TIMER,TIMER_INT_UP); //使能更新中断
-	nvic_irq_enable(DELAY_TIMER_IRQn,0,0); //使能中断线
+	nvic_irq_enable(DELAY_TIMER_IRQn,0x0f,0); //使能中断线
 	TMR_DISABEL();
 }
  

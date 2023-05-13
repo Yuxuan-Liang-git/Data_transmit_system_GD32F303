@@ -141,52 +141,14 @@ void PendSV_Handler(void)
 {
 }
 
-/*!
-    \brief      this function handles SysTick exception
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void SysTick_Handler(void)
-{
-    delay_decrement();
-}
-
-//	100us触发一次中断
-void TIMER1_IRQHandler(void)
-{
-		if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP))
-		{
-			/* clear TIMER interrupt flag */
-			timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
-			adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
-    }
-}
-
-
-////	10us触发一次中断
-//void TIMER1_IRQHandler(void)
+///*!
+//    \brief      this function handles SysTick exception
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//void SysTick_Handler(void)
 //{
-//	if(SET == timer_interrupt_flag_get(TIMER1,TIMER_INT_UP)){
-//		if(count<32)	//	3.2ms发一次
-//		{
-//			if(adc_finish_flag == SET)
-//			{
-//				memcpy(cache_data+64*count,adc_value,64);
-//				count++;
-//				adc_finish_flag = RESET;
-//			}
-//		} 
-//		else
-//		{
-//			do_tcp_communicate(cache_data,2048);
-//			memcpy(cache_data,0x00,2048);							//	清空缓存
-//			memcpy(cache_data,adc_value,64);	
-//			count = 1;
-//		}
-//		adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);	
-//		/* clear TIMER interrupt flag */
-//		timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
-//    }
+//    delay_decrement();
 //}
 

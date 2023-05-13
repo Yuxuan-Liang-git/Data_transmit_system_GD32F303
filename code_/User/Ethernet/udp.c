@@ -12,7 +12,8 @@
 #include "w5500_conf.h"
 #include "w5500.h"
 #include "socket.h"
-#include "utility.h"
+//#include "utility.h"
+#include "systick.h"
 #include "udp.h"
 
 void udp_com_init(void)
@@ -47,7 +48,7 @@ void do_udp(void)
 		  break;
 		
 		case SOCK_UDP:                                                           /*socket初始化完成*/
-			delay_ms(10);
+			delay_1ms(10);
 			if(getSn_IR(SOCK_UDPS) & Sn_IR_RECV)
 			{
 				setSn_IR(SOCK_UDPS, Sn_IR_RECV);                                     /*清接收中断*/

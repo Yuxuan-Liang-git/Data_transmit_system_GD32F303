@@ -12,7 +12,8 @@
 
 #include "w5500_conf.h"
 //#include "bsp_i2c_ee.h"
-#include "utility.h"
+//#include "utility.h"
+#include "systick.h"
 #include "w5500.h"
 #include "dhcp.h"
 #include "bsp_TiMbase.h"
@@ -179,9 +180,10 @@ void iinchip_cson(void)
 void reset_w5500(void)
 {
 	gpio_bit_reset(WIZ_SPIx_RESET_PORT,WIZ_RESET);
-	delay_us(100);  
+	delay_1us(100);  
+//	delay_1ms(1);
 	gpio_bit_set(WIZ_SPIx_RESET_PORT,WIZ_RESET);
-	delay_ms(1);
+	delay_1ms(1);
 }
 
 uint8_t SPI_SendByte(uint8_t byte)

@@ -17,7 +17,7 @@ int main(void)
 	SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
 	nvic_priority_group_set(NVIC_PRIGROUP_PRE4_SUB0);
 	systick_config(); // 初始化systick计时器
-	Delay_Timer_Init();		//	us级延时
+//	Delay_Timer_Init();		//	us级延时
 	led_init();
 	addr_init();
 	adc_init();
@@ -30,17 +30,6 @@ int main(void)
 	finished_flag = SET;
 	while(1)
 	{
-	//		if(temp_flag == SET && finished_flag == SET)
-	//		{
-	//			
-	//			uint16_t j;
-	//			for(j=0;j<(dma_cache_size/8);j++)
-	//			{
-	//					printf("{plotter:%.d}\n", temp_data[16*j]);
-	//					delay_ms(1);
-	//			}
-	//			finished_flag = RESET;
-	//		}
 		if(adc_dma_flag == ADC_DMA_HF)
 		{
 			uint16_t i;

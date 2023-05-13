@@ -44,8 +44,8 @@ void adc_rcu_config(void)
 		/* enable ADC0 clock */
 		rcu_periph_clock_enable(RCU_ADC0);
 //	似乎不分频也行 应该和系统时钟一致 转换速度会快一些
-//		/* config ADC clock */
-//		rcu_adc_clock_config(RCU_CKADC_CKAPB2_DIV6);
+		/* config ADC clock */
+		rcu_adc_clock_config(RCU_CKADC_CKAPB2_DIV2);
 }
 
 //	时钟120M
@@ -64,7 +64,7 @@ void timer_config(void)
     timer_initpara.prescaler         = 120-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 200-1;
+    timer_initpara.period            = 120;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER0, &timer_initpara);
@@ -75,7 +75,7 @@ void timer_config(void)
     timer_ocintpara.outputstate = TIMER_CCX_ENABLE;
     timer_channel_output_config(TIMER0, TIMER_CH_0, &timer_ocintpara);
 
-    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 100);
+    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 80);
     timer_channel_output_mode_config(TIMER0, TIMER_CH_0, TIMER_OC_MODE_PWM0);
     timer_channel_output_shadow_config(TIMER0, TIMER_CH_0, TIMER_OC_SHADOW_DISABLE);
 
@@ -115,8 +115,9 @@ void dma_config(void)
     dma_init(DMA0, DMA_CH0, &dma_data_parameter);
   
     dma_circulation_enable(DMA0, DMA_CH0);
-//		dma_memory_to_memory_disable(DMA0,DMA_CH0);
 		
+		dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
+		dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
 		//	开启DMA中断、DMA半中断
 		dma_interrupt_enable(DMA0,DMA_CH0,DMA_INT_FTF);
 		dma_interrupt_enable(DMA0,DMA_CH0,DMA_INT_HTF);
@@ -187,11 +188,6 @@ void DMA0_Channel0_IRQHandler(void)
 			{
 				adc_dma_flag = ADC_DMA_F;
 			}
-//			if(temp_flag == RESET)
-//			{
-//				memcpy(temp_data,raw_data,dma_cache_size*2*sizeof(raw_data[0]));
-//				temp_flag = SET;
-//			}
 			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
 		}		
 }

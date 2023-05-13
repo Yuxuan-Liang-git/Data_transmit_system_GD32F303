@@ -37,7 +37,7 @@
 .\objects\w5500_conf.o: ..\Library\Include\gd32f30x_enet.h
 .\objects\w5500_conf.o: ..\Library\Include\gd32f30x_exmc.h
 .\objects\w5500_conf.o: ..\User\Ethernet\types.h
-.\objects\w5500_conf.o: ..\User\Ethernet\utility.h
+.\objects\w5500_conf.o: ..\User\systick.h
 .\objects\w5500_conf.o: ..\User\Ethernet\w5500.h
 .\objects\w5500_conf.o: ..\User\Ethernet\dhcp.h
 .\objects\w5500_conf.o: ..\User\type.h

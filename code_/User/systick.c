@@ -1,44 +1,116 @@
-/*!
-    \file    systick.c
-    \brief   the systick configuration file
+///*!
+//    \file    systick.c
+//    \brief   the systick configuration file
 
-    \version 2017-02-10, V1.0.0, firmware for GD32F30x
-    \version 2018-10-10, V1.1.0, firmware for GD32F30x
-    \version 2018-12-25, V2.0.0, firmware for GD32F30x
-    \version 2020-09-30, V2.1.0, firmware for GD32F30x 
+//    \version 2017-02-10, V1.0.0, firmware for GD32F30x
+//    \version 2018-10-10, V1.1.0, firmware for GD32F30x
+//    \version 2018-12-25, V2.0.0, firmware for GD32F30x
+//    \version 2020-09-30, V2.1.0, firmware for GD32F30x 
+//*/
+
+///*
+//    Copyright (c) 2020, GigaDevice Semiconductor Inc.
+
+//    Redistribution and use in source and binary forms, with or without modification, 
+//are permitted provided that the following conditions are met:
+
+//    1. Redistributions of source code must retain the above copyright notice, this 
+//       list of conditions and the following disclaimer.
+//    2. Redistributions in binary form must reproduce the above copyright notice, 
+//       this list of conditions and the following disclaimer in the documentation 
+//       and/or other materials provided with the distribution.
+//    3. Neither the name of the copyright holder nor the names of its contributors 
+//       may be used to endorse or promote products derived from this software without 
+//       specific prior written permission.
+
+//    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+//AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+//WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+//IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+//INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+//NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+//PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+//WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+//ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+//OF SUCH DAMAGE.
+//*/
+
+//#include "gd32f30x.h"
+//#include "systick.h"
+
+//volatile static uint32_t delay;
+
+///*!
+//    \brief      configure systick
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//void systick_config(void)
+//{
+////    /* setup systick timer for 1000Hz interrupts */
+////    if (SysTick_Config(SystemCoreClock / 1000U)){
+////        /* capture error */
+////        while (1){
+////        }
+////    }
+//	    /* setup systick timer for 1000Hz interrupts */
+//    if (SysTick_Config(SystemCoreClock/120000 )){
+//        /* capture error */
+//        while (1){
+//        }
+//    }
+//    /* configure the systick handler priority */
+//    NVIC_SetPriority(SysTick_IRQn, 0x0fU);
+//}
+
+///*!
+//    \brief      delay a time in milliseconds
+//    \param[in]  count: count in milliseconds
+//    \param[out] none
+//    \retval     none
+//*/
+//void delay_1ms(uint32_t count)
+//{
+//    delay = count;
+
+//    while(0U != delay){
+//    }
+//}
+
+
+///*!
+//    \brief      delay decrement
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//void delay_decrement(void)
+//{
+//    if (0U != delay){
+//        delay--;
+//    }
+//}
+
+/*!
+    \file  systick.c
+    \brief the systick configuration file
 */
 
 /*
-    Copyright (c) 2020, GigaDevice Semiconductor Inc.
+    Copyright (C) 2017 GigaDevice
 
-    Redistribution and use in source and binary forms, with or without modification, 
-are permitted provided that the following conditions are met:
-
-    1. Redistributions of source code must retain the above copyright notice, this 
-       list of conditions and the following disclaimer.
-    2. Redistributions in binary form must reproduce the above copyright notice, 
-       this list of conditions and the following disclaimer in the documentation 
-       and/or other materials provided with the distribution.
-    3. Neither the name of the copyright holder nor the names of its contributors 
-       may be used to endorse or promote products derived from this software without 
-       specific prior written permission.
-
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
-IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
-INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
-NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
-OF SUCH DAMAGE.
+    2014-12-26, V1.0.0, platform GD32F1x0(x=3,5)
+    2016-01-15, V2.0.0, platform GD32F1x0(x=3,5,7,9)
+    2016-04-30, V3.0.0, firmware update for GD32F1x0(x=3,5,7,9)
+    2017-06-19, V3.1.0, firmware update for GD32F1x0(x=3,5,7,9)
 */
 
 #include "gd32f30x.h"
 #include "systick.h"
 
-volatile static uint32_t delay;
+volatile static float count_1us = 0;
+volatile static float count_1ms = 0;
 
 /*!
     \brief      configure systick
@@ -48,46 +120,61 @@ volatile static uint32_t delay;
 */
 void systick_config(void)
 {
-//    /* setup systick timer for 1000Hz interrupts */
-//    if (SysTick_Config(SystemCoreClock / 1000U)){
-//        /* capture error */
-//        while (1){
-//        }
-//    }
-	    /* setup systick timer for 1000Hz interrupts */
-    if (SysTick_Config(SystemCoreClock/120000 )){
-        /* capture error */
-        while (1){
-        }
-    }
-    /* configure the systick handler priority */
-    NVIC_SetPriority(SysTick_IRQn, 0x00U);
+    systick_clksource_set(SYSTICK_CLKSOURCE_HCLK);
+    count_1us = (float)SystemCoreClock/120000000;
+    count_1ms = (float)count_1us * 1000;
 }
 
 /*!
-    \brief      delay a time in milliseconds
+    \brief      delay a time in microseconds in polling mode
+    \param[in]  count: count in microseconds
+    \param[out] none
+    \retval     none
+*/
+void delay_1us(uint32_t count)
+{
+    uint32_t ctl;
+    
+    /* reload the count value */
+    SysTick->LOAD = (uint32_t)(count * count_1us);
+    /* clear the current count value */
+    SysTick->VAL = 0x0000U;
+    /* enable the systick timer */
+    SysTick->CTRL = SysTick_CTRL_ENABLE_Msk;
+    /* wait for the COUNTFLAG flag set */
+    do{
+        ctl = SysTick->CTRL;
+    }while((ctl&SysTick_CTRL_ENABLE_Msk)&&!(ctl & SysTick_CTRL_COUNTFLAG_Msk));
+    /* disable the systick timer */
+    SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
+    /* clear the current count value */
+    SysTick->VAL = 0x0000U;
+}
+
+/*!
+    \brief      delay a time in milliseconds in polling mode
     \param[in]  count: count in milliseconds
     \param[out] none
     \retval     none
 */
 void delay_1ms(uint32_t count)
 {
-    delay = count;
-
-    while(0U != delay){
-    }
+    uint32_t ctl;
+    
+    /* reload the count value */
+    SysTick->LOAD = (uint32_t)(count * count_1ms);
+    /* clear the current count value */
+    SysTick->VAL = 0x0000U;
+    /* enable the systick timer */
+    SysTick->CTRL = SysTick_CTRL_ENABLE_Msk;
+    /* wait for the COUNTFLAG flag set */
+    do{
+        ctl = SysTick->CTRL;
+    }while((ctl&SysTick_CTRL_ENABLE_Msk)&&!(ctl & SysTick_CTRL_COUNTFLAG_Msk));
+    /* disable the systick timer */
+    SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
+    /* clear the current count value */
+    SysTick->VAL = 0x0000U;
 }
 
 
-/*!
-    \brief      delay decrement
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void delay_decrement(void)
-{
-    if (0U != delay){
-        delay--;
-    }
-}

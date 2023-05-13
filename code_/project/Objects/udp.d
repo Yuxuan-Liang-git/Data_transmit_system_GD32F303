@@ -39,5 +39,5 @@
 .\objects\udp.o: ..\User\Ethernet\types.h
 .\objects\udp.o: ..\User\Ethernet\w5500.h
 .\objects\udp.o: ..\User\Ethernet\socket.h
-.\objects\udp.o: ..\User\Ethernet\utility.h
+.\objects\udp.o: ..\User\systick.h
 .\objects\udp.o: ..\User\Ethernet\udp.h
