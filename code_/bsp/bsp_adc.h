@@ -15,7 +15,7 @@
 #define DEV_COM0_GPIO_PORT              GPIOA
 #define DEV_COM0_GPIO_CLK               RCU_GPIOA
 
-#define tcp_cache_size	512							//	tcp通讯16kb缓存
+#define tcp_cache_size	8*1024							//	tcp通讯16kb缓存
 #define dma_cache_size	tcp_cache_size/4		//	dma内存是uint32，tcp是uint8
 
 typedef enum {ADC_DMA_RST = 0,ADC_DMA_HF,ADC_DMA_F } ADC_DMA_FLAG;
@@ -30,8 +30,6 @@ void timer_config(void);
 extern uint32_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
 extern uint8_t adc_value[tcp_cache_size];
 extern ADC_DMA_FLAG adc_dma_flag;
-extern uint32_t temp_data[dma_cache_size*2];		//	DMA双缓冲区
-extern FlagStatus temp_flag;
 static uint32_t adc_channels[]= {
 	ADC_CHANNEL_6, ADC_CHANNEL_4, ADC_CHANNEL_2,ADC_CHANNEL_0, 
 	ADC_CHANNEL_7, ADC_CHANNEL_5, ADC_CHANNEL_3, ADC_CHANNEL_1, 

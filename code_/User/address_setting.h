@@ -23,5 +23,4 @@ uint8 get_addr(void);
 }
 #endif
 
-#endif /* _ADDRESS_SETTING_H__ */
-																	 
+#endif /* _ADDRESS_SETTING_H__ */																	 

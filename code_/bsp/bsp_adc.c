@@ -8,9 +8,7 @@
 uint32_t raw_data[dma_cache_size*2];		//	DMAË«»º³åÇø
 uint8_t adc_value[tcp_cache_size];
 ADC_DMA_FLAG adc_dma_flag;
-uint16_t j = 0;
-uint32_t temp_data[dma_cache_size*2];		//	DMAË«»º³åÇø
-FlagStatus temp_flag;
+
 
 void adc_init(void)
 {
@@ -64,7 +62,7 @@ void timer_config(void)
     timer_initpara.prescaler         = 120-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 120;
+    timer_initpara.period            = 100;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER0, &timer_initpara);
@@ -75,7 +73,7 @@ void timer_config(void)
     timer_ocintpara.outputstate = TIMER_CCX_ENABLE;
     timer_channel_output_config(TIMER0, TIMER_CH_0, &timer_ocintpara);
 
-    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 80);
+    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 30);
     timer_channel_output_mode_config(TIMER0, TIMER_CH_0, TIMER_OC_MODE_PWM0);
     timer_channel_output_shadow_config(TIMER0, TIMER_CH_0, TIMER_OC_SHADOW_DISABLE);
 

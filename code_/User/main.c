@@ -26,8 +26,6 @@ int main(void)
 	address=get_addr();
 	printf("Address is:%d \n\r",address);	
 	tcp_com_init(address);
-	temp_flag = RESET;
-	finished_flag = SET;
 	while(1)
 	{
 		if(adc_dma_flag == ADC_DMA_HF)
