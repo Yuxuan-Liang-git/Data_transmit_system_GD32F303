@@ -26,7 +26,7 @@ int main(void)
 {  
 		SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
     OS_Init();
-		//	systick_config();		//	Systick在xStartScheduler里配置好了
+		systick_config();		//	Systick在xStartScheduler里配置好了
     delay_init();			//	用TIM6统计各任务用时
     uart_printf_init();
 		addr_init();

@@ -1,1513 +1,0 @@
-Dependencies for Project 'template', Target 'Target 1': (DO NOT MODIFY !)
-F (..\CMSIS\system_gd32f30x.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\system_gd32f30x.o --omf_browse .\objects\system_gd32f30x.crf --depend .\objects\system_gd32f30x.d)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Startup\startup_gd32f30x_xd.s)(0x64510A9D)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "GD32F30X_HD SETA 1"--list .\listings\startup_gd32f30x_xd.lst --xref -o .\objects\startup_gd32f30x_xd.o --depend .\objects\startup_gd32f30x_xd.d)
-F (..\Library\Source\gd32f30x_adc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_adc.o --omf_browse .\objects\gd32f30x_adc.crf --depend .\objects\gd32f30x_adc.d)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_bkp.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_bkp.o --omf_browse .\objects\gd32f30x_bkp.crf --depend .\objects\gd32f30x_bkp.d)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_can.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_can.o --omf_browse .\objects\gd32f30x_can.crf --depend .\objects\gd32f30x_can.d)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-F (..\Library\Source\gd32f30x_crc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_crc.o --omf_browse .\objects\gd32f30x_crc.crf --depend .\objects\gd32f30x_crc.d)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_ctc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_ctc.o --omf_browse .\objects\gd32f30x_ctc.crf --depend .\objects\gd32f30x_ctc.d)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_dac.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_dac.o --omf_browse .\objects\gd32f30x_dac.crf --depend .\objects\gd32f30x_dac.d)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_dbg.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_dbg.o --omf_browse .\objects\gd32f30x_dbg.crf --depend .\objects\gd32f30x_dbg.d)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_dma.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_dma.o --omf_browse .\objects\gd32f30x_dma.crf --depend .\objects\gd32f30x_dma.d)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-F (..\Library\Source\gd32f30x_enet.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_enet.o --omf_browse .\objects\gd32f30x_enet.crf --depend .\objects\gd32f30x_enet.d)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-F (..\Library\Source\gd32f30x_exmc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_exmc.o --omf_browse .\objects\gd32f30x_exmc.crf --depend .\objects\gd32f30x_exmc.d)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_exti.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_exti.o --omf_browse .\objects\gd32f30x_exti.crf --depend .\objects\gd32f30x_exti.d)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_fmc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_fmc.o --omf_browse .\objects\gd32f30x_fmc.crf --depend .\objects\gd32f30x_fmc.d)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_fwdgt.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_fwdgt.o --omf_browse .\objects\gd32f30x_fwdgt.crf --depend .\objects\gd32f30x_fwdgt.d)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_gpio.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_gpio.o --omf_browse .\objects\gd32f30x_gpio.crf --depend .\objects\gd32f30x_gpio.d)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_i2c.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_i2c.o --omf_browse .\objects\gd32f30x_i2c.crf --depend .\objects\gd32f30x_i2c.d)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_misc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_misc.o --omf_browse .\objects\gd32f30x_misc.crf --depend .\objects\gd32f30x_misc.d)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_pmu.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_pmu.o --omf_browse .\objects\gd32f30x_pmu.crf --depend .\objects\gd32f30x_pmu.d)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_rcu.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_rcu.o --omf_browse .\objects\gd32f30x_rcu.crf --depend .\objects\gd32f30x_rcu.d)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_rtc.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_rtc.o --omf_browse .\objects\gd32f30x_rtc.crf --depend .\objects\gd32f30x_rtc.d)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_sdio.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_sdio.o --omf_browse .\objects\gd32f30x_sdio.crf --depend .\objects\gd32f30x_sdio.d)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_spi.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_spi.o --omf_browse .\objects\gd32f30x_spi.crf --depend .\objects\gd32f30x_spi.d)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_timer.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_timer.o --omf_browse .\objects\gd32f30x_timer.crf --depend .\objects\gd32f30x_timer.d)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_usart.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_usart.o --omf_browse .\objects\gd32f30x_usart.crf --depend .\objects\gd32f30x_usart.d)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\Library\Source\gd32f30x_wwdgt.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_wwdgt.o --omf_browse .\objects\gd32f30x_wwdgt.crf --depend .\objects\gd32f30x_wwdgt.d)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\User\main.c)(0x645E2286)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\User\main.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\systick.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\address_setting.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\bsp\bsp_usart.h)(0x64510A9D)
-I (..\bsp\bsp_gpio.h)(0x64510A9D)
-I (..\bsp\bsp_adc.h)(0x64510A9D)
-I (..\bsp\gd25qxx.h)(0x64510A9D)
-I (..\User\gd32f30x_it.h)(0x6452002D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\tcp.h)(0x64510A9D)
-F (..\User\systick.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\systick.h)(0x64510A9D)
-F (..\User\gd32f30x_it.c)(0x645E2296)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd32f30x_it.o --omf_browse .\objects\gd32f30x_it.crf --depend .\objects\gd32f30x_it.d)
-I (..\User\gd32f30x_it.h)(0x6452002D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\systick.h)(0x64510A9D)
-I (..\User\main.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\address_setting.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\bsp\bsp_usart.h)(0x64510A9D)
-I (..\bsp\bsp_gpio.h)(0x64510A9D)
-I (..\bsp\bsp_adc.h)(0x64510A9D)
-I (..\bsp\gd25qxx.h)(0x64510A9D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (..\User\Ethernet\tcp.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-F (..\User\address_setting.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\address_setting.o --omf_browse .\objects\address_setting.crf --depend .\objects\address_setting.d)
-I (..\User\address_setting.h)(0x64510A9D)
-I (..\User\main.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\systick.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\bsp\bsp_usart.h)(0x64510A9D)
-I (..\bsp\bsp_gpio.h)(0x64510A9D)
-I (..\bsp\bsp_adc.h)(0x64510A9D)
-I (..\bsp\gd25qxx.h)(0x64510A9D)
-I (..\User\gd32f30x_it.h)(0x6452002D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-F (..\User\type.h)(0x64510A9D)()
-F (..\bsp\bsp_gpio.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\bsp_gpio.o --omf_browse .\objects\bsp_gpio.crf --depend .\objects\bsp_gpio.d)
-I (..\bsp\bsp_gpio.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-F (..\bsp\bsp_usart.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\bsp_usart.o --omf_browse .\objects\bsp_usart.crf --depend .\objects\bsp_usart.d)
-I (..\bsp\bsp_usart.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-F (..\bsp\gd25qxx.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\gd25qxx.o --omf_browse .\objects\gd25qxx.crf --depend .\objects\gd25qxx.d)
-I (..\bsp\gd25qxx.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-F (..\bsp\bsp_adc.c)(0x64524A48)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\bsp_adc.o --omf_browse .\objects\bsp_adc.crf --depend .\objects\bsp_adc.d)
-I (..\bsp\bsp_adc.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\systick.h)(0x64510A9D)
-I (..\User\main.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\address_setting.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\bsp\bsp_usart.h)(0x64510A9D)
-I (..\bsp\bsp_gpio.h)(0x64510A9D)
-I (..\bsp\gd25qxx.h)(0x64510A9D)
-I (..\User\gd32f30x_it.h)(0x6452002D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\tcp.h)(0x64510A9D)
-F (..\bsp\bsp_rcu_clk.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\bsp_rcu_clk.o --omf_browse .\objects\bsp_rcu_clk.crf --depend .\objects\bsp_rcu_clk.d)
-I (..\bsp\bsp_rcu_clk.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\systick.h)(0x64510A9D)
-I (..\bsp\bsp_usart.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-F (..\User\Ethernet\dhcp.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\dhcp.o --omf_browse .\objects\dhcp.crf --depend .\objects\dhcp.d)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\Types.h)(0x64510A9D)
-I (..\User\Ethernet\socket.h)(0x64510A9D)
-I (..\User\Ethernet\dhcp.h)(0x64510A9D)
-I (..\User\type.h)(0x64510A9D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (..\User\Ethernet\w5500_conf.h)(0x64510A9D)
-F (..\User\Ethernet\socket.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\socket.o --omf_browse .\objects\socket.crf --depend .\objects\socket.d)
-I (..\User\Ethernet\socket.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\Types.h)(0x64510A9D)
-I (..\User\Ethernet\W5500_conf.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-F (..\User\Ethernet\w5500.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\w5500.o --omf_browse .\objects\w5500.crf --depend .\objects\w5500.d)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\w5500_conf.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-I (..\User\Ethernet\socket.h)(0x64510A9D)
-F (..\User\Ethernet\w5500_conf.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\w5500_conf.o --omf_browse .\objects\w5500_conf.crf --depend .\objects\w5500_conf.d)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\w5500_conf.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-I (..\User\Ethernet\dhcp.h)(0x64510A9D)
-I (..\User\type.h)(0x64510A9D)
-I (..\bsp\bsp_TiMbase.h)(0x64510A9D)
-F (..\User\Ethernet\utility.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\utility.o --omf_browse .\objects\utility.crf --depend .\objects\utility.d)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-I (..\User\Ethernet\Types.h)(0x64510A9D)
-I (..\User\Ethernet\w5500_conf.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (..\User\type.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
-F (..\User\Ethernet\udp.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\udp.o --omf_browse .\objects\udp.crf --depend .\objects\udp.d)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\w5500_conf.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-I (..\User\Ethernet\socket.h)(0x64510A9D)
-I (..\User\Ethernet\utility.h)(0x64510A9D)
-I (..\User\Ethernet\udp.h)(0x64510A9D)
-F (..\User\Ethernet\tcp.c)(0x64510A9D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\tcp.o --omf_browse .\objects\tcp.crf --depend .\objects\tcp.d)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\Ethernet\tcp.h)(0x64510A9D)
-I (..\User\Ethernet\types.h)(0x64510A9D)
-I (..\User\Ethernet\W5500_conf.h)(0x64510A9D)
-I (..\CMSIS\gd32f30x.h)(0x64510A9D)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B971444)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8F4DD4)
-I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8F4DD4)
-I (..\CMSIS\system_gd32f30x.h)(0x64510A9D)
-I (..\User\gd32f30x_libopt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rcu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_adc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_can.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_crc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_ctc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dac.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dbg.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_dma.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exti.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fmc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_fwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_gpio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_i2c.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_pmu.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_bkp.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_rtc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_sdio.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_spi.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_timer.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_usart.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_wwdgt.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_misc.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_enet.h)(0x64510A9D)
-I (..\Library\Include\gd32f30x_exmc.h)(0x64510A9D)
-I (..\User\Ethernet\w5500.h)(0x64510A9D)
-I (..\User\Ethernet\socket.h)(0x64510A9D)

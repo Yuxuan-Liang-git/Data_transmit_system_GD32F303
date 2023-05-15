@@ -120,16 +120,16 @@ void PendSV_Handler(void)
     xPortPendSVHandler();
 }
 
-/*!
-    \brief      this function handles SysTick exception
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void SysTick_Handler(void)
-{
-    xPortSysTickHandler();
+///*!
+//    \brief      this function handles SysTick exception
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//void SysTick_Handler(void)
+//{
+//    xPortSysTickHandler();
 
-    delay_decrement();
-}
+//    delay_decrement();
+//}
 
