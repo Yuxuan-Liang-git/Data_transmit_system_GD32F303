@@ -8,7 +8,9 @@
 uint32_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
 uint8_t adc_value[tcp_cache_size];
 ADC_DMA_FLAG adc_dma_flag;
+uint8_t temp;
 
+uint32_t printf_cache[dma_cache_size*12];
 
 void adc_init(void)
 {
@@ -73,7 +75,7 @@ void timer_config(void)
     timer_ocintpara.outputstate = TIMER_CCX_ENABLE;
     timer_channel_output_config(TIMER0, TIMER_CH_0, &timer_ocintpara);
 
-    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 30);
+    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 20);
     timer_channel_output_mode_config(TIMER0, TIMER_CH_0, TIMER_OC_MODE_PWM0);
     timer_channel_output_shadow_config(TIMER0, TIMER_CH_0, TIMER_OC_SHADOW_DISABLE);
 
@@ -157,12 +159,12 @@ void adc_config(void)
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);
+				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_1POINT5);
 		}
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC1, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);
+				adc_regular_channel_config(ADC1, i, adc_channels[i], ADC_SAMPLETIME_1POINT5);
 		}
     /* ADC external trigger enable */
 		//	只需要规则组 
@@ -190,6 +192,7 @@ void DMA0_Channel0_IRQHandler(void)
 {
 		if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
 		{
+
 			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
 			if(adc_dma_flag == ADC_DMA_RST)
 			{
@@ -198,7 +201,16 @@ void DMA0_Channel0_IRQHandler(void)
 		}
 		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
 		{
-//			printf("DMA_INT_FLAG_FTF \n");
+//			uint32_t i;
+//			temp++;
+//			memcpy(&printf_cache[temp*dma_cache_size*2],raw_data,sizeof(raw_data));		
+//			if(temp>6)
+//			{
+//				timer_disable(TIMER0);
+//				for (i = 0;i<dma_cache_size*12/16;i++)
+//				{
+//					printf("{plotter:%d}\n", printf_cache[16*i]);
+//				}		
 			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
 			if(adc_dma_flag == ADC_DMA_RST)
 			{

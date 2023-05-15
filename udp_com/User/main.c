@@ -6,10 +6,9 @@
 uint16_t address;
 uint16_t delay_time;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
-uint32_t temp;
+//uint32_t temp;
 uint32_t ADC0_0,ADC0_1;
 FlagStatus finished_flag;
-extern uint8_t send_data[4];
 
 int main(void)
 {
@@ -29,8 +28,7 @@ int main(void)
 	while(1)
 	{
 //		do_udp();
-		
-		if(adc_dma_flag == ADC_DMA_HF)
+		if(adc_dma_flag == ADC_DMA_HF )
 		{
 			uint16_t i;
 			uint8_t *ptr; 
@@ -59,10 +57,29 @@ int main(void)
 					adc_value[4*i+0] = *(ptr+3);
 			}
 //			do_tcp_communicate(adc_value,tcp_cache_size);
-			
 			do_udp_communicate(adc_value,tcp_cache_size);
 			adc_dma_flag = ADC_DMA_RST;
 		}
+//		if(adc_dma_flag == ADC_DMA_HF)
+//		{
+//			adc_dma_flag = ADC_DMA_RST;
+//		}
+//		else if(adc_dma_flag == ADC_DMA_F)
+//		{
+//			uint16_t i;	
+//			for (i = 0;i<2*dma_cache_size;i++)
+//			{
+//					printf("{plotter:%d}\n", printf_cache[16*i]);
+//			}
+//			adc_dma_flag = ADC_DMA_RST;
+//			break;
+//		}	
+		
+		
+//		for (j = 0;j<dma_cache_size;j++)
+//		{
+//				printf("{plotter:%.d}\n", raw_data[16*j]);
+//		}
 	}
 }
 
