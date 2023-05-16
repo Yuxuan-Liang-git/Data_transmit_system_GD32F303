@@ -43,15 +43,13 @@ int main(void)
 			adc_dma_flag = ADC_DMA_RST;
 			count ++ ;
 		}
-		if(count == 32)
+		if(count == 4)
 		{
 			uint16_t i,j;
 			uint8_t *ptr; 
-			
-			adc_disable(ADC0);
-			adc_disable(ADC1);
-
-			for(j=0;j<64;j++)
+//			adc_disable(ADC0);
+//			adc_disable(ADC1);
+			for(j=0;j<count;j++)
 			{
 				memset(temp_value,0,sizeof(temp_value));
 				for (i = 0;i<dma_cache_size;i++)
@@ -64,9 +62,9 @@ int main(void)
 				}
 				do_udp_communicate(temp_value,tcp_cache_size);
 			}			
-			break;
+			count = 0;
+//			break;
 		}
-
 
 //			memcpy(&printf_cache[temp*dma_cache_size*2],raw_data,sizeof(raw_data));	
 		
