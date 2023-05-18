@@ -17,9 +17,10 @@
 #include "udp.h"
 
 extern uint8 count_m;
-
-void udp_com_init(void)
+extern uint8 local_ip[4];
+void udp_com_init(uint8 address)
 {
+	local_ip[3]=address;
 	gpio_for_w5500_config();						        /*初始化MCU相关引脚*/
 	reset_w5500();											/*硬复位W5500*/
 	set_w5500_mac();										/*配置MAC地址*/

@@ -23,11 +23,12 @@ int main(void)
 	led_on();
 	address=get_addr();
 	printf("Address is:%d \n\r",address);	
-	udp_com_init();
+	udp_com_init(address);
 //	tcp_com_init(address);
 	while(1)
 	{
 //		do_udp();
+		
 		if(adc_dma_flag == ADC_DMA_HF )
 		{
 			uint16_t i;
@@ -60,6 +61,7 @@ int main(void)
 			do_udp_communicate(adc_value,tcp_cache_size);
 			adc_dma_flag = ADC_DMA_RST;
 		}
+		
 //		if(adc_dma_flag == ADC_DMA_HF)
 //		{
 //			adc_dma_flag = ADC_DMA_RST;

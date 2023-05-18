@@ -853,7 +853,7 @@ I (..\Library\Include\gd32f30x_usart.h)(0x6461F5B2)
 I (..\Library\Include\gd32f30x_misc.h)(0x6461F5B2)
 I (..\Library\Include\gd32f30x_enet.h)(0x6461F5B2)
 I (..\Library\Include\gd32f30x_exmc.h)(0x6461F5B2)
-F (..\User\main.c)(0x6462028D)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x64648E8E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\User\main.h)(0x6461F5B2)
 I (..\CMSIS\gd32f30x.h)(0x6461F5B2)
 I (G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
@@ -1343,7 +1343,7 @@ I (..\Library\Include\gd32f30x_exmc.h)(0x6461F5B2)
 I (..\User\Ethernet\types.h)(0x6461F5B2)
 I (..\User\Ethernet\w5500.h)(0x6461F5B2)
 I (..\User\Ethernet\socket.h)(0x6461F5B2)
-F (..\User\Ethernet\w5500_conf.c)(0x6461F5B2)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\w5500_conf.o --omf_browse .\objects\w5500_conf.crf --depend .\objects\w5500_conf.d)
+F (..\User\Ethernet\w5500_conf.c)(0x6464932B)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Library\Include -I ..\User -I ..\bsp -I ..\User\Ethernet-I.\RTE\_Target_1-IG:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IG:\Programming\Keil4\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\objects\w5500_conf.o --omf_browse .\objects\w5500_conf.crf --depend .\objects\w5500_conf.d)
 I (G:\Programming\Keil4\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (G:\Programming\Keil4\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (..\User\Ethernet\w5500_conf.h)(0x6461F5B2)
