@@ -25,8 +25,8 @@ void system_init(void)
 		xQueue_buffer = xQueueCreate(1,tcp_cache_size);					//	创建队列
 		taskENTER_CRITICAL();				//	进临界段 关中断
     test_task_init();
-		adc_task_init();
-		communicate_task_init();
+//		adc_task_init();
+//		communicate_task_init();
 		taskEXIT_CRITICAL();
 
 }
