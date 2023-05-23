@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon May 15 11:14:39 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue May 23 00:26:01 2023
 <BR><P>
 <H3>Maximum Stack Usage =        132 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -350,14 +350,14 @@ Global Symbols
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_TX_FSR
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
 </UL>
 
 <P><STRONG><a name="[51]"></a>IINCHIP_SpiSendData</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, w5500_conf.o(i.IINCHIP_SpiSendData))
@@ -365,10 +365,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_SendByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
 <P><STRONG><a name="[54]"></a>IINCHIP_WRITE</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, w5500_conf.o(i.IINCHIP_WRITE))
@@ -378,13 +378,13 @@ Global Symbols
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
 </UL>
 
 <P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_it.o(i.MemManage_Handler))
@@ -433,13 +433,13 @@ Global Symbols
 <P><STRONG><a name="[9a]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 </UL>
 
 <P><STRONG><a name="[c2]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
@@ -458,7 +458,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_config
 </UL>
 
-<P><STRONG><a name="[5c]"></a>adc_config</STRONG> (Thumb, 224 bytes, Stack size 8 bytes, bsp_adc.o(i.adc_config))
+<P><STRONG><a name="[5c]"></a>adc_config</STRONG> (Thumb, 222 bytes, Stack size 8 bytes, bsp_adc.o(i.adc_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = adc_config &rArr; adc_regular_channel_config
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_special_function_config
@@ -559,9 +559,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_communicate
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_communicate
 </UL>
 
 <P><STRONG><a name="[73]"></a>connect</STRONG> (Thumb, 248 bytes, Stack size 24 bytes, socket.o(i.connect))
@@ -653,13 +653,13 @@ Global Symbols
 <P><STRONG><a name="[7c]"></a>do_tcp_communicate</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, tcp.o(i.do_tcp_communicate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = do_tcp_communicate &rArr; send &rArr; send_data_processing &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_IR
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSn_IR
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -719,8 +719,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_communicate
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_tcp_communicate
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;connect
 </UL>
 
 <P><STRONG><a name="[7d]"></a>getSn_SR</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, w5500.o(i.getSn_SR))
@@ -795,10 +795,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
 <P><STRONG><a name="[52]"></a>iinchip_cson</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, w5500_conf.o(i.iinchip_cson))
@@ -806,10 +806,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 
 <P><STRONG><a name="[95]"></a>led_init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, bsp_gpio.o(i.led_init))
@@ -914,10 +914,10 @@ Global Symbols
 <P><STRONG><a name="[a0]"></a>send_data_processing</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, w5500.o(i.send_data_processing))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = send_data_processing &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 </UL>
@@ -965,13 +965,13 @@ Global Symbols
 <P><STRONG><a name="[a6]"></a>set_w5500_ip</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, w5500_conf.o(i.set_w5500_ip))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = set_w5500_ip &rArr; setSUBR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSIPR
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getGAR
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_com_init
 </UL>
@@ -1037,12 +1037,12 @@ Global Symbols
 <P><STRONG><a name="[9b]"></a>tcp_com_init</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, tcp.o(i.tcp_com_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = tcp_com_init &rArr; set_w5500_mac &rArr; setSHAR &rArr; wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_mac
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_mac
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;socket_buf_init
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1153,10 +1153,10 @@ Global Symbols
 <P><STRONG><a name="[8a]"></a>wiz_read_buf</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, w5500_conf.o(i.wiz_read_buf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = wiz_read_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSIPR
@@ -1166,16 +1166,16 @@ Global Symbols
 <P><STRONG><a name="[a1]"></a>wiz_write_buf</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, w5500_conf.o(i.wiz_write_buf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = wiz_write_buf &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
 </UL>
 <P>
 <H3>

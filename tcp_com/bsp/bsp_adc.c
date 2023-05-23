@@ -139,7 +139,7 @@ void adc_config(void)
 {
 		uint8_t i;
     /* configure the ADC sync mode */
-    adc_mode_config(ADC_DAUL_REGULAL_FOLLOWUP_FAST);
+    adc_mode_config(ADC_MODE_FREE);
     /* ADC data alignment config */
     adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
     adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
@@ -154,12 +154,12 @@ void adc_config(void)
     adc_channel_length_config(ADC1, ADC_REGULAR_CHANNEL,16);
     /* ADC regular channel config */
 		//	信号变化较为迅速，需要短的采样时间SAMPLETIME 15个通道
-		for (i = 0; i < 16; i++) 
+		for (i = 0; i < 8; i++) 
 		{
 				// 对每个通道进行处理
 				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);
 		}
-		for (i = 0; i < 16; i++) 
+		for (i = 8; i < 16; i++) 
 		{
 				// 对每个通道进行处理
 				adc_regular_channel_config(ADC1, i, adc_channels[i], ADC_SAMPLETIME_28POINT5);

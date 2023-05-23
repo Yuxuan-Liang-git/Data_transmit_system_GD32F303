@@ -22,7 +22,7 @@ int main(void)
 	gd_usart_com_init(DEV_COM0);
 	led_on();
 	address=get_addr();
-	printf("Address is:%d \n\r",address);	
+	printf("设定的IP地址为:192,168,1,%d \n\r",address);	
 	udp_com_init(address);
 //	tcp_com_init(address);
 	while(1)

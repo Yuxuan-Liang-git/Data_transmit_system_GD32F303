@@ -64,7 +64,7 @@ void timer_config(void)
     timer_initpara.prescaler         = 120-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 100;
+    timer_initpara.period            = 50;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER0, &timer_initpara);
@@ -75,7 +75,7 @@ void timer_config(void)
     timer_ocintpara.outputstate = TIMER_CCX_ENABLE;
     timer_channel_output_config(TIMER0, TIMER_CH_0, &timer_ocintpara);
 
-    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 20);
+    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 50);
     timer_channel_output_mode_config(TIMER0, TIMER_CH_0, TIMER_OC_MODE_PWM0);
     timer_channel_output_shadow_config(TIMER0, TIMER_CH_0, TIMER_OC_SHADOW_DISABLE);
 
@@ -141,7 +141,7 @@ void adc_config(void)
 {
 		uint8_t i;
     /* configure the ADC sync mode */
-    adc_mode_config(ADC_DAUL_REGULAL_FOLLOWUP_FAST);
+    adc_mode_config(ADC_DAUL_REGULAL_PARALLEL);
     /* ADC data alignment config */
     adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
     adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
@@ -159,12 +159,12 @@ void adc_config(void)
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_1POINT5);
+				adc_regular_channel_config(ADC0, i, adc_channels[i], ADC_SAMPLETIME_55POINT5);
 		}
 		for (i = 0; i < 16; i++) 
 		{
 				// 对每个通道进行处理
-				adc_regular_channel_config(ADC1, i, adc_channels[i], ADC_SAMPLETIME_1POINT5);
+				adc_regular_channel_config(ADC1, i, adc_channels[i], ADC_SAMPLETIME_55POINT5);
 		}
     /* ADC external trigger enable */
 		//	只需要规则组 

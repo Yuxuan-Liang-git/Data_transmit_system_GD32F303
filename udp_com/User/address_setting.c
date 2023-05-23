@@ -5,12 +5,10 @@ void addr_init(void)
 {
 		rcu_periph_clock_enable(RCU_AF);	
 		rcu_periph_clock_enable(ADDR_GPIO_CLK);
-
 		for(i=0;i<8;i++)
 		{		
 			gpio_init(ADDR_GPIO_Port, GPIO_MODE_IPU, GPIO_OSPEED_50MHZ, ADDR_PIN[i]);
 		}
-
 }
 
 uint8 get_addr(void)

@@ -30,7 +30,7 @@ void udp_com_init(uint8 address)
 	printf(" W5500可以和电脑的UDP端口通讯 \r\n");
 	printf(" W5500的本地端口为:%d \r\n",local_port);
 	printf(" 远端端口为:%d \r\n",remote_port);
-	printf(" 连接成功后，PC机发送数据给W5500，W5500将返回对应数据 \r\n");
+	printf(" W5500可以通过UDP回传信息至PC端！ \r\n");
 }
 
 
