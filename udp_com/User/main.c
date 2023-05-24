@@ -1,7 +1,9 @@
 #include "main.h"
 #include "string.h"
-
+#include "stdio.h"
 #include "udp.h"
+
+#define BREAK_UINT32( var, ByteNum ) (uint8)((uint32) (((var) >>((ByteNum) * 8)) & 0x00FF))
 
 uint16_t address;
 uint16_t delay_time;
@@ -10,9 +12,11 @@ uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
 uint32_t ADC0_0,ADC0_1;
 FlagStatus finished_flag;
 
+
+
 int main(void)
 {
-	SystemInit();			//	初始化时钟，使用内部8M振荡电路，用PLL倍频到120M
+	SystemInit();			//	初始化时钟，使用外部晶振
 	nvic_priority_group_set(NVIC_PRIGROUP_PRE4_SUB0);
 	systick_config(); // 初始化systick计时器
 //	Delay_Timer_Init();		//	us级延时
@@ -36,11 +40,10 @@ int main(void)
 			for (i = 0;i<dma_cache_size;i++)
 			{
 					ptr = (uint8_t *)&raw_data[i];
-					adc_value[4*i+3] = *(ptr+0);
-					adc_value[4*i+2] = *(ptr+1);
-					adc_value[4*i+1] = *(ptr+2);
-					adc_value[4*i+0] = *(ptr+3);
+					adc_value[2*i+1] = *(ptr+0);
+					adc_value[2*i+0] = *(ptr+1);
 			}
+
 //			do_tcp_communicate(adc_value,tcp_cache_size);
 			do_udp_communicate(adc_value,tcp_cache_size);
 			adc_dma_flag = ADC_DMA_RST;
@@ -52,12 +55,16 @@ int main(void)
 			for (i = 0;i<dma_cache_size;i++)
 			{
 					ptr = (uint8_t *)&raw_data[i+dma_cache_size];
-					adc_value[4*i+3] = *(ptr+0);
-					adc_value[4*i+2] = *(ptr+1);
-					adc_value[4*i+1] = *(ptr+2);
-					adc_value[4*i+0] = *(ptr+3);
+					adc_value[2*i+1] = *(ptr+0);
+					adc_value[2*i+0] = *(ptr+1);
+//					adc_value[4*i+3] = BREAK_UINT32(raw_data[i+dma_cache_size],0);
+//					adc_value[4*i+2] = BREAK_UINT32(raw_data[i+dma_cache_size],1);
+//					adc_value[4*i+1] = BREAK_UINT32(raw_data[i+dma_cache_size],2);
+//					adc_value[4*i+0] = BREAK_UINT32(raw_data[i+dma_cache_size],3);
 			}
-//			do_tcp_communicate(adc_value,tcp_cache_size);
+			
+//			memcpy(&adc_value,&raw_data[dma_cache_size],sizeof(raw_data[0])*dma_cache_size);
+			
 			do_udp_communicate(adc_value,tcp_cache_size);
 			adc_dma_flag = ADC_DMA_RST;
 		}
