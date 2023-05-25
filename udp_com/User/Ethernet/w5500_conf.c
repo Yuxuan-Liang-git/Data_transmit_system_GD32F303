@@ -17,6 +17,7 @@
 #include "w5500.h"
 #include "dhcp.h"
 #include "bsp_TiMbase.h"
+#include "bsp_adc.h"
 
 CONFIG_MSG  ConfigMsg;																	/*配置结构体*/
 EEPROM_MSG_STR EEPROM_MSG;															/*EEPROM存储信息结构体*/
@@ -43,6 +44,7 @@ uint8   dhcp_ok   = 0;													   			/*dhcp成功获取IP*/
 uint32	ms        = 0;															  	/*毫秒计数*/
 uint32	dhcp_time = 0;															  	/*DHCP运行计数*/
 
+uint8_t send_buff[udp_cache_data];		//	SPI DMA传输缓冲
 
 /**
 *@brief		配置W5500的IP地址
@@ -110,11 +112,15 @@ void gpio_for_w5500_config(void)
 		gpio_pin_remap_config(GPIO_SWJ_SWDPENABLE_REMAP, ENABLE);/*!< JTAG-DP disabled and SW-DP enabled */
 		gpio_pin_remap_config(GPIO_SPI0_REMAP, ENABLE);//REMAP SPI0
 	
+//    /* SPI0_SCK(PB3), SPI0_MISO(PB4) and SPI0_MOSI(PB5) GPIO pin configuration */
+//    gpio_init(WIZ_SPIx_GPIO_PORT, GPIO_MODE_AF_PP, GPIO_OSPEED_50MHZ, WIZ_SPIx_SCLK | WIZ_SPIx_MISO | WIZ_SPIx_MOSI);
+//    /* SPI0_CS(PB6) GPIO pin configuration */
+//    gpio_init(WIZ_SPIx_GPIO_PORT, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, WIZ_SPIx_SCS);
+	
     /* SPI0_SCK(PB3), SPI0_MISO(PB4) and SPI0_MOSI(PB5) GPIO pin configuration */
-    gpio_init(WIZ_SPIx_GPIO_PORT, GPIO_MODE_AF_PP, GPIO_OSPEED_50MHZ, WIZ_SPIx_SCLK | WIZ_SPIx_MISO | WIZ_SPIx_MOSI);
+    gpio_init(WIZ_SPIx_GPIO_PORT, GPIO_MODE_AF_PP, GPIO_OSPEED_MAX, WIZ_SPIx_SCLK | WIZ_SPIx_MISO | WIZ_SPIx_MOSI);
     /* SPI0_CS(PB6) GPIO pin configuration */
-    gpio_init(WIZ_SPIx_GPIO_PORT, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, WIZ_SPIx_SCS);
-
+    gpio_init(WIZ_SPIx_GPIO_PORT, GPIO_MODE_OUT_PP, GPIO_OSPEED_MAX, WIZ_SPIx_SCS);
     /* SPI0 parameter configuration */
     spi_init_struct.trans_mode           = SPI_TRANSMODE_FULLDUPLEX;
     spi_init_struct.device_mode          = SPI_MASTER;
@@ -125,13 +131,15 @@ void gpio_for_w5500_config(void)
     spi_init_struct.endian               = SPI_ENDIAN_MSB;
     spi_init(WIZ_SPIx, &spi_init_struct);
 
+		spi_dma_enable(SPI0,SPI_DMA_TRANSMIT);
     /* enable SPI0 */
     spi_enable(WIZ_SPIx);
+	
 		
 		/*定义RESET引脚PB8*/
-		gpio_init(WIZ_SPIx_RESET_PORT,GPIO_MODE_OUT_PP,GPIO_OSPEED_50MHZ,WIZ_RESET);
+		gpio_init(WIZ_SPIx_RESET_PORT,GPIO_MODE_OUT_PP,GPIO_OSPEED_MAX,WIZ_RESET);
 		/*定义INT引脚PB7*/	
-		gpio_init(WIZ_SPIx_RESET_PORT,GPIO_MODE_IPU,GPIO_OSPEED_50MHZ,WIZ_RESET);
+		gpio_init(WIZ_SPIx_RESET_PORT,GPIO_MODE_IPU,GPIO_OSPEED_MAX,WIZ_RESET);
 }
 
 
@@ -289,6 +297,27 @@ uint16 wiz_write_buf(uint32 addrbsb,uint8* buf,uint16 len)
    return len;  
 }
 
+/**
+*@brief		直接用DMA向W5500写入len字节数据
+*@param		addrbsb: 写入数据的地址
+*@param   buf：写入字符串
+*@param   len：字符串长度
+*@return	len：返回字符串长度
+*/
+uint16 dma_wiz_write_buf(uint32 addrbsb,uint8* buf,uint16 len)
+{
+   uint16 idx = 0;
+   if(len == 0) printf("Unexpected2 length 0\r\n");
+   iinchip_csoff();                               
+   IINCHIP_SpiSendData( (addrbsb & 0x00FF0000)>>16);
+   IINCHIP_SpiSendData( (addrbsb & 0x0000FF00)>> 8);
+   IINCHIP_SpiSendData( (addrbsb & 0x000000F8) + 4); 
+	spi_dma_send(buf,len);
+   iinchip_cson();                           
+   return len;  
+}
+
+
 uint16 wiz_write_buf_2byte(uint32 addrbsb,uint16* buf,uint16 len)
 {
    uint16 idx = 0;
@@ -303,6 +332,48 @@ uint16 wiz_write_buf_2byte(uint32 addrbsb,uint16* buf,uint16 len)
    }
    iinchip_cson();                           
    return len;  
+}
+
+
+void SPI_DMA_config(void)
+{
+			/* ADC_DMA_channel configuration */
+    dma_parameter_struct dma_data_parameter;
+		rcu_periph_clock_enable(RCU_DMA0);
+		dma_struct_para_init(&dma_data_parameter);
+		//	开启DMA->SPI功能
+    /* ADC_DMA_channel deinit */
+    dma_deinit(DMA0, DMA_CH2);
+    
+    /* initialize DMA single data mode */
+    dma_data_parameter.periph_addr = (uint32_t)(&SPI_DATA(SPI0));
+    dma_data_parameter.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
+    dma_data_parameter.memory_addr = (uint32_t)send_buff;
+    dma_data_parameter.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
+    dma_data_parameter.periph_width = DMA_PERIPHERAL_WIDTH_32BIT;
+    dma_data_parameter.memory_width = DMA_MEMORY_WIDTH_8BIT;
+    dma_data_parameter.direction = DMA_MEMORY_TO_PERIPHERAL;
+    dma_data_parameter.number = udp_cache_data;		
+    dma_data_parameter.priority = DMA_PRIORITY_HIGH;
+    dma_init(DMA0, DMA_CH2, &dma_data_parameter);
+  
+    dma_circulation_disable(DMA0, DMA_CH2);
+		dma_interrupt_disable(DMA0,DMA_CH2,DMA_INT_FTF);
+}
+
+/**
+*@brief		直接将数据通过DMA+spi通讯传输
+*@param 	buf：存放读取数据
+*@param		len：数据长度
+*/
+void spi_dma_send(uint8* buf,uint16 len)
+{
+	memcpy(send_buff,buf,len*sizeof(buf[0]));
+	dma_channel_disable(DMA0,DMA_CH2);
+	SPI_DMA_config();
+	dma_channel_enable(DMA0,DMA_CH2);
+	while(RESET == dma_flag_get(DMA0,DMA_CH2,DMA_FLAG_FTF));
+	
 }
 
 /**

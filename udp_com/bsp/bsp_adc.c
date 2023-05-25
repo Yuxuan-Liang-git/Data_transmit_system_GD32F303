@@ -7,7 +7,7 @@
 
 uint16_t raw_data[dma_cache_size*2];		//	DMAË«»º³åÇø
 //uint16_t adc_value[tcp_cache_size];
-uint8_t adc_value[tcp_cache_size];
+uint8_t adc_value[udp_cache_data];
 ADC_DMA_FLAG adc_dma_flag;
 uint8_t temp;
 
@@ -65,7 +65,7 @@ void timer_config(void)
     timer_initpara.prescaler         = 60-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 100-1;
+    timer_initpara.period            = 50-1;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER0, &timer_initpara);
@@ -76,7 +76,7 @@ void timer_config(void)
     timer_ocintpara.outputstate = TIMER_CCX_ENABLE;
     timer_channel_output_config(TIMER0, TIMER_CH_0, &timer_ocintpara);
 
-    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 50);
+    timer_channel_output_pulse_value_config(TIMER0, TIMER_CH_0, 30);
     timer_channel_output_mode_config(TIMER0, TIMER_CH_0, TIMER_OC_MODE_PWM0);
     timer_channel_output_shadow_config(TIMER0, TIMER_CH_0, TIMER_OC_SHADOW_DISABLE);
 
@@ -193,25 +193,19 @@ void DMA0_Channel0_IRQHandler(void)
 {
 		if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_HTF))
 		{
+//			start_count();
 
 			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_HTF);
 			if(adc_dma_flag == ADC_DMA_RST)
 			{
 				adc_dma_flag = ADC_DMA_HF;
 			}
+			
 		}
 		else if(dma_interrupt_flag_get(DMA0,DMA_CH0,DMA_INT_FLAG_FTF))
 		{
-//			uint32_t i;
-//			temp++;
-//			memcpy(&printf_cache[temp*dma_cache_size*2],raw_data,sizeof(raw_data));		
-//			if(temp>6)
-//			{
-//				timer_disable(TIMER0);
-//				for (i = 0;i<dma_cache_size*12/16;i++)
-//				{
-//					printf("{plotter:%d}\n", printf_cache[16*i]);
-//				}		
+//				dur = get_dur();
+				
 			dma_interrupt_flag_clear(DMA0,DMA_CH0,DMA_INT_FLAG_FTF);
 			if(adc_dma_flag == ADC_DMA_RST)
 			{

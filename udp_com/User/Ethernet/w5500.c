@@ -310,8 +310,8 @@ void send_data_processing(SOCKET s, uint8 *data, uint16 len)
   ptr = ((ptr & 0x00ff) << 8) + IINCHIP_READ(Sn_TX_WR1(s));
 
   addrbsb = (uint32)(ptr<<8) + (s<<5) + 0x10;
-  wiz_write_buf(addrbsb, data, len);
-  
+//  wiz_write_buf(addrbsb, data, len);
+  dma_wiz_write_buf(addrbsb, data, len);
   ptr += len;
   IINCHIP_WRITE( Sn_TX_WR0(s) ,(uint8)((ptr & 0xff00) >> 8));
   IINCHIP_WRITE( Sn_TX_WR1(s),(uint8)(ptr & 0x00ff));

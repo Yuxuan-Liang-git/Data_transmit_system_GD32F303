@@ -1,4 +1,6 @@
 .\objects\systick.o: ..\User\systick.c
+.\objects\systick.o: ..\User\systick.h
+.\objects\systick.o: ..\Library\Include\gd32f30x_timer.h
 .\objects\systick.o: ..\CMSIS\gd32f30x.h
 .\objects\systick.o: G:\Programming\Keil4\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h
 .\objects\systick.o: G:\Programming\Keil4\ARM\ARMCC\Bin\..\include\stdint.h
@@ -33,4 +35,3 @@
 .\objects\systick.o: ..\Library\Include\gd32f30x_misc.h
 .\objects\systick.o: ..\Library\Include\gd32f30x_enet.h
 .\objects\systick.o: ..\Library\Include\gd32f30x_exmc.h
-.\objects\systick.o: ..\User\systick.h

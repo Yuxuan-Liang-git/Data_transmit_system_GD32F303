@@ -13,13 +13,13 @@ uint32_t ADC0_0,ADC0_1;
 FlagStatus finished_flag;
 
 
-
 int main(void)
 {
+
 	SystemInit();			//	初始化时钟，使用外部晶振
 	nvic_priority_group_set(NVIC_PRIGROUP_PRE4_SUB0);
-	systick_config(); // 初始化systick计时器
-//	Delay_Timer_Init();		//	us级延时
+//	systick_config(); // 初始化systick计时器
+	Delay_Timer_Init();		//	us级延时
 	led_init();
 	addr_init();
 	adc_init();
@@ -35,13 +35,16 @@ int main(void)
 		{
 			uint16_t i;
 			uint8_t *ptr; 
+			
 			for (i = 0;i<dma_cache_size;i++)
 			{
 					ptr = (uint8_t *)&raw_data[i];
 					adc_value[2*i+1] = *(ptr+0);
 					adc_value[2*i+0] = *(ptr+1);
 			}
-			do_udp_communicate(adc_value,tcp_cache_size);
+
+			do_udp_communicate(adc_value,udp_cache_data);
+
 			adc_dma_flag = ADC_DMA_RST;
 		}
 		else if(adc_dma_flag == ADC_DMA_F)
@@ -54,7 +57,7 @@ int main(void)
 					adc_value[2*i+1] = *(ptr+0);
 					adc_value[2*i+0] = *(ptr+1);
 			}
-			do_udp_communicate(adc_value,tcp_cache_size);
+			do_udp_communicate(adc_value,udp_cache_data);
 			adc_dma_flag = ADC_DMA_RST;
 		}
 

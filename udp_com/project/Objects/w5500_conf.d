@@ -42,3 +42,13 @@
 .\objects\w5500_conf.o: ..\User\Ethernet\dhcp.h
 .\objects\w5500_conf.o: ..\User\type.h
 .\objects\w5500_conf.o: ..\bsp\bsp_TiMbase.h
+.\objects\w5500_conf.o: ..\bsp\bsp_adc.h
+.\objects\w5500_conf.o: ..\User\main.h
+.\objects\w5500_conf.o: ..\User\address_setting.h
+.\objects\w5500_conf.o: ..\User\main.h
+.\objects\w5500_conf.o: ..\bsp\bsp_usart.h
+.\objects\w5500_conf.o: ..\bsp\bsp_gpio.h
+.\objects\w5500_conf.o: ..\bsp\bsp_adc.h
+.\objects\w5500_conf.o: ..\bsp\gd25qxx.h
+.\objects\w5500_conf.o: ..\User\gd32f30x_it.h
+.\objects\w5500_conf.o: ..\User\Ethernet\utility.h

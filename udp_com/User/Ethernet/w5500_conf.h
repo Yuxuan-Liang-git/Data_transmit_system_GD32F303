@@ -90,9 +90,10 @@ void gpio_for_w5500_config(void);														/*SPI接口reset 及中断引脚*/
 void IINCHIP_WRITE( uint32 addrbsb,  uint8 data);						/*写入一个8位数据到W5500*/
 uint8 IINCHIP_READ(uint32 addrbsb);													/*从W5500读出一个8位数据*/
 uint16 wiz_write_buf(uint32 addrbsb,uint8* buf,uint16 len);	/*向W5500写入len字节数据*/
+uint16 dma_wiz_write_buf(uint32 addrbsb,uint8* buf,uint16 len);		//	直接用DMA向w5500写入数据
 uint16 wiz_write_buf_2byte(uint32 addrbsb,uint16 * buf,uint16 len);	/*向W5500写入len字节数据*/
 uint16 wiz_read_buf(uint32 addrbsb, uint8* buf,uint16 len);	/*从W5500读出len字节数据*/
-
+void spi_dma_send(uint8* buf,uint16 len);		//	直接用dma发送
 /*W5500基本配置相关函数*/
 void reset_w5500(void);																			/*硬复位W5500*/
 void set_w5500_mac(void);																		/*配置W5500的MAC地址*/
