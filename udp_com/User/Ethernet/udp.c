@@ -87,3 +87,19 @@ void do_udp_communicate(uint8 * data,int len)
 			break;
 	}
 }
+
+void do_udp_communicate_2byte(uint16 * data,int len)
+{               
+	switch(getSn_SR(SOCK_UDPS))                                                /*获取socket的状态*/
+	{
+		case SOCK_CLOSED:                                                        /*socket处于关闭状态*/
+			socket(SOCK_UDPS,Sn_MR_UDP,local_port,0);                              /*初始化socket*/
+		  break;
+		
+		case SOCK_UDP:                                                           /*socket初始化完成*/
+//			delay_1ms(10);
+//				data[len]=0x00;                                                    /*添加字符串结束符*/
+			sendto_2byte(SOCK_UDPS,data,len, remote_ip, remote_port); 
+			break;
+	}
+}

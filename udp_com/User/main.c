@@ -31,8 +31,6 @@ int main(void)
 //	tcp_com_init(address);
 	while(1)
 	{
-//		do_udp();
-		
 		if(adc_dma_flag == ADC_DMA_HF )
 		{
 			uint16_t i;
@@ -43,8 +41,6 @@ int main(void)
 					adc_value[2*i+1] = *(ptr+0);
 					adc_value[2*i+0] = *(ptr+1);
 			}
-
-//			do_tcp_communicate(adc_value,tcp_cache_size);
 			do_udp_communicate(adc_value,tcp_cache_size);
 			adc_dma_flag = ADC_DMA_RST;
 		}
@@ -58,12 +54,39 @@ int main(void)
 					adc_value[2*i+1] = *(ptr+0);
 					adc_value[2*i+0] = *(ptr+1);
 			}
-			
-//			memcpy(&adc_value,&raw_data[dma_cache_size],sizeof(raw_data[0])*dma_cache_size);
-			
 			do_udp_communicate(adc_value,tcp_cache_size);
 			adc_dma_flag = ADC_DMA_RST;
 		}
+
+//		if(adc_dma_flag == ADC_DMA_HF )
+//		{
+//			uint16_t i;
+//			uint8_t *ptr,*ptr_; 
+
+//			for (i = 0;i<dma_cache_size;i++)
+//			{
+//					ptr = (uint8_t *)&raw_data[i];
+//					ptr_ = (uint8_t *)&adc_value[i];
+//					*(ptr_+0) = *(ptr+1);
+//					*(ptr_+1) = *(ptr+0);
+//			}
+//			do_udp_communicate_2byte(adc_value,tcp_cache_size);
+//			adc_dma_flag = ADC_DMA_RST;
+//		}
+//		else if(adc_dma_flag == ADC_DMA_F)
+//		{
+//			uint16_t i;
+//			uint8_t *ptr,*ptr_; 
+//			for (i = 0;i<dma_cache_size;i++)
+//			{
+//					ptr = (uint8_t *)&raw_data[i+dma_cache_size];
+//					ptr_ = (uint8_t *)&adc_value[i];
+//					*(ptr_+0) = *(ptr+1);
+//					*(ptr_+1) = *(ptr+0);
+//			}
+//			do_udp_communicate_2byte(adc_value,tcp_cache_size);
+//			adc_dma_flag = ADC_DMA_RST;
+//		}
 		
 	}
 }

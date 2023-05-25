@@ -317,6 +317,27 @@ void send_data_processing(SOCKET s, uint8 *data, uint16 len)
   IINCHIP_WRITE( Sn_TX_WR1(s),(uint8)(ptr & 0x00ff));
 }
 
+void send_2byte_data_processing(SOCKET s, uint16 *data, uint16 len)
+{
+  uint16 ptr =0;
+  uint32 addrbsb =0;
+  if(len == 0)
+  {
+    printf("CH: %d Unexpected1 length 0\r\n", s);
+    return;
+  }
+   
+  ptr = IINCHIP_READ( Sn_TX_WR0(s) );
+  ptr = ((ptr & 0x00ff) << 8) + IINCHIP_READ(Sn_TX_WR1(s));
+
+  addrbsb = (uint32)(ptr<<8) + (s<<5) + 0x10;
+  wiz_write_buf_2byte(addrbsb, data, len);
+  
+  ptr += len;
+  IINCHIP_WRITE( Sn_TX_WR0(s) ,(uint8)((ptr & 0xff00) >> 8));
+  IINCHIP_WRITE( Sn_TX_WR1(s),(uint8)(ptr & 0x00ff));
+}
+
 /**
 *@brief  	This function is being called by recv() also.
 					This function read the Rx read pointer register

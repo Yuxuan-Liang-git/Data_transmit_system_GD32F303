@@ -301,6 +301,48 @@ uint16 sendto(SOCKET s, const uint8 * buf, uint16 len, uint8 * addr, uint16 port
    return ret;
 }
 
+uint16 sendto_2byte(SOCKET s, const uint16 * buf, uint16 len, uint8 * addr, uint16 port)
+{
+   uint16 ret=0;
+
+   if (len > getIINCHIP_TxMAX(s)) 
+   ret = getIINCHIP_TxMAX(s); // check size not to exceed MAX size.
+   else ret = len;
+
+   if( ((addr[0] == 0x00) && (addr[1] == 0x00) && (addr[2] == 0x00) && (addr[3] == 0x00)) || ((port == 0x00)) )//||(ret == 0) )
+   {
+      /* added return value */
+      ret = 0;
+   }
+   else
+   {
+      IINCHIP_WRITE( Sn_DIPR0(s), addr[0]);
+      IINCHIP_WRITE( Sn_DIPR1(s), addr[1]);
+      IINCHIP_WRITE( Sn_DIPR2(s), addr[2]);
+      IINCHIP_WRITE( Sn_DIPR3(s), addr[3]);
+      IINCHIP_WRITE( Sn_DPORT0(s),(uint8)((port & 0xff00) >> 8));
+      IINCHIP_WRITE( Sn_DPORT1(s),(uint8)(port & 0x00ff));
+      // copy data
+      send_2byte_data_processing(s, (uint16 *)buf, ret);
+      IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_SEND);
+      /* wait to process the command... */
+      while( IINCHIP_READ( Sn_CR(s) ) )
+	  ;
+      /* ------- */
+     while( (IINCHIP_READ( Sn_IR(s) ) & Sn_IR_SEND_OK) != Sn_IR_SEND_OK )
+     {
+      if (IINCHIP_READ( Sn_IR(s) ) & Sn_IR_TIMEOUT)
+      {
+            /* clear interrupt */
+      IINCHIP_WRITE( Sn_IR(s) , (Sn_IR_SEND_OK | Sn_IR_TIMEOUT)); /* clear SEND_OK & TIMEOUT */
+      return 0;
+      }
+     }
+      IINCHIP_WRITE( Sn_IR(s) , Sn_IR_SEND_OK);
+   }
+   return ret;
+}
+
 /**
 *@brief   This function is an application I/F function which is used to receive the data in other then
 					TCP mode. This function is used to receive UDP, IP_RAW and MAC_RAW mode, and handle the header as well.

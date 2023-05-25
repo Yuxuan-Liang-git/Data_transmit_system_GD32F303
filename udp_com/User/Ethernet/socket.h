@@ -27,6 +27,7 @@ extern uint8 listen(SOCKET s);	// Establish TCP connection (Passive connection)
 extern uint16 send(SOCKET s, const uint8 * buf, uint16 len); // Send data (TCP)
 extern uint16 recv(SOCKET s, uint8 * buf, uint16 len);	// Receive data (TCP)
 extern uint16 sendto(SOCKET s, const uint8 * buf, uint16 len, uint8 * addr, uint16 port); // Send data (UDP/IP RAW)
+extern uint16 sendto_2byte(SOCKET s, const uint16 * buf, uint16 len, uint8 * addr, uint16 port); // Send data (UDP/IP RAW)
 extern uint16 recvfrom(SOCKET s, uint8 * buf, uint16 len, uint8 * addr, uint16  *port); // Receive data (UDP/IP RAW)
 
 #ifdef __MACRAW__

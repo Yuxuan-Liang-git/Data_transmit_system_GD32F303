@@ -201,6 +201,21 @@ uint8_t SPI_SendByte(uint8_t byte)
 	return spi_i2s_data_receive(WIZ_SPIx);
 }
 
+uint8_t SPI_Send2Byte(uint16_t byte)
+{
+  /* Loop while DR register in not emplty */
+	while(RESET == spi_i2s_flag_get(WIZ_SPIx, SPI_FLAG_TBE));
+
+  /* Send byte through the SPI0 peripheral */
+	spi_i2s_data_transmit(WIZ_SPIx, byte);
+
+  /* Wait to receive a byte */
+	while(RESET == spi_i2s_flag_get(WIZ_SPIx, SPI_FLAG_RBNE));
+
+  /* Return the byte read from the SPI bus */
+	return spi_i2s_data_receive(WIZ_SPIx);
+}
+
 /**
 *@brief		STM32 SPI1读写8位数据
 *@param		dat：写入的8位数据
@@ -210,6 +225,12 @@ uint8  IINCHIP_SpiSendData(uint8 dat)
 {
    return(SPI_SendByte(dat));
 }
+
+uint8  IINCHIP_SpiSendData_2byte(uint16 dat)
+{
+   return(SPI_Send2Byte(dat));
+}
+
 
 /**
 *@brief		写入一个8位数据到W5500
@@ -263,6 +284,22 @@ uint16 wiz_write_buf(uint32 addrbsb,uint8* buf,uint16 len)
    for(idx = 0; idx < len; idx++)
    {
      IINCHIP_SpiSendData(buf[idx]);
+   }
+   iinchip_cson();                           
+   return len;  
+}
+
+uint16 wiz_write_buf_2byte(uint32 addrbsb,uint16* buf,uint16 len)
+{
+   uint16 idx = 0;
+   if(len == 0) printf("Unexpected2 length 0\r\n");
+   iinchip_csoff();                               
+   IINCHIP_SpiSendData( (addrbsb & 0x00FF0000)>>16);
+   IINCHIP_SpiSendData( (addrbsb & 0x0000FF00)>> 8);
+   IINCHIP_SpiSendData( (addrbsb & 0x000000F8) + 4); 
+   for(idx = 0; idx < len; idx++)
+   {
+     IINCHIP_SpiSendData_2byte(buf[idx]);
    }
    iinchip_cson();                           
    return len;  

@@ -265,6 +265,7 @@ uint16 getSn_RX_RSR(SOCKET s); // get socket RX recv buf size
 uint8 getSn_SR(SOCKET s);
 void setSn_TTL(SOCKET s, uint8 ttl);
 void send_data_processing(SOCKET s, uint8 *wizdata, uint16 len);
+void send_2byte_data_processing(SOCKET s, uint16 *wizdata, uint16 len);
 void recv_data_processing(SOCKET s, uint8 *wizdata, uint16 len);
 
 void setGAR(uint8 * addr); // set gateway address

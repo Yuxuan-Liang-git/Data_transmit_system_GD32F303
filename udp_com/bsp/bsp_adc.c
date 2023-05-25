@@ -6,6 +6,7 @@
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
 uint16_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
+//uint16_t adc_value[tcp_cache_size];
 uint8_t adc_value[tcp_cache_size];
 ADC_DMA_FLAG adc_dma_flag;
 uint8_t temp;
@@ -61,10 +62,10 @@ void timer_config(void)
     timer_parameter_struct timer_initpara;
 
     /* TIMER0 configuration */
-    timer_initpara.prescaler         = 120-1;
+    timer_initpara.prescaler         = 60-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 50;
+    timer_initpara.period            = 100-1;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER0, &timer_initpara);
