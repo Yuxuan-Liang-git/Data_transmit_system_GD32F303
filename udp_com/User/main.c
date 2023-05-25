@@ -57,10 +57,6 @@ int main(void)
 					ptr = (uint8_t *)&raw_data[i+dma_cache_size];
 					adc_value[2*i+1] = *(ptr+0);
 					adc_value[2*i+0] = *(ptr+1);
-//					adc_value[4*i+3] = BREAK_UINT32(raw_data[i+dma_cache_size],0);
-//					adc_value[4*i+2] = BREAK_UINT32(raw_data[i+dma_cache_size],1);
-//					adc_value[4*i+1] = BREAK_UINT32(raw_data[i+dma_cache_size],2);
-//					adc_value[4*i+0] = BREAK_UINT32(raw_data[i+dma_cache_size],3);
 			}
 			
 //			memcpy(&adc_value,&raw_data[dma_cache_size],sizeof(raw_data[0])*dma_cache_size);
@@ -69,26 +65,6 @@ int main(void)
 			adc_dma_flag = ADC_DMA_RST;
 		}
 		
-//		if(adc_dma_flag == ADC_DMA_HF)
-//		{
-//			adc_dma_flag = ADC_DMA_RST;
-//		}
-//		else if(adc_dma_flag == ADC_DMA_F)
-//		{
-//			uint16_t i;	
-//			for (i = 0;i<2*dma_cache_size;i++)
-//			{
-//					printf("{plotter:%d}\n", printf_cache[16*i]);
-//			}
-//			adc_dma_flag = ADC_DMA_RST;
-//			break;
-//		}	
-		
-		
-//		for (j = 0;j<dma_cache_size;j++)
-//		{
-//				printf("{plotter:%.d}\n", raw_data[16*j]);
-//		}
 	}
 }
 
