@@ -4,23 +4,6 @@
 #include "types.h"
 #include "gd32f30x.h"
 #include "gd32f30x_timer.h"
-
-//#define DELAY_TIMER				TIMER3
-//#define RCU_DELAY_TIMER			RCU_TIMER3
-//#define DELAY_TIMER_IRQHandler	TIMER3_IRQHandler
-//#define DELAY_TIMER_IRQn		TIMER3_IRQn
-// 
-////定时器不分频
-//#define DELAY_TIMER_PRESCALER	0	//分频值0,频率和系统时钟一样 120MHz
-////1us的定时计数是
-//#define DELAY_TIMER_PERIOD		(SystemCoreClock / 1000 /1000)-1	//120	//SystemCoreClock / 1000 /1000
-// 
-//#define TMR_ENABLE()	TIMER_CTL0(DELAY_TIMER)|=(uint32_t)TIMER_CTL0_CEN	//开启定时器
-//#define TMR_DISABEL()	TIMER_CTL0(DELAY_TIMER) &= ~(uint32_t)TIMER_CTL0_CEN //关闭定时器
-//#define TMR_CLR_FLAG()	TIMER_INTF(DELAY_TIMER) = (~(uint32_t)TIMER_INT_FLAG_UP)	//清除中断标志位
-//#define TMR_SET_CNT(X)	TIMER_CNT(DELAY_TIMER) = (uint32_t)(X)	//配置计数器
-// 
-//extern uint16_t us_count;
  
 void Delay_Timer_Init(void);
 void delay_us(uint16_t count);
@@ -60,5 +43,8 @@ uint16 checksum(unsigned char * src, unsigned int len);		/* Calculate checksum o
 
 uint8 check_dest_in_local(u_long destip);			/* Check Destination in local or remote */
 
+//功能描述：把ASCII字符转换为16进制 
+uint8_t CharToHex(uint8_t  bHex);
+uint8_t  HexToChar(uint8_t  bChar);
 
 #endif

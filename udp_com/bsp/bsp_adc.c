@@ -6,20 +6,19 @@
 //	adc采样如果有问题，调调ADC_SAMPLETIME
 
 uint16_t raw_data[dma_cache_size*2];		//	DMA双缓冲区
-//uint16_t adc_value[tcp_cache_size];
 uint8_t adc_value[udp_cache_data];
 ADC_DMA_FLAG adc_dma_flag;
 uint8_t temp;
 
 uint32_t printf_cache[dma_cache_size*12];
 
-void adc_init(void)
+//	ADC默认开40kHz采样
+void adc_init(ADC_FREQ adc_freq)
 {
 		adc_rcu_config();
 		adc_gpio_config();
-//		nvic_priority_group_set(NVIC_PRIGROUP_PRE2_SUB2);
     /* TIMER configuration */
-    timer_config();
+		timer_config(adc_freq);
     /* DMA configuration */
     dma_config();
     /* ADC configuration */
@@ -51,21 +50,38 @@ void adc_rcu_config(void)
 
 //	时钟120M
 /*!
-    \brief      configure the timer peripheral
+    \brief      configure the timer peripheral 晶振120Mhz，TIMER0挂在APB2下，120Mhz
     \param[in]  none
     \param[out] none
     \retval     none
 */
-void timer_config(void)
+void timer_config(ADC_FREQ adc_freq)
 {
+		uint16_t period_set;
     timer_oc_parameter_struct timer_ocintpara;
     timer_parameter_struct timer_initpara;
+	
+		switch(adc_freq)
+		{
+			case ADC_FREQ_40:
+				period_set = 50;
+				break;
+			case ADC_FREQ_20:
+				period_set = 100;
+				break;
+			case ADC_FREQ_10:
+				period_set = 200;
+				break;
+			case ADC_FREQ_5:
+				period_set = 400;
+				break;
+		}
 
     /* TIMER0 configuration */
     timer_initpara.prescaler         = 60-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 50-1;
+    timer_initpara.period            = period_set-1;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER0, &timer_initpara);

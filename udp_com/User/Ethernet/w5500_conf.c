@@ -312,7 +312,7 @@ uint16 dma_wiz_write_buf(uint32 addrbsb,uint8* buf,uint16 len)
    IINCHIP_SpiSendData( (addrbsb & 0x00FF0000)>>16);
    IINCHIP_SpiSendData( (addrbsb & 0x0000FF00)>> 8);
    IINCHIP_SpiSendData( (addrbsb & 0x000000F8) + 4); 
-	spi_dma_send(buf,len);
+	 spi_dma_send(buf,len);
    iinchip_cson();                           
    return len;  
 }

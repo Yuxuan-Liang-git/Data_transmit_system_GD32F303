@@ -8,10 +8,9 @@
 uint16_t address;
 uint16_t delay_time;
 uint32_t apb1_clk,apb2_clk,ahb_clk,sys_clk;
-//uint32_t temp;
 uint32_t ADC0_0,ADC0_1;
 FlagStatus finished_flag;
-
+uint8 adc_freq = ADC_FREQ_40;
 
 int main(void)
 {
@@ -22,13 +21,12 @@ int main(void)
 	Delay_Timer_Init();		//	us级延时
 	led_init();
 	addr_init();
-	adc_init();
+	adc_init(adc_freq);
 	gd_usart_com_init(DEV_COM0);
 	led_on();
 	address=get_addr();
 	printf("设定的IP地址为:192,168,1,%d \n\r",address);	
 	udp_com_init(address);
-//	tcp_com_init(address);
 	while(1)
 	{
 		if(adc_dma_flag == ADC_DMA_HF )
@@ -42,9 +40,7 @@ int main(void)
 					adc_value[2*i+1] = *(ptr+0);
 					adc_value[2*i+0] = *(ptr+1);
 			}
-
 			do_udp_communicate(adc_value,udp_cache_data);
-
 			adc_dma_flag = ADC_DMA_RST;
 		}
 		else if(adc_dma_flag == ADC_DMA_F)
@@ -60,37 +56,6 @@ int main(void)
 			do_udp_communicate(adc_value,udp_cache_data);
 			adc_dma_flag = ADC_DMA_RST;
 		}
-
-//		if(adc_dma_flag == ADC_DMA_HF )
-//		{
-//			uint16_t i;
-//			uint8_t *ptr,*ptr_; 
-
-//			for (i = 0;i<dma_cache_size;i++)
-//			{
-//					ptr = (uint8_t *)&raw_data[i];
-//					ptr_ = (uint8_t *)&adc_value[i];
-//					*(ptr_+0) = *(ptr+1);
-//					*(ptr_+1) = *(ptr+0);
-//			}
-//			do_udp_communicate_2byte(adc_value,tcp_cache_size);
-//			adc_dma_flag = ADC_DMA_RST;
-//		}
-//		else if(adc_dma_flag == ADC_DMA_F)
-//		{
-//			uint16_t i;
-//			uint8_t *ptr,*ptr_; 
-//			for (i = 0;i<dma_cache_size;i++)
-//			{
-//					ptr = (uint8_t *)&raw_data[i+dma_cache_size];
-//					ptr_ = (uint8_t *)&adc_value[i];
-//					*(ptr_+0) = *(ptr+1);
-//					*(ptr_+1) = *(ptr+0);
-//			}
-//			do_udp_communicate_2byte(adc_value,tcp_cache_size);
-//			adc_dma_flag = ADC_DMA_RST;
-//		}
-		
 	}
 }
 

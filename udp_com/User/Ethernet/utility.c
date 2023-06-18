@@ -21,73 +21,6 @@ typedef uint8				u8;		/**< 8-bit value */
 typedef uint16			u16;	/**< 16-bit value */
 typedef uint32			u32;		/**< 32-bit value */
 
-//uint16_t us_count;
-// 
-///*----------------------------------------------------------------------------------
-//Function   :Delay_Timer_Init
-//Description:初始化延时函数定时器
-//Input      :无
-//Retrun     :无
-//----------------------------------------------------------------------------------*/
-//void Delay_Timer_Init(void)
-//{
-//	timer_parameter_struct tmr;
-// 
-//	rcu_periph_clock_enable(RCU_DELAY_TIMER);
-//	timer_deinit(DELAY_TIMER);
-// 
-//	 /* TIMERx configuration */
-//	tmr.prescaler         = DELAY_TIMER_PRESCALER;
-//	tmr.alignedmode       = TIMER_COUNTER_EDGE;
-//	tmr.counterdirection  = TIMER_COUNTER_UP;
-//	tmr.period            = DELAY_TIMER_PERIOD;
-//	tmr.clockdivision     = TIMER_CKDIV_DIV1;
-//	tmr.repetitioncounter = 0;
-//	timer_init(DELAY_TIMER,&tmr);
-
-//	timer_interrupt_enable(DELAY_TIMER,TIMER_INT_UP); //使能更新中断
-//	nvic_irq_enable(DELAY_TIMER_IRQn,0x0f,0); //使能中断线
-//	TMR_DISABEL();
-//}
-// 
-// 
-///*----------------------------------------------------------------------------------
-//Function   :DELAY_TIMER_IRQHandler
-//Description:定时器中断
-//Input      :无
-//Retrun     :无
-//----------------------------------------------------------------------------------*/
-//void DELAY_TIMER_IRQHandler(void)
-//{
-//    //timer_interrupt_flag_clear(DELAY_TIMER, TIMER_INT_FLAG_UP); //清除中断标志位
-//	TMR_CLR_FLAG();
-//    us_count++;
-//}
-// 
-// 
-///*----------------------------------------------------------------------------------
-//Function   :Delay_1us
-//Description:延时us
-//Input      :count:微秒数
-//Retrun     :无
-//----------------------------------------------------------------------------------*/
-//void delay_us(uint16_t count)
-//{
-//	TMR_SET_CNT(0);	//timer_counter_value_config(DELAY_TIMER,0);	
-//	TMR_ENABLE();	//timer_enable
-//	us_count = 0;		
-//	while (us_count < count);
-//	TMR_DISABEL();	//timer_disable
-//}
-// 
-//void delay_ms(uint16_t count)
-//{
-//   while (count--)
-//   {
-//	   delay_us(1000);	//为了避开中断
-//   }          
-//}
-
 
 /**
 *@brief	 	字符转转化为8位整型函数
@@ -435,4 +368,44 @@ u_char check_dest_in_local(u_long destip)
 			return 1;	// Remote
 	}
 	return 0;
+}
+
+//功能描述：把ASCII字符转换为16进制 
+uint8_t CharToHex(uint8_t  bHex)
+{
+    if((bHex>=0)&&(bHex<=9))
+    {
+        bHex += 0x30;
+    }
+    else if((bHex>=10)&&(bHex<=15))//Capital
+    {
+        bHex += 0x37;
+    }
+    else 
+    {
+        bHex = 0xff;
+    }
+    return bHex;
+}
+
+//功能描述：把16进制转换为ASCII字符 
+uint8_t  HexToChar(uint8_t  bChar)
+{
+    if((bChar>=0x30)&&(bChar<=0x39))
+    {
+        bChar -= 0x30;
+    }
+    else if((bChar>=0x41)&&(bChar<=0x46)) // Capital
+    {
+        bChar -= 0x37;
+    }
+    else if((bChar>=0x61)&&(bChar<=0x66)) //littlecase
+    {
+        bChar -= 0x57;
+    }
+    else 
+    {
+        bChar = 0xff;
+    }
+    return bChar;
 }

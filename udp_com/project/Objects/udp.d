@@ -39,5 +39,14 @@
 .\objects\udp.o: ..\User\Ethernet\types.h
 .\objects\udp.o: ..\User\Ethernet\w5500.h
 .\objects\udp.o: ..\User\Ethernet\socket.h
+.\objects\udp.o: ..\User\main.h
 .\objects\udp.o: ..\User\systick.h
+.\objects\udp.o: ..\User\address_setting.h
+.\objects\udp.o: ..\User\main.h
+.\objects\udp.o: ..\bsp\bsp_usart.h
+.\objects\udp.o: ..\bsp\bsp_gpio.h
+.\objects\udp.o: ..\bsp\bsp_adc.h
+.\objects\udp.o: ..\bsp\gd25qxx.h
+.\objects\udp.o: ..\User\gd32f30x_it.h
+.\objects\udp.o: ..\User\Ethernet\utility.h
 .\objects\udp.o: ..\User\Ethernet\udp.h

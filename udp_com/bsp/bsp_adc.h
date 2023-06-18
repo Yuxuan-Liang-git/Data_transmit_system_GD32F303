@@ -21,12 +21,15 @@
 
 typedef enum {ADC_DMA_RST = 0,ADC_DMA_HF,ADC_DMA_F } ADC_DMA_FLAG;
 
-void adc_init(void);
+typedef enum {ADC_FREQ_5 = 0,ADC_FREQ_10,ADC_FREQ_20,ADC_FREQ_40 } ADC_FREQ;
+
+void adc_init(ADC_FREQ adc_freq);
 void adc_rcu_config(void);
 void adc_gpio_config(void);
 void dma_config(void);
 void adc_config(void);
-void timer_config(void);
+//void timer_config(void);
+void timer_config(ADC_FREQ adc_freq);
 
 extern uint16_t raw_data[dma_cache_size*2];		//	DMAË«»º³åÇø
 //extern uint16_t adc_value[tcp_cache_size];

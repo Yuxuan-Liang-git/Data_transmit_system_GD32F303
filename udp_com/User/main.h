@@ -20,7 +20,7 @@ extern "C" {
 #define DELAY_US 1000
 
 extern uint16_t address;
-
+extern uint8 adc_freq;
 
 void get_clk(void);		//	ªÒ»° ±÷”
 
